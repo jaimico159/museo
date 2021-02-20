@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import urls from "../../constants/urls";
+import { urls } from "../../constants/constants";
 
 function Banner() {
   return (

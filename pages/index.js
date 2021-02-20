@@ -4,12 +4,14 @@ import { Fragment } from "react";
 import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
+import Gallery from "../src/components/Gallery";
 
 export default function Home() {
   return (
     <Fragment>
       <Topnav></Topnav>
       <Banner></Banner>
+      <Gallery></Gallery>
       <Footer></Footer>
     </Fragment>
   );
