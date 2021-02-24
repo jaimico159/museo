@@ -10,12 +10,17 @@ import React, { useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 
 const VerticalCenteredModal = function ({ show, src, onHide }) {
+  const handleClose = () => {
+    onHide();
+  };
+
   return (
     <Modal
       show={show}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      onHide={handleClose}
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
