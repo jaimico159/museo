@@ -7,6 +7,7 @@ import { BsFillClockFill } from "react-icons/bs";
 import { Fragment } from "react";
 import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
+import AliceCarousel from "react-alice-carousel";
 
 const VerticalCenteredModal = function ({ show, src, onHide }) {
   return (
@@ -22,7 +23,7 @@ const VerticalCenteredModal = function ({ show, src, onHide }) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image src={src}></Image>
+        <Image src={src} style={{ height: 200 }}></Image>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={onHide}>Close</Button>
@@ -41,7 +42,7 @@ const ClickableImage = function ({ src }) {
         onClick={() => {
           setModalShow(true);
         }}
-        height="300px"
+        style={{ height: 200, cursor: "pointer" }}
       ></Image>
       <VerticalCenteredModal
         src={src}
@@ -53,11 +54,18 @@ const ClickableImage = function ({ src }) {
 };
 
 function Gallery() {
+  const images = gallery_images.map(function (item) {
+    return <ClickableImage src={item}></ClickableImage>;
+  });
+
   return (
     <Fragment>
-      {gallery_images.map(function (item) {
-        return <ClickableImage src={item}></ClickableImage>;
-      })}
+      <AliceCarousel
+        mouseTracking
+        items={images}
+        autoWidth={true}
+        disableButtonsControls={true}
+      />
     </Fragment>
   );
 }

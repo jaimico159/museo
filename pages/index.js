@@ -1,5 +1,6 @@
 import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-alice-carousel/lib/alice-carousel.css";
 import { Fragment } from "react";
 import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";
