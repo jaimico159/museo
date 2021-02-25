@@ -18,28 +18,42 @@ const Info = styled.div`
   padding: 2rem;
 `;
 
+const Details = styled.ul`
+  list-style-type: none;
+`;
+
+const MoreInfo = styled.a`
+  color: black;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.25em 1em;
+  border: 2px solid black;
+`;
+
 function Maps() {
   return (
     <StyledMap>
       <Image src={map_image}></Image>
       <Info>
         <h2>BIENVENIDOS</h2>
-        <ul>
+        <Details>
           <li>DIAS Y HORAS</li>
-          <ul>
+          <Details>
             <li>Lunes a Viernes: 9 am - 7 pm</li>
             <li>Sábado: 9 am - 1 pm</li>
-          </ul>
+          </Details>
           <li>PRECIOS</li>
-          <ul>
-            <li>Adulto:S/.10.00</li>
+          <Details>
+            <li>AdDetailsto:S/.10.00</li>
             <li>Estudiante:S/.5.00</li>
             <li>Niños:S/.2.00</li>
             <li>Escolares:S/.3.00</li>
             <li>Adulto mayor:S/.4.00</li>
-          </ul>
-        </ul>
-        <a href="/">Más información</a>
+          </Details>
+        </Details>
+        <MoreInfo as="a" href="/">
+          Más información
+        </MoreInfo>
       </Info>
     </StyledMap>
   );
