@@ -6,12 +6,14 @@ import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
+import FilmsSection from "../src/components/FilmsSection";
 
 export default function Home() {
   return (
     <Fragment>
       <Topnav></Topnav>
       <Banner></Banner>
+      <FilmsSection></FilmsSection>
       <Gallery></Gallery>
       <Footer></Footer>
     </Fragment>
