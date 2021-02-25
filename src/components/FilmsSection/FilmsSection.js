@@ -22,6 +22,12 @@ function FilmsSection() {
     <FilmCard />,
     <FilmCard />,
     <FilmCard />,
+    <FilmCard />,
+    <FilmCard />,
+    <FilmCard />,
+    <FilmCard />,
+    <FilmCard />,
+    <FilmCard />,
   ];
   return (
     <Fragment>
