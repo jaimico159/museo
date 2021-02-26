@@ -6,6 +6,7 @@ import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
+import Maps from "../src/components/Maps";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Topnav></Topnav>
       <Banner></Banner>
       <Gallery></Gallery>
+      <Maps></Maps>
       <Footer></Footer>
     </Fragment>
   );
