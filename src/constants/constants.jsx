@@ -17,7 +17,7 @@ const gallery_images = [
 ];
 
 const map_image = [
-  "/images/main/museo-map.png"
+  "/images/main/map-museo.png"
 ]
 
 export { urls, gallery_images, map_image };
