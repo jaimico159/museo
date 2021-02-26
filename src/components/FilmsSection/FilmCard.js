@@ -7,6 +7,7 @@ import { BsFillClockFill } from "react-icons/bs";
 import { Fragment } from "react";
 import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
+import Links from "./Links";
 
 const styledCardImg = () => {};
 
@@ -38,10 +39,7 @@ function FilmCard() {
       </Card.Body>
       <Card.Img variant="bottom" src={gallery_images[0]} />
       <Card.Footer className="text-muted">
-        <div style={footerStyles.container}>
-          <div style={footerStyles.leftLink}>Habla</div>
-          <div style={footerStyles.rightLink}>Causa</div>
-        </div>
+        <Links />
       </Card.Footer>
     </Card>
   );

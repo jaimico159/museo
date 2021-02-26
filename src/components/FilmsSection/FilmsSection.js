@@ -10,9 +10,9 @@ import React, { useState } from "react";
 import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 
-const FilmsContainer = styled.div`
-  width: 90%;
-`;
+const filmsContainerStyles = {
+  maxWidth: 1600,
+};
 
 function FilmsSection() {
   const items = [
@@ -30,13 +30,13 @@ function FilmsSection() {
     <FilmCard />,
   ];
   return (
-    <Fragment>
+    <Container style={filmsContainerStyles}>
       <AliceCarousel
         autoWidth={true}
         disableButtonsControls={true}
         items={items}
       />
-    </Fragment>
+    </Container>
   );
 }
 
