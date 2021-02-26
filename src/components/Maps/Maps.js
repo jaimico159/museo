@@ -11,7 +11,7 @@ const StyledMap = styled.div`
 
 const Container = styled.div`
   order: 1;
-  background-color: orange;
+  background-color: #f64e00;
   padding: 2%;
   max-width: 100%;
   height: 60%;
@@ -25,7 +25,7 @@ const Image = styled.img`
 `;
 
 const Info = styled.div`
-  background: orange;
+  background-color: #f64e00;
   order: 2;
   margin-bottom: 2%;
   width: 28%;
