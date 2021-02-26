@@ -7,6 +7,7 @@ import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
 import FilmsSection from "../src/components/FilmsSection";
+import Maps from "../src/components/Maps";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Banner></Banner>
       <FilmsSection></FilmsSection>
       <Gallery></Gallery>
+      <Maps></Maps>
       <Footer></Footer>
     </Fragment>
   );

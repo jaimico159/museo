@@ -16,4 +16,8 @@ const gallery_images = [
   "/images/main/moon.cms",
 ];
 
-export { urls, gallery_images };
+const map_image = [
+  "/images/main/map-museo.png"
+]
+
+export { urls, gallery_images, map_image };
