@@ -28,16 +28,25 @@ const footerStyles = {
   },
 };
 
-function FilmCard() {
+function FilmCard({ src }) {
   return (
-    <Card style={{ width: 500, height: 600 }}>
+    <Card
+      style={{
+        width: 400,
+        height: 500,
+        border: "solid 2px",
+        borderColor: "rgb(229,229,229)",
+      }}
+    >
       <Card.Body>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
       </Card.Body>
-      <Card.Img variant="bottom" src={gallery_images[0]} />
+      <Card.Img as="div" variant="bottom">
+        <Image src={src} style={{ maxHeight: 300, width: 396 }}></Image>
+      </Card.Img>
       <Card.Footer className="text-muted">
         <Links />
       </Card.Footer>
