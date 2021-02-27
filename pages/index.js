@@ -7,6 +7,7 @@ import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
 import Maps from "../src/components/Maps";
+import Visitors from "../src/components/Visitors";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Banner></Banner>
       <Gallery></Gallery>
       <Maps></Maps>
+      <Visitors></Visitors>
       <Footer></Footer>
     </Fragment>
   );
