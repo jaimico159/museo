@@ -5,7 +5,7 @@ import { urls } from "../../constants/constants";
 function Banner() {
   return (
     <Fragment>
-      <Carousel interval={1000}>
+      <Carousel interval={3000} controls={false}>
         {urls.map(function (item, index) {
           return (
             <Carousel.Item key={index}>
