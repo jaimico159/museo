@@ -13,11 +13,12 @@ import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
 import FilmsSection from "../src/components/FilmsSection";
 import Maps from "../src/components/Maps";
+import Events from "../src/components/Events/Events";
 
 const theme = createMuiTheme({
   palette: {
-    yellow: yellow,
-    museumGrey: {
+    primary: yellow,
+    secondary: {
       main: "#f5f5f5",
       light: "#ffffff",
       dark: "#c2c2c2",
@@ -35,6 +36,7 @@ export default function Home() {
         <FilmsSection></FilmsSection>
         <Gallery></Gallery>
         <Maps></Maps>
+        <Events></Events>
         <Footer></Footer>
       </ThemeProvider>
     </Fragment>
