@@ -14,6 +14,7 @@ import Gallery from "../src/components/Gallery";
 import FilmsSection from "../src/components/FilmsSection";
 import Maps from "../src/components/Maps";
 import Events from "../src/components/Events/Events";
+import Feedback from "../src/components/Feedback";
 
 const theme = createMuiTheme({
   palette: {
@@ -37,6 +38,7 @@ export default function Home() {
         <Gallery></Gallery>
         <Maps></Maps>
         <Events></Events>
+        <Feedback></Feedback>
         <Footer></Footer>
       </ThemeProvider>
     </Fragment>
