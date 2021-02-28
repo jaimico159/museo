@@ -1,8 +1,13 @@
 import Typography from "@material-ui/core/Typography";
 
-function Title({ text }) {
+function Title({ text, color }) {
   return (
-    <Typography variant="h4" gutterBottom style={{ marginBottom: 30 }}>
+    <Typography
+      variant="h4"
+      gutterBottom
+      style={{ marginBottom: 30 }}
+      color={color}
+    >
       {text}
     </Typography>
   );
