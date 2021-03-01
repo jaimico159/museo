@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 import Slider from "react-slick";
-import SquareButton from "../../shared/SquareButton";
+// import SquareButton from "../../shared/SquareButton";
 import Title from "../../shared/Title";
 
 const filmsContainerStyles = {
