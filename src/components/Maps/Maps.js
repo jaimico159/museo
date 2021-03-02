@@ -1,5 +1,9 @@
 import { map_image } from "../../constants/constants";
 import styled from "styled-components";
+import {
+  map_section_title,
+  map_section_button,
+} from "../../content/map_section_content";
 
 const StyledMap = styled.div`
   display: flex;
@@ -53,7 +57,7 @@ function Maps() {
         <Image src={map_image}></Image>
       </Container>
       <Info>
-        <h2>BIENVENIDOS</h2>
+        <h2>{map_section_title.es}</h2>
         <Details>
           <li>DIAS Y HORAS</li>
           <Details>
@@ -70,7 +74,7 @@ function Maps() {
           </Details>
         </Details>
         <MoreInfo as="a" href="/">
-          Más información
+          {map_section_button}
         </MoreInfo>
       </Info>
     </StyledMap>
