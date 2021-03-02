@@ -46,11 +46,11 @@ const gallery_images = [
 const map_image = ["/images/main/map-museo.png"];
 
 const icons = [
+  "/images/icons/icono mascarilla.png",
   "/images/icons/icono desinfectante alcohol.png",
   "/images/icons/icono desinfectante.png",
   "/images/icons/icono distanciamiento social.png",
-  "/images/icons/icono duracion max.png",
-  "/images/icons/icono mascarilla.png",
+  "/images/icons/icono duracion max.png",  
 ]
 
 export { urls, gallery_images, map_image, icons };

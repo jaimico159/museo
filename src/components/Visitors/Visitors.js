@@ -33,15 +33,16 @@ function Visitors() {
             <span> (+54) 999 999 999 </span>y proporcionando la siguiente
             información:
           </p>
-
-          <li>Nombre y Apellidos de la persona encargada</li>
-          <li>Fecha de la visita</li>
-          <li>Hora de la visita</li>
-          <li>Número de niños</li>
-          <li>Número de adolescentes</li>
-          <li>Número de adultos</li>
-          <li>Número de adultos mayor</li>
-          <li>Número de niños</li>
+          <ol>
+            <li>Nombre y Apellidos de la persona encargada</li>
+            <li>Fecha de la visita</li>
+            <li>Hora de la visita</li>
+            <li>Número de niños</li>
+            <li>Número de adolescentes</li>
+            <li>Número de adultos</li>
+            <li>Número de adultos mayor</li>
+            <li>Número de niños</li>
+          </ol>
         </div>
       </div>
       <div>
