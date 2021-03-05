@@ -15,6 +15,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import VerticalLine from "../../shared/VerticalLine";
 
 const useStyles = makeStyles({
   root: {
@@ -29,9 +30,10 @@ const useStyles = makeStyles({
     justifyContent: "flex-end",
     height: 50,
     minHeight: 50,
+    alignItems: "center",
   },
   buttonRoot: {
-    borderRight: "1px solid white",
+    //borderRight: "1px solid white",
     borderRadius: 0,
     paddingRight: 20,
     paddingLeft: 20,
@@ -40,7 +42,7 @@ const useStyles = makeStyles({
   actionRoot: {
     fontSize: 12,
     color: "white",
-    borderRight: "1px solid white",
+    //borderRight: "1px solid white",
   },
   actionSelected: {
     background: "white",
@@ -69,12 +71,15 @@ function Topnav() {
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           INICIO
         </Button>
+        <VerticalLine height={30} />
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           VISITANTES
         </Button>
+        <VerticalLine height={30} />
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           CALENDARIO LITURGICO
         </Button>
+        <VerticalLine height={30} />
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           LA ORDEN FRANCISCANA
         </Button>
