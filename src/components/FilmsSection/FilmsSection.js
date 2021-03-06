@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 import styled from "styled-components";
 import { BsFillClockFill } from "react-icons/bs";
 import { Fragment } from "react";
-import { gallery_images } from "../../constants/constants";
+import { gallery_images, colors } from "../../constants/constants";
 import React, { useState } from "react";
 import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
@@ -19,7 +19,7 @@ const filmsContainerStyles = {
 
 const mainContainer = {
   width: "100%",
-  background: "rgb(248,247,245)",
+  background: colors.CUSTOM_GRAY,
   maxWidth: 2600,
   height: 700,
   paddingTop: 50,

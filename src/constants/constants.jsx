@@ -45,4 +45,10 @@ const gallery_images = [
 
 const map_image = ["/images/main/map-museo.png"];
 
-export { urls, gallery_images, map_image };
+const colors = {
+  CUSTOM_GREY: "rgb(248,247,245)",
+  BORDER_GREY: "rgb(229,229,229)",
+  WHITE: "rgb(255,255,255)",
+};
+
+export { urls, gallery_images, map_image, colors };
