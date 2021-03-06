@@ -8,6 +8,7 @@ import { Fragment } from "react";
 import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 import Links from "./Links";
+import { colors } from "../../constants/constants";
 
 const styledCardImg = () => {};
 
@@ -35,7 +36,7 @@ function FilmCard({ src }) {
         width: 400,
         height: 500,
         border: "solid 2px",
-        borderColor: "rgb(229,229,229)",
+        borderColor: colors.BORDER_GREY,
       }}
     >
       <Card.Body>
