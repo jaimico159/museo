@@ -72,7 +72,11 @@ function Topnav() {
           INICIO
         </Button>
         <VerticalLine height={30} />
-        <Button color="secondary" classes={{ root: classes.buttonRoot }}>
+        <Button
+          color="secondary"
+          classes={{ root: classes.buttonRoot }}
+          href="/visitors"
+        >
           VISITANTES
         </Button>
         <VerticalLine height={30} />
