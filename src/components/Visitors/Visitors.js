@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { icons } from "../../constants/constants";
 import HorizontalLine from "../../shared/HorizontalLine";
-import background from "../../../public/images/main/sagrada-familia.png";
+import { background_image } from "../../constants/constants";
+import VisitorsBanner from "./VisitorsBanner";
 
 const StyledVisitors = styled.div`
   text-align: center;
@@ -9,11 +10,6 @@ const StyledVisitors = styled.div`
   //   align-items: stretch;
   //   flex: 3 0px;
   //   align-content: stretch;
-`;
-
-const Title = styled.div`
-  text-align: center;
-  background-image: url(${background});
 `;
 
 const List = styled.div`
@@ -32,11 +28,6 @@ function Visitors() {
   return (
     <StyledVisitors>
       <div>
-        <Title>
-          <HorizontalLine />
-          RESERVACIONES
-          <HorizontalLine />
-        </Title>
         <h2>PLANEA TU VISITA</h2>
         <div>
           <p>

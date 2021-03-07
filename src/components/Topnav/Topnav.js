@@ -20,7 +20,7 @@ import VerticalLine from "../../shared/VerticalLine";
 const useStyles = makeStyles({
   root: {
     position: "absolute",
-    zIndex: 1,
+    zIndex: 100,
     width: "100%",
     background: "transparent",
     height: 50,

@@ -53,4 +53,6 @@ const icons = [
   "/images/icons/icono duracion max.png",  
 ]
 
-export { urls, gallery_images, map_image, icons };
+const background_image = ["/images/main/sagrada-familia.png"];
+
+export { urls, gallery_images, map_image, icons, background_image };
