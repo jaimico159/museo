@@ -45,13 +45,14 @@ const gallery_images = [
 
 const map_image = ["/images/main/map-museo.png"];
 
-const icons = [
-  "/images/icons/icono mascarilla.png",
-  "/images/icons/icono desinfectante alcohol.png",
-  "/images/icons/icono desinfectante.png",
-  "/images/icons/icono distanciamiento social.png",
-  "/images/icons/icono duracion max.png",  
-]
+const icons = {
+  mascarilla: "/images/icons/icono-mascarilla.png",
+  alcohol: "/images/icons/icono-desinfectante-alcohol.png",
+  desinfectante: "/images/icons/icono-desinfectante.png",
+  distanciamiento: "/images/icons/icono-distanciamiento-social.png",
+  dMax:"/images/icons/icono-duracion-max.png",  
+  telefono: "/images/icons/icono-telefono.png",  
+}
 
 const background_image = ["/images/main/sagrada-familia.png"];
 

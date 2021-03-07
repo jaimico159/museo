@@ -7,9 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { Fragment } from "react";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
-import Visitors from "../src/components/Visitors";
+import Protocols from "../src/components/Visitors/Protocols";
 import VisitorsBanner from "../src/components/Visitors/VisitorsBanner";
 import styled from "styled-components";
+import VisitorsInfo from "../src/components/Visitors/VisitorsInfo";
 
 const BlackContainer = styled.div`
   position: absolute;
@@ -26,7 +27,8 @@ export default function Visitantes() {
       <Topnav></Topnav>
       <BlackContainer></BlackContainer>
       <VisitorsBanner></VisitorsBanner>
-      <Visitors></Visitors>
+      <VisitorsInfo></VisitorsInfo>
+      <Protocols></Protocols>
       <Footer></Footer>
     </Fragment>
   );

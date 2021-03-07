@@ -29,7 +29,7 @@ function VisitorsBanner() {
     <BannerContainer>
       <ContentContainer>
         <HorizontalLine width={140} marRight={40} />
-        <Typography variant="h4">RESERVACIONES</Typography>
+        <Typography variant="h3">RESERVACIONES</Typography>
         <HorizontalLine width={140} marLeft={40} />
       </ContentContainer>
     </BannerContainer>
