@@ -35,7 +35,7 @@ function Protocols() {
           <p>Uso de alcohol líquido en gel</p>
           <Image src={icons.alcohol}></Image>
         </ListItem>
-        <ListItem>
+        <ListItem style={{ margin: "10px 0 10px 0" }}>
           <p>Limpieza y desinfección periódica de espacios</p>
           <Image src={icons.desinfectante}></Image>
         </ListItem>
