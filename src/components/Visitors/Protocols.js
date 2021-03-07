@@ -25,7 +25,7 @@ const Image = styled.img`
 function Protocols() {
   return (
     <ProtocolsContainer>
-      <h2>Protocolo de Seguridad e Higiene</h2>
+      <h2>PROTOCOLO DE SEGURIDAD E HIGIENE</h2>
       <List>
         <ListItem>
           <p>Uso obligatorio de mascarilla</p>
