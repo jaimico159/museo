@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   }),
 });
 
-function Title({ text, color, variant, space, marginBottom }) {
+function Title({ color, variant, space, marginBottom, children }) {
   const props = {
     space: space || 0,
     marginBottom: marginBottom || 0,
@@ -22,7 +22,7 @@ function Title({ text, color, variant, space, marginBottom }) {
       color={color}
       classes={{ root: classes.root }}
     >
-      {text}
+      {children}
     </Typography>
   );
 }

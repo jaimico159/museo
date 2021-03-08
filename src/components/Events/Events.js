@@ -34,11 +34,9 @@ function Events() {
   return (
     <EventsContainer>
       <ContentContainer>
-        <Title
-          text={events_section_title.es}
-          color="secondary"
-          marginBottom={30}
-        />
+        <Title color="secondary" marginBottom={30}>
+          {events_section_title.es}
+        </Title>
         <ButtonContainer>
           <SquareButton>{events_section_button.es}</SquareButton>
         </ButtonContainer>
