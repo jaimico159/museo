@@ -49,6 +49,7 @@ const colors = {
   CUSTOM_GREY: "rgb(248,247,245)",
   BORDER_GREY: "rgb(229,229,229)",
   WHITE: "rgb(255,255,255)",
+  CUSTOM_YELLOW: "rgb(201,160,80)",
 };
 
 export { urls, gallery_images, map_image, colors };
