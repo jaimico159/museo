@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'GothamLight';
+    src: url('Gotham-Light.woff') format('woff')
+  }
+  
+  @font-face {
+    font-family: 'GothamExtraLight';
+    src: url('Gotham\ ExtraLight.woff') format('woff')
+  }
+  
+  @font-face {
+    font-family: 'GothamNarrowLight';
+    src: url('GothamNarrow-Light.woff') format('woff')
+  }
+  
+  @font-face {
+    font-family: 'ITCEDSCR';
+    src: url('ITCEDSCR.woff') format('woff')
+  }
+  
+  @font-face {
+    font-family: 'MOD20';
+    src: url('MOD20.woff') format('woff')
+  }
