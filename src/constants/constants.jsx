@@ -43,7 +43,7 @@ const gallery_images = [
   "/images/gallery/036.heic",
 ];
 
-const map_image = ["/images/main/map-museo.png"];
+const map_image = ["/images/main/museo-map.png"];
 
 const icons = {
   mascarilla: "/images/icons/icono-mascarilla.png",

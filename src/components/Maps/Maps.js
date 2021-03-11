@@ -1,5 +1,11 @@
 import { map_image } from "../../constants/constants";
 import styled from "styled-components";
+import Title from "../../shared/Title/Title";
+import {
+  details_section_button,
+  details_section_title,
+} from "../../content/details_section_content";
+import { Button } from "@material-ui/core";
 
 const StyledMap = styled.div`
   display: flex;
@@ -11,8 +17,6 @@ const StyledMap = styled.div`
 
 const Container = styled.div`
   order: 1;
-  background-color: #f64e00;
-  padding: 2%;
   max-width: 100%;
   height: 60%;
   width: 70%;
@@ -21,7 +25,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  height: 350px;
+  // height: 100%;
 `;
 
 const Info = styled.div`
@@ -38,12 +42,9 @@ const Details = styled.ul`
   padding: 0.5rem 0;
 `;
 
-const MoreInfo = styled.a`
-  color: black;
-  font-size: 1em;
-  margin: 0;
-  padding: 0.25em 1em;
-  border: 2px solid black;
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: start;
 `;
 
 function Maps() {
@@ -53,7 +54,7 @@ function Maps() {
         <Image src={map_image}></Image>
       </Container>
       <Info>
-        <h2>BIENVENIDOS</h2>
+        <Title text={details_section_title.es} color="secondary" />
         <Details>
           <li>DIAS Y HORAS</li>
           <Details>
@@ -69,9 +70,15 @@ function Maps() {
             <li>Adulto mayor: S/.4.00</li>
           </Details>
         </Details>
-        <MoreInfo as="a" href="/">
-          Más información
-        </MoreInfo>
+        <ButtonContainer>
+          <Button
+            variant="outlined"
+            color="secondary"
+            style={{ borderRadius: 0 }}
+          >
+            {details_section_button.es}
+          </Button>
+        </ButtonContainer>
       </Info>
     </StyledMap>
   );

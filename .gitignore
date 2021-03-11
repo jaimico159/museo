@@ -33,6 +33,5 @@ yarn-error.log*
 
 /public/images/icons/
 
-/public/images/main/map-museo.png
-/public/images/main/sagrada-familia.png
+/public/images/main/
 
