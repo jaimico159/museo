@@ -1,22 +1,29 @@
 import Head from "next/head";
+import "fontsource-roboto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-alice-carousel/lib/alice-carousel.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Fragment } from "react";
 import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
 import Gallery from "../src/components/Gallery";
+import FilmsSection from "../src/components/FilmsSection";
 import Maps from "../src/components/Maps";
-import Visitors from "../src/components/Visitors";
+import Events from "../src/components/Events/Events";
+import Feedback from "../src/components/Feedback";
 
 export default function Home() {
   return (
     <Fragment>
       <Topnav></Topnav>
       <Banner></Banner>
+      <FilmsSection></FilmsSection>
       <Gallery></Gallery>
       <Maps></Maps>
-      <Visitors></Visitors>
+      <Events></Events>
+      <Feedback></Feedback>
       <Footer></Footer>
     </Fragment>
   );

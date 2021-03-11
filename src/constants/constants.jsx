@@ -1,7 +1,7 @@
 const urls = [
-  "/images/main/moon.cms",
-  "/images/main/moon.cms",
-  "/images/main/moon.cms",
+  "/images/gallery/007.jpg",
+  "/images/gallery/008.jpg",
+  "/images/gallery/006.jpg",
 ];
 
 const gallery_images = [
@@ -40,11 +40,15 @@ const gallery_images = [
   "/images/gallery/033.jpg",
   "/images/gallery/034.jpg",
   "/images/gallery/035.jpg",
-  // "/images/main/036.heic",
+  "/images/main/036.heic",
 ];
 
-const map_image = [
-  "/images/main/map-museo.png",
-];
+const map_image = ["/images/main/map-museo.png"];
 
-export { urls, gallery_images, map_image };
+const colors = {
+  CUSTOM_GREY: "rgb(248,247,245)",
+  BORDER_GREY: "rgb(229,229,229)",
+  WHITE: "rgb(255,255,255)",
+};
+
+export { urls, gallery_images, map_image, colors };

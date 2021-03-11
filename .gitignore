@@ -29,8 +29,4 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-#images
-/public/images/gallery
-/public/images/main/map-museo.png
-
-
+/public/images/gallery/
