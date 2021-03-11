@@ -8,6 +8,22 @@ import { Fragment } from "react";
 import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 import AliceCarousel from "react-alice-carousel";
+import Slider from "react-slick";
+import Title from "../../shared/Title";
+
+const filmsContainerStyles = {
+  // maxWidth: 1600,
+  // width: "85%",
+  margin: 0,
+};
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 7,
+  slidesToScroll: 7,
+};
 
 const VerticalCenteredModal = function ({ show, src, onHide }) {
   const handleClose = () => {
@@ -64,14 +80,14 @@ function Gallery() {
   });
 
   return (
-    <Fragment>
-      <AliceCarousel
-        mouseTracking
-        items={images}
-        autoWidth={true}
-        disableButtonsControls={true}
-      />
-    </Fragment>
+    <Container style={filmsContainerStyles}>
+      <Title text="Galería de Imágenes" style={{ marginLeft: 50 }} />
+      <Slider {...settings}>
+        {gallery_images.map((url) => {
+          return <ClickableImage src={url} />;
+        })}
+      </Slider>
+    </Container>
   );
 }
 
