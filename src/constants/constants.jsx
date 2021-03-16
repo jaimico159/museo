@@ -40,7 +40,7 @@ const gallery_images = [
   "/images/gallery/033.jpg",
   "/images/gallery/034.jpg",
   "/images/gallery/035.jpg",
-  "/images/gallery/036.heic",
+  "/images/gallery/036.jpg",
 ];
 
 const map_image = ["/images/main/museo-map.png"];
@@ -57,8 +57,8 @@ const icons = {
 const background_image = ["/images/main/sagrada-familia.png"];
 
 const colors = {
-  CUSTOM_GREY: "rgb(248,247,245)",
-  BORDER_GREY: "rgb(229,229,229)",
+  CUSTOM_GRAY: "rgb(248,247,245)",
+  BORDER_GRAY: "rgb(229,229,229)",
   WHITE: "rgb(255,255,255)",
   CUSTOM_YELLOW: "rgb(201,160,80)",
 };
