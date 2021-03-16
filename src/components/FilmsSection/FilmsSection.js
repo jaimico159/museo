@@ -9,7 +9,6 @@ import React, { useState } from "react";
 import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 import Slider from "react-slick";
-// import SquareButton from "../../shared/SquareButton";
 import Title from "../../shared/Title";
 
 const filmsContainerStyles = {
@@ -38,7 +37,7 @@ function FilmsSection() {
   return (
     <Container style={mainContainer}>
       <Container style={filmsContainerStyles}>
-        <Title text="Videos" />
+        <Title marginBottom={30}>Videos</Title>
         <Slider {...settings}>
           {gallery_images.map((url) => {
             return <FilmCard src={url} />;
