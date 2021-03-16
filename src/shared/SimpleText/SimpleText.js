@@ -7,7 +7,7 @@ const useStyles = makeStyles({
   },
 });
 
-function SimpleText({ children }) {
+function SimpleText({ color, children }) {
   const classes = useStyles();
   return (
     <Typography

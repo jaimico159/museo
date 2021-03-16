@@ -5,7 +5,10 @@ import {
   details_section_button,
   details_section_title,
 } from "../../content/details_section_content";
-import { Button } from "@material-ui/core";
+import SquareButton from "../../shared/SquareButton";
+import SimpleText from "../../shared/SimpleText/SimpleText";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 
 const StyledMap = styled.div`
   display: flex;
@@ -54,30 +57,32 @@ function Maps() {
         <Image src={map_image}></Image>
       </Container>
       <Info>
-        <Title text={details_section_title.es} color="secondary" />
+        <Title color="secondary">{details_section_title.es}</Title>
         <Details>
-          <li>DIAS Y HORAS</li>
+          <SimpleText color="primary">
+            <AccessTimeIcon fontSize="small"></AccessTimeIcon> DIAS Y HORAS
+          </SimpleText>
           <Details>
-            <li>Lunes a Viernes: 9 am - 7 pm</li>
-            <li>Sábado: 9 am - 1 pm</li>
+            <SimpleText color="secondary">
+              Lunes a Viernes: 9 am - 7 pm
+            </SimpleText>
+            <SimpleText color="secondary">Sábado: 9 am - 1 pm</SimpleText>
           </Details>
-          <li>PRECIOS</li>
+          <SimpleText color="primary">
+            <AttachMoneyIcon fontSize="small"></AttachMoneyIcon>PRECIOS
+          </SimpleText>
           <Details>
-            <li>Adultos: S/.10.00</li>
-            <li>Estudiantes: S/.5.00</li>
-            <li>Niños: S/.2.00</li>
-            <li>Escolares: S/.3.00</li>
-            <li>Adulto mayor: S/.4.00</li>
+            <SimpleText color="secondary">Adultos: S/.10.00</SimpleText>
+            <SimpleText color="secondary">Estudiantes: S/.5.00</SimpleText>
+            <SimpleText color="secondary">Niños: S/.2.00</SimpleText>
+            <SimpleText color="secondary">Escolares: S/.3.00</SimpleText>
+            <SimpleText color="secondary">Adulto mayor: S/.4.00</SimpleText>
           </Details>
         </Details>
         <ButtonContainer>
-          <Button
-            variant="outlined"
-            color="secondary"
-            style={{ borderRadius: 0 }}
-          >
+          <SquareButton colorVariant="primary">
             {details_section_button.es}
-          </Button>
+          </SquareButton>
         </ButtonContainer>
       </Info>
     </StyledMap>
