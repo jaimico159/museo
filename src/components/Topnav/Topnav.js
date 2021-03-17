@@ -19,6 +19,7 @@ import VerticalLine from "../../shared/VerticalLine";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { IconFlagES, IconFlagUS } from "material-ui-flags";
 
 const useStyles = makeStyles({
   root: {
@@ -73,17 +74,15 @@ function Topnav() {
       color="secondary"
     >
       <Toolbar classes={{ root: classes.toolbarRoot }}>
-        <Link href="/" locale={router.locale === "es" ? "en" : "es"}>
-          <Button
-            color="secondary"
-            classes={{ root: classes.buttonRoot }}
-            onClick={() => {
-              i18n.changeLanguage("en");
-              i18n.reloadResources();
-            }}
-          >
-            CAMBIA
-          </Button>
+        <Link href="/" locale="en">
+          <IconButton>
+            <IconFlagUS />
+          </IconButton>
+        </Link>
+        <Link href="/" locale="es">
+          <IconButton>
+            <IconFlagES />
+          </IconButton>
         </Link>
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           {t("topnav.home")}
