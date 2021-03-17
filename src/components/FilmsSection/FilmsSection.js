@@ -10,6 +10,7 @@ import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
+import { useTranslation } from "next-i18next";
 
 const filmsContainerStyles = {
   maxWidth: 1600,
@@ -34,10 +35,11 @@ const settings = {
 };
 
 function FilmsSection() {
+  const { t, i18n } = useTranslation();
   return (
     <Container style={mainContainer}>
       <Container style={filmsContainerStyles}>
-        <Title marginBottom={30}>Videos</Title>
+        <Title marginBottom={30}>{t("films.title")}</Title>
         <Slider {...settings}>
           {gallery_images.map((url, index) => {
             return <FilmCard src={url} key={index} />;

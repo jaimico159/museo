@@ -1,14 +1,11 @@
 import { map_image } from "../../constants/constants";
 import styled from "styled-components";
 import Title from "../../shared/Title/Title";
-import {
-  details_section_button,
-  details_section_title,
-} from "../../content/details_section_content";
 import SquareButton from "../../shared/SquareButton";
 import SimpleText from "../../shared/SimpleText/SimpleText";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import { useTranslation } from "next-i18next";
 
 const StyledMap = styled.div`
   display: flex;
@@ -51,37 +48,37 @@ const ButtonContainer = styled.div`
 `;
 
 function Maps() {
+  const { t, i18n } = useTranslation();
   return (
     <StyledMap>
       <Container>
         <Image src={map_image}></Image>
       </Container>
       <Info>
-        <Title color="secondary">{details_section_title.es}</Title>
+        <Title color="secondary">{t("maps.title")}</Title>
         <Details>
           <SimpleText color="primary">
-            <AccessTimeIcon fontSize="small"></AccessTimeIcon> DIAS Y HORAS
+            <AccessTimeIcon fontSize="small"></AccessTimeIcon> {t("maps.hours")}
           </SimpleText>
           <Details>
-            <SimpleText color="secondary">
-              Lunes a Viernes: 9 am - 7 pm
-            </SimpleText>
-            <SimpleText color="secondary">Sábado: 9 am - 1 pm</SimpleText>
+            <SimpleText color="secondary">{t("maps.m-s-hours")}</SimpleText>
           </Details>
           <SimpleText color="primary">
-            <AttachMoneyIcon fontSize="small"></AttachMoneyIcon>PRECIOS
+            <AttachMoneyIcon fontSize="small"></AttachMoneyIcon>
+            {t("maps.price")}
           </SimpleText>
           <Details>
-            <SimpleText color="secondary">Adultos: S/.10.00</SimpleText>
-            <SimpleText color="secondary">Estudiantes: S/.5.00</SimpleText>
-            <SimpleText color="secondary">Niños: S/.2.00</SimpleText>
-            <SimpleText color="secondary">Escolares: S/.3.00</SimpleText>
-            <SimpleText color="secondary">Adulto mayor: S/.4.00</SimpleText>
+            <SimpleText color="secondary">{t("maps.children-p")}</SimpleText>
+            <SimpleText color="secondary">{t("maps.school-ch-p")}</SimpleText>
+            <SimpleText color="secondary">{t("maps.uni-st-p")}</SimpleText>
+            <SimpleText color="secondary">{t("maps.adults-p")}</SimpleText>
+            <SimpleText color="secondary">{t("maps.a-over65-p")}</SimpleText>
+            <SimpleText color="secondary">{t("maps.eccles-p")}</SimpleText>
           </Details>
         </Details>
         <ButtonContainer>
           <SquareButton colorVariant="primary">
-            {details_section_button.es}
+            {t("maps.maps-button")}
           </SquareButton>
         </ButtonContainer>
       </Info>

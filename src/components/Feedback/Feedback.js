@@ -6,6 +6,7 @@ import {
 } from "../../content/feedback_section_content";
 import CapsuleButton from "../../shared/CapsuleButton";
 import Typography from "@material-ui/core/Typography";
+import { useTranslation } from "next-i18next";
 
 const FeedbackSectionContainer = styled.div`
   height: 300px;
@@ -42,17 +43,16 @@ const ButtonContainer = styled.div`
 const FeedbackTitle = styled.div``;
 
 function Feedback() {
+  const { t, i18n } = useTranslation();
   return (
     <FeedbackSectionContainer>
       <FeedbackContainer>
         <TextContainer>
-          <Typography variant="h4">{feedback_section_title.es}</Typography>
-          <Typography variant="subtitle1">
-            {feedback_section_info.es}
-          </Typography>
+          <Typography variant="h4">{t("feedback.title")}</Typography>
+          <Typography variant="subtitle1">{t("feedback.details")}</Typography>
         </TextContainer>
         <ButtonContainer>
-          <CapsuleButton>{feedback_section_button.es}</CapsuleButton>
+          <CapsuleButton>{t("feedback.feedback-button")}</CapsuleButton>
         </ButtonContainer>
       </FeedbackContainer>
     </FeedbackSectionContainer>

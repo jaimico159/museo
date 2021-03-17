@@ -12,6 +12,12 @@ import VisitorsBanner from "../src/components/Visitors/VisitorsBanner";
 import styled from "styled-components";
 import VisitorsInfo from "../src/components/Visitors/VisitorsInfo";
 
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "footer"])),
+  },
+});
+
 const BlackContainer = styled.div`
   position: absolute;
   background: black;

@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import styled from "styled-components";
 import { BsFillClockFill } from "react-icons/bs";
+import { useTranslation } from "next-i18next";
 
 const FooterContainer = styled.section`
   width: 100%;
@@ -57,6 +58,7 @@ const FooterLineData = styled.div`
 `;
 
 function Footer() {
+  const { t, i18n } = useTranslation();
   return (
     <FooterContainer>
       <Container className="h-100">
@@ -68,18 +70,22 @@ function Footer() {
                 rounded
               ></InfoImage>
               <InfoData>
-                <FooterTitle>Información de Contacto</FooterTitle>
+                <FooterTitle>{t("footer.title")}</FooterTitle>
                 <FooterLine>
                   <BsFillClockFill />
-                  <FooterLineData>DATAA 1</FooterLineData>
+                  <FooterLineData>{t("footer.address")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
                   <BsFillClockFill />
-                  <FooterLineData>DATAA 1</FooterLineData>
+                  <FooterLineData>{t("footer.hours")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
                   <BsFillClockFill />
-                  <FooterLineData>DATAA 1</FooterLineData>
+                  <FooterLineData>{t("footer.e-mail")}</FooterLineData>
+                </FooterLine>
+                <FooterLine>
+                  <BsFillClockFill />
+                  <FooterLineData>{t("footer.phone")}</FooterLineData>
                 </FooterLine>
               </InfoData>
             </InfoContainer>
