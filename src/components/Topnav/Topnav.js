@@ -16,6 +16,10 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import VerticalLine from "../../shared/VerticalLine";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import { IconFlagES, IconFlagUS } from "material-ui-flags";
 
 const useStyles = makeStyles({
   root: {
@@ -60,6 +64,8 @@ const useStyles = makeStyles({
 function Topnav() {
   const classes = useStyles();
   const [value, setValue] = useState(0);
+  const { t, i18n } = useTranslation();
+  const router = useRouter();
 
   return (
     <AppBar
@@ -68,8 +74,18 @@ function Topnav() {
       color="secondary"
     >
       <Toolbar classes={{ root: classes.toolbarRoot }}>
+        <Link href="/" locale="en">
+          <IconButton>
+            <IconFlagUS />
+          </IconButton>
+        </Link>
+        <Link href="/" locale="es">
+          <IconButton>
+            <IconFlagES />
+          </IconButton>
+        </Link>
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
-          INICIO
+          {t("topnav.home")}
         </Button>
         <VerticalLine height={30} />
         <Button

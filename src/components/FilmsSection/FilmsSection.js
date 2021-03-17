@@ -39,8 +39,8 @@ function FilmsSection() {
       <Container style={filmsContainerStyles}>
         <Title marginBottom={30}>Videos</Title>
         <Slider {...settings}>
-          {gallery_images.map((url) => {
-            return <FilmCard src={url} />;
+          {gallery_images.map((url, index) => {
+            return <FilmCard src={url} key={index} />;
           })}
         </Slider>
       </Container>
