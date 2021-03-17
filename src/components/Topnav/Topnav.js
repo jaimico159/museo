@@ -24,7 +24,7 @@ import { IconFlagES, IconFlagUS } from "material-ui-flags";
 const useStyles = makeStyles({
   root: {
     position: "absolute",
-    zIndex: 1,
+    zIndex: 100,
     width: "100%",
     background: "transparent",
     height: 50,
@@ -88,7 +88,11 @@ function Topnav() {
           {t("topnav.home")}
         </Button>
         <VerticalLine height={30} />
-        <Button color="secondary" classes={{ root: classes.buttonRoot }}>
+        <Button
+          color="secondary"
+          classes={{ root: classes.buttonRoot }}
+          href="/visitors"
+        >
           VISITANTES
         </Button>
         <VerticalLine height={30} />

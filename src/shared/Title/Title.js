@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   }),
 });
 
-function Title({ color, variant, space, marginBottom, children }) {
+function Title({ color, variant, space, marginBottom, children, style }) {
   const props = {
     space: space || 0,
     marginBottom: marginBottom || 0,
@@ -21,6 +21,7 @@ function Title({ color, variant, space, marginBottom, children }) {
       variant={variant || "h4"}
       color={color}
       classes={{ root: classes.root }}
+      style={style}
     >
       {children}
     </Typography>

@@ -5,9 +5,26 @@ import Image from "react-bootstrap/Image";
 import styled from "styled-components";
 import { BsFillClockFill } from "react-icons/bs";
 import { Fragment } from "react";
-import { gallery_images } from "../../constants/constants";
+import { colors, gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
-import AliceCarousel from "react-alice-carousel";
+import Slider from "react-slick";
+import Title from "../../shared/Title";
+
+const SliderContainer = styled.div`
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  padding: 100px 0;
+`;
+
+const settings = {
+  className: "center",
+  infinite: true,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+};
 
 const VerticalCenteredModal = function ({ show, src, onHide }) {
   const handleClose = () => {
@@ -47,7 +64,12 @@ const ClickableImage = function ({ src }) {
         onClick={() => {
           setModalShow(true);
         }}
-        style={{ height: 200, cursor: "pointer" }}
+        style={{
+          height: 300,
+          cursor: "pointer",
+          padding: "8px 4px",
+          backgroundColor: colors.CUSTOM_GRAY,
+        }}
       ></Image>
       <VerticalCenteredModal
         src={src}
@@ -59,19 +81,17 @@ const ClickableImage = function ({ src }) {
 };
 
 function Gallery() {
-  const images = gallery_images.map(function (item) {
-    return <ClickableImage src={item}></ClickableImage>;
-  });
-
   return (
-    <Fragment>
-      <AliceCarousel
-        mouseTracking
-        items={images}
-        autoWidth={true}
-        disableButtonsControls={true}
-      />
-    </Fragment>
+    <SliderContainer>
+      <Title style={{ marginLeft: "100px" }} marginBottom={30}>
+        Galería de Imágenes
+      </Title>
+      <Slider {...settings}>
+        {gallery_images.map((url) => {
+          return <ClickableImage src={url} />;
+        })}
+      </Slider>
+    </SliderContainer>
   );
 }
 

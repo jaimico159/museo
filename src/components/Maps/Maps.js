@@ -1,5 +1,14 @@
 import { map_image } from "../../constants/constants";
 import styled from "styled-components";
+import Title from "../../shared/Title/Title";
+import {
+  details_section_button,
+  details_section_title,
+} from "../../content/details_section_content";
+import SquareButton from "../../shared/SquareButton";
+import SimpleText from "../../shared/SimpleText/SimpleText";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 
 const StyledMap = styled.div`
   display: flex;
@@ -11,8 +20,6 @@ const StyledMap = styled.div`
 
 const Container = styled.div`
   order: 1;
-  background-color: #f64e00;
-  padding: 2%;
   max-width: 100%;
   height: 60%;
   width: 70%;
@@ -21,7 +28,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  height: 350px;
+  // height: 100%;
 `;
 
 const Info = styled.div`
@@ -38,12 +45,9 @@ const Details = styled.ul`
   padding: 0.5rem 0;
 `;
 
-const MoreInfo = styled.a`
-  color: black;
-  font-size: 1em;
-  margin: 0;
-  padding: 0.25em 1em;
-  border: 2px solid black;
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: start;
 `;
 
 function Maps() {
@@ -53,25 +57,33 @@ function Maps() {
         <Image src={map_image}></Image>
       </Container>
       <Info>
-        <h2>BIENVENIDOS</h2>
+        <Title color="secondary">{details_section_title.es}</Title>
         <Details>
-          <li>DIAS Y HORAS</li>
+          <SimpleText color="primary">
+            <AccessTimeIcon fontSize="small"></AccessTimeIcon> DIAS Y HORAS
+          </SimpleText>
           <Details>
-            <li>Lunes a Viernes: 9 am - 7 pm</li>
-            <li>Sábado: 9 am - 1 pm</li>
+            <SimpleText color="secondary">
+              Lunes a Viernes: 9 am - 7 pm
+            </SimpleText>
+            <SimpleText color="secondary">Sábado: 9 am - 1 pm</SimpleText>
           </Details>
-          <li>PRECIOS</li>
+          <SimpleText color="primary">
+            <AttachMoneyIcon fontSize="small"></AttachMoneyIcon>PRECIOS
+          </SimpleText>
           <Details>
-            <li>Adultos: S/.10.00</li>
-            <li>Estudiantes: S/.5.00</li>
-            <li>Niños: S/.2.00</li>
-            <li>Escolares: S/.3.00</li>
-            <li>Adulto mayor: S/.4.00</li>
+            <SimpleText color="secondary">Adultos: S/.10.00</SimpleText>
+            <SimpleText color="secondary">Estudiantes: S/.5.00</SimpleText>
+            <SimpleText color="secondary">Niños: S/.2.00</SimpleText>
+            <SimpleText color="secondary">Escolares: S/.3.00</SimpleText>
+            <SimpleText color="secondary">Adulto mayor: S/.4.00</SimpleText>
           </Details>
         </Details>
-        <MoreInfo as="a" href="/">
-          Más información
-        </MoreInfo>
+        <ButtonContainer>
+          <SquareButton colorVariant="primary">
+            {details_section_button.es}
+          </SquareButton>
+        </ButtonContainer>
       </Info>
     </StyledMap>
   );
