@@ -10,6 +10,8 @@ import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const filmsContainerStyles = {
   maxWidth: 1600,
@@ -26,19 +28,31 @@ const mainContainer = {
 };
 
 const settings = {
-  dots: true,
   infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  dots: true,
+  centerMode: true,
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: true,
+  accessibility: true,
+  nextArrow: <ArrowForwardIosIcon color="primary" fontSize="large" />,
+  prevArrow: <ArrowBackIosIcon color="primary" fontSize="large" />,
 };
+
+const filmsContent = [
+  {
+    title: "title1",
+    src: "src",
+    content: "content",
+  },
+];
 
 function FilmsSection() {
   return (
     <Container style={mainContainer}>
       <Container style={filmsContainerStyles}>
         <Title marginBottom={30}>Videos</Title>
-        <Slider {...settings}>
+        <Slider {...settings} style={{ padding: "0 20px" }}>
           {gallery_images.map((url, index) => {
             return <FilmCard src={url} key={index} />;
           })}
