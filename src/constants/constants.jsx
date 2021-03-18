@@ -1,5 +1,5 @@
 const banner_image_url = "/images/banner/encabezado-home.png";
-const events_image_url = "/images/banner/eventos-inglesia.png";
+const events_image_url = "/images/banner/eventos-iglesia.png";
 
 const urls = [
   "/images/gallery/007.jpg",
