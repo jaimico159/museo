@@ -1,5 +1,11 @@
+import Card from "@material-ui/core/Card";
+import Button from "@material-ui/core/Button";
+import CardHeader from "@material-ui/core/CardHeader";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import { makeStyles } from "@material-ui/core/styles";
 import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import Image from "react-bootstrap/Image";
 import styled from "styled-components";
@@ -9,48 +15,46 @@ import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 import Links from "./Links";
 import { colors } from "../../constants/constants";
+import Title from "../../shared/Title";
+import SimpleText from "../../shared/SimpleText";
 
-const styledCardImg = () => {};
-
-const footerStyles = {
-  container: {
-    display: "flex",
-    flexDirection: "row",
+const useStyles = makeStyles({
+  root: {
+    width: 400,
+    border: "solid 2px",
+    borderColor: colors.BORDER_GRAY,
+    margin: "0 10px",
   },
-  leftLink: {
-    display: "flex",
-    justifyContent: "flex-start",
-    flexGrow: 1,
+  media: {
+    height: 250,
   },
-  rightLink: {
-    display: "flex",
-    justifyContent: "flex-end",
-    flexGrow: 1,
+  contentRoot: {
+    overflow: "scroll",
   },
-};
+});
 
 function FilmCard({ src }) {
+  const classes = useStyles();
+
   return (
-    <Card
-      style={{
-        width: 400,
-        height: 500,
-        border: "solid 2px",
-        borderColor: colors.BORDER_GREY,
-      }}
-    >
-      <Card.Body>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-      <Card.Img as="div" variant="bottom">
-        <Image src={src} style={{ maxHeight: 300, width: 396 }}></Image>
-      </Card.Img>
-      <Card.Footer className="text-muted">
-        <Links />
-      </Card.Footer>
+    <Card classes={{ root: classes.root }}>
+      <CardContent>
+        <Title variant="h6" marginBottom={15}>
+          Ejemplo de Video
+        </Title>
+        <SimpleText classes={{ root: classes.contentRoot }}>
+          Esta es una breve descripción del video que se va a mostrar
+        </SimpleText>
+      </CardContent>
+      <CardMedia className={classes.media} image={src} component="img" />
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
     </Card>
   );
 }
