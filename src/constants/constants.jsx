@@ -1,5 +1,6 @@
 const banner_image_url = "/images/banner/encabezado-home.png";
 const events_image_url = "/images/banner/eventos-iglesia.png";
+const prices_image_url = "/images/main/fondo-precios.jpg";
 
 const urls = [
   "/images/gallery/007.jpg",
@@ -75,4 +76,5 @@ export {
   colors,
   banner_image_url,
   events_image_url,
+  prices_image_url,
 };
