@@ -9,6 +9,7 @@ import SquareButton from "../../shared/SquareButton";
 import SimpleText from "../../shared/SimpleText/SimpleText";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import { prices_image_url } from "../../constants/constants";
 
 const StyledMap = styled.div`
   display: flex;
@@ -32,7 +33,8 @@ const Image = styled.img`
 `;
 
 const Info = styled.div`
-  background-color: #f64e00;
+  background-image: url(${prices_image_url});
+  background-size: 100%;
   order: 2;
   margin-bottom: 2%;
   width: 28%;
