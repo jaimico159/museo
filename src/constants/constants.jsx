@@ -1,3 +1,6 @@
+const banner_image_url = "/images/banner/encabezado-home.png";
+const events_image_url = "/images/banner/eventos-inglesia.png";
+
 const urls = [
   "/images/gallery/007.jpg",
   "/images/gallery/008.jpg",
@@ -50,9 +53,9 @@ const icons = {
   alcohol: "/images/icons/icono-desinfectante-alcohol.png",
   desinfectante: "/images/icons/icono-desinfectante.png",
   distanciamiento: "/images/icons/icono-distanciamiento-social.png",
-  dMax:"/images/icons/icono-duracion-max.png",  
-  telefono: "/images/icons/icono-telefono.png",  
-}
+  dMax: "/images/icons/icono-duracion-max.png",
+  telefono: "/images/icons/icono-telefono.png",
+};
 
 const background_image = ["/images/main/sagrada-familia.png"];
 
@@ -63,4 +66,13 @@ const colors = {
   CUSTOM_YELLOW: "rgb(201,160,80)",
 };
 
-export { urls, gallery_images, map_image, icons, background_image, colors  };
+export {
+  urls,
+  gallery_images,
+  map_image,
+  icons,
+  background_image,
+  colors,
+  banner_image_url,
+  events_image_url,
+};
