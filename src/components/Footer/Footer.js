@@ -73,10 +73,7 @@ function Footer() {
           <Col>
             <InfoContainer>
               <InfoImage>
-                <img
-                  src="https://previews.123rf.com/images/jemastock/jemastock1710/jemastock171013378/88544485-hombre-con-camisa-de-manga-larga-avatar-cuerpo-completo-icono-imagen-vector-ilustraci%C3%B3n-dise%C3%B1o-l%C3%ADnea-negra.jpg"
-                  height="200"
-                />
+                <img src="/images/main/logo-museo.png" height="200" />
               </InfoImage>
               <InfoData>
                 <Title variant="h5">Información de Contacto</Title>
