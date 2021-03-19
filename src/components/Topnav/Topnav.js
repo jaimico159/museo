@@ -89,11 +89,7 @@ function Topnav() {
           {t("topnav.home")}
         </Button>
         <VerticalLine height={30} />
-        <Button
-          color="secondary"
-          classes={{ root: classes.buttonRoot }}
-          href="/visitors"
-        >
+        <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           VISITANTES
         </Button>
         <VerticalLine height={30} />

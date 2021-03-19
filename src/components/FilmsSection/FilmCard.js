@@ -4,6 +4,8 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import Box from "@material-ui/core/Box";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
@@ -33,28 +35,32 @@ const useStyles = makeStyles({
   },
 });
 
-function FilmCard({ src }) {
+function FilmCard({ src, title, content }) {
   const classes = useStyles();
 
   return (
     <Card classes={{ root: classes.root }}>
       <CardContent>
-        <Title variant="h6" marginBottom={15}>
-          Ejemplo de Video
-        </Title>
-        <SimpleText classes={{ root: classes.contentRoot }}>
-          Esta es una breve descripción del video que se va a mostrar
-        </SimpleText>
+        <Box overflow="auto" style={{ height: 70 }}>
+          <Title variant="h6" marginBottom={15}>
+            {title}
+          </Title>
+        </Box>
+        <Box overflow="auto" style={{ height: 200 }}>
+          <SimpleText classes={{ root: classes.contentRoot }}>
+            {content}
+          </SimpleText>
+        </Box>
       </CardContent>
-      <CardMedia className={classes.media} image={src} component="img" />
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
+      <CardMedia
+        className={classes.media}
+        image={src}
+        component="video"
+        height="140"
+        controls
+        controlsList="nodownload"
+        disablePictureInPicture
+      />
     </Card>
   );
 }
