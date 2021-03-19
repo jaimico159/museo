@@ -7,13 +7,14 @@ const useStyles = makeStyles({
   },
 });
 
-function SimpleText({ color, children }) {
+function SimpleText({ color, children, style }) {
   const classes = useStyles();
   return (
     <Typography
       variant="body1"
       color={color || "initial"}
       classes={{ root: classes.root }}
+      style={style}
     >
       {children}
     </Typography>
