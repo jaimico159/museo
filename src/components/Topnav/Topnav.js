@@ -26,14 +26,15 @@ const useStyles = makeStyles({
     position: "absolute",
     zIndex: 100,
     width: "100%",
-    background: "transparent",
-    height: 50,
+    background: "black",
+    height: 40,
+    boxShadow: "none",
   },
   toolbarRoot: {
     display: "flex",
     justifyContent: "flex-end",
-    height: 50,
-    minHeight: 50,
+    height: 40,
+    minHeight: 30,
     alignItems: "center",
   },
   buttonRoot: {
@@ -41,7 +42,7 @@ const useStyles = makeStyles({
     borderRadius: 0,
     paddingRight: 20,
     paddingLeft: 20,
-    height: 20,
+    height: 30,
   },
   actionRoot: {
     fontSize: 12,
@@ -88,11 +89,7 @@ function Topnav() {
           {t("topnav.home")}
         </Button>
         <VerticalLine height={30} />
-        <Button
-          color="secondary"
-          classes={{ root: classes.buttonRoot }}
-          href="/visitors"
-        >
+        <Button color="secondary" classes={{ root: classes.buttonRoot }}>
           VISITANTES
         </Button>
         <VerticalLine height={30} />

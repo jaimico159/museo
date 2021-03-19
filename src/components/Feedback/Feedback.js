@@ -6,6 +6,7 @@ import {
 } from "../../content/feedback_section_content";
 import CapsuleButton from "../../shared/CapsuleButton";
 import Typography from "@material-ui/core/Typography";
+import Title from "../../shared/Title";
 
 const FeedbackSectionContainer = styled.div`
   height: 300px;
@@ -46,7 +47,7 @@ function Feedback() {
     <FeedbackSectionContainer>
       <FeedbackContainer>
         <TextContainer>
-          <Typography variant="h4">{feedback_section_title.es}</Typography>
+          <Title>{feedback_section_title.es}</Title>
           <Typography variant="subtitle1">
             {feedback_section_info.es}
           </Typography>
