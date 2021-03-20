@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { icons } from "../../constants/constants";
+import Title from "../../shared/Title/Title";
+import SimpleText from "../../shared/SimpleText/SimpleText";
 
 const ProtocolsContainer = styled.div`
   text-align: center;
@@ -25,26 +27,30 @@ const Image = styled.img`
 function Protocols() {
   return (
     <ProtocolsContainer>
-      <h2>PROTOCOLO DE SEGURIDAD E HIGIENE</h2>
+      <Title color="black" space="3px">
+        PROTOCOLO DE SEGURIDAD E HIGIENE
+      </Title>
       <List>
         <ListItem>
-          <p>Uso obligatorio de mascarilla</p>
+          <SimpleText color="black">Uso obligatorio de mascarilla</SimpleText>
           <Image src={icons.mascarilla}></Image>
         </ListItem>
         <ListItem>
-          <p>Uso de alcohol líquido en gel</p>
+          <SimpleText color="black">Uso de alcohol líquido en gel</SimpleText>
           <Image src={icons.alcohol}></Image>
         </ListItem>
         <ListItem style={{ margin: "10px 0 10px 0" }}>
-          <p>Limpieza y desinfección periódica de espacios</p>
+          <SimpleText color="black">
+            Limpieza y desinfección periódica de espacios
+          </SimpleText>
           <Image src={icons.desinfectante}></Image>
         </ListItem>
         <ListItem>
-          <p>Distancia mínima de seguridad</p>
+          <SimpleText color="black">Distancia mínima de seguridad</SimpleText>
           <Image src={icons.distanciamiento}></Image>
         </ListItem>
         <ListItem>
-          <p>Duración máxima de la visita</p>
+          <SimpleText color="black">Duración máxima de la visita</SimpleText>
           <Image src={icons.dMax}></Image>
         </ListItem>
       </List>

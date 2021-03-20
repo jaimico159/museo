@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { background_image } from "../../constants/constants";
 import HorizontalLine from "../../shared/HorizontalLine";
 import Typography from "@material-ui/core/Typography";
+import Title from "../../shared/Title/Title";
 
 const BannerContainer = styled.div`
   text-align: center;
@@ -29,7 +30,9 @@ function VisitorsBanner() {
     <BannerContainer>
       <ContentContainer>
         <HorizontalLine width={140} marRight={40} />
-        <Typography variant="h3">RESERVACIONES</Typography>
+        <Title color="secondary" variant="h3" space="10px">
+          RESERVACIONES
+        </Title>
         <HorizontalLine width={140} marLeft={40} />
       </ContentContainer>
     </BannerContainer>

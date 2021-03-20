@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { icons } from "../../constants/constants";
 import HorizontalLine from "../../shared/HorizontalLine";
 import Typography from "@material-ui/core/Typography";
+import Title from "../../shared/Title/Title";
+import SimpleText from "../../shared/SimpleText/SimpleText";
 
 const VisitorsContainer = styled.div`
   display: flex;
@@ -56,22 +58,27 @@ function VisitorsInfo() {
       <VisitorsInfoContainer>
         <TitleContainer>
           <HorizontalLine color="black" width={140} marRight={40} />
-          <Typography variant="h4">PLANEA TU VISITA</Typography>
+          <Title color="black" space="5px">
+            PLANEA TU VISITA
+          </Title>
+          <Typography variant="h4"></Typography>
           <HorizontalLine color="black" width={140} marLeft={40} />
         </TitleContainer>
         <PhoneInfoContainer>
           <InfoContainer>
-            Si vas a venir al museo en un grupo numeroso, puedes planear tu
-            visita llamándonos al:
+            <SimpleText>
+              Si vas a venir al museo en un grupo numeroso, puedes planear tu
+              visita llamándonos al:
+            </SimpleText>
           </InfoContainer>
           <PhoneContainer>
             <Image src={icons.telefono}></Image>
-            <span> (+54) 999 999 999 </span>
+            <SimpleText> (+54) 999 999 999 </SimpleText>
           </PhoneContainer>
         </PhoneInfoContainer>
 
         <VisitorDetailsContainer>
-          <p>Y proporcionando la siguiente información:</p>
+          <SimpleText>Y proporcionando la siguiente información:</SimpleText>
           <ol style={{ paddingLeft: 18, marginTop: 26 }}>
             <li>Nombre y Apellidos de la persona encargada</li>
             <li>Fecha de la visita</li>
