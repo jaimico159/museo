@@ -10,6 +10,7 @@ import FilmCard from "./FilmCard";
 import AliceCarousel from "react-alice-carousel";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
+import { useTranslation } from "next-i18next";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
@@ -79,10 +80,11 @@ const filmsContent = [
 ];
 
 function FilmsSection() {
+  const { t, i18n } = useTranslation();
   return (
     <Container style={mainContainer}>
       <Container style={filmsContainerStyles}>
-        <Title marginBottom={30}>Videos</Title>
+        <Title marginBottom={30}>{t("films.title")}</Title>
         <Slider {...settings} style={{ padding: "0 20px" }}>
           {filmsContent.map((el, index) => {
             return (

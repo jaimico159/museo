@@ -89,16 +89,20 @@ function Topnav() {
           {t("topnav.home")}
         </Button>
         <VerticalLine height={30} />
-        <Button color="secondary" classes={{ root: classes.buttonRoot }}>
-          VISITANTES
+        <Button
+          color="secondary"
+          classes={{ root: classes.buttonRoot }}
+          href="/visitors"
+        >
+          {t("topnav.visitors")}
         </Button>
         <VerticalLine height={30} />
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
-          CALENDARIO LITURGICO
+          {t("topnav.calendar")}
         </Button>
         <VerticalLine height={30} />
         <Button color="secondary" classes={{ root: classes.buttonRoot }}>
-          LA ORDEN FRANCISCANA
+          {t("topnav.fran-order")}
         </Button>
       </Toolbar>
     </AppBar>

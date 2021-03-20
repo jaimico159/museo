@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import { BsFillClockFill } from "react-icons/bs";
+import { useTranslation } from "next-i18next";
 import Title from "../../shared/Title";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
@@ -66,6 +67,7 @@ const FooterLineData = styled.div`
 `;
 
 function Footer() {
+  const { t, i18n } = useTranslation();
   return (
     <FooterContainer>
       <Container className="h-100">
@@ -76,26 +78,22 @@ function Footer() {
                 <img src="/images/main/logo-museo.png" height="200" />
               </InfoImage>
               <InfoData>
-                <Title variant="h5">Información de Contacto</Title>
+                <FooterTitle>{t("footer.title")}</FooterTitle>
                 <FooterLine>
-                  <LocationOnIcon />
-                  <FooterLineData>
-                    Calle Zela 103, Cercado, Arequipa
-                  </FooterLineData>
+                  <BsFillClockFill />
+                  <FooterLineData>{t("footer.address")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <AccessTimeIcon />
-                  <FooterLineData>
-                    Lunes a Sábado: 9:00 AM - 06:00 AM
-                  </FooterLineData>
+                  <BsFillClockFill />
+                  <FooterLineData>{t("footer.hours")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <MailOutlineIcon />
-                  <FooterLineData>museosanfrancisco@example.com</FooterLineData>
+                  <BsFillClockFill />
+                  <FooterLineData>{t("footer.e-mail")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <PhoneIcon />
-                  <FooterLineData>(+54) 999 999 999</FooterLineData>
+                  <BsFillClockFill />
+                  <FooterLineData>{t("footer.phone")}</FooterLineData>
                 </FooterLine>
               </InfoData>
             </InfoContainer>

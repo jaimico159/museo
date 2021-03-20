@@ -9,6 +9,7 @@ import { colors, gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
+import { useTranslation } from "next-i18next";
 
 const SliderContainer = styled.div`
   width: 100%;
@@ -81,10 +82,11 @@ const ClickableImage = function ({ src }) {
 };
 
 function Gallery() {
+  const { t, i18n } = useTranslation();
   return (
     <SliderContainer>
       <Title style={{ marginLeft: "100px" }} marginBottom={30}>
-        Galería de Imágenes
+        {t("gallery.title")}
       </Title>
       <Slider {...settings}>
         {gallery_images.map((url) => {

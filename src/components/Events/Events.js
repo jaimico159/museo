@@ -7,6 +7,7 @@ import {
 } from "../../content/events_section_content";
 import Title from "../../shared/Title";
 import SquareButton from "../../shared/SquareButton";
+import { useTranslation } from "next-i18next";
 import { events_image_url } from "../../constants/constants";
 
 const EventsContainer = styled.div`
@@ -32,14 +33,15 @@ const ButtonContainer = styled.div`
 `;
 
 function Events() {
+  const { t, i18n } = useTranslation();
   return (
     <EventsContainer>
       <ContentContainer>
         <Title color="secondary" marginBottom={30}>
-          {events_section_title.es}
+          {t("events.title")}
         </Title>
         <ButtonContainer>
-          <SquareButton>{events_section_button.es}</SquareButton>
+          <SquareButton>{t("events.events-button")}</SquareButton>
         </ButtonContainer>
       </ContentContainer>
     </EventsContainer>
