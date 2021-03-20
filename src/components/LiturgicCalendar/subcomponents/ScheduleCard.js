@@ -4,7 +4,8 @@ import CardHeader from "@material-ui/core/CardHeader";
 import { red } from "@material-ui/core/colors";
 import Title from "../../../shared/Title";
 import SimpleText from "../../../shared/SimpleText";
-import { Box } from "@material-ui/core";
+import { Box, IconButton } from "@material-ui/core";
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 function CardTitle({ children }) {
   return (
@@ -30,15 +31,14 @@ function CardTitle({ children }) {
 const useStyles = makeStyles({
   root: {
     maxWidth: 210,
-    height: 300,
+    height: 320,
     borderRadius: 7,
     borderColor: "black",
     borderWidth: 1,
     borderStyle: "solid",
   },
   header: {
-    backgroundImage:
-      "url('/images/liturgic_calendar/estatua-virgen-de-lourdes.jpg')",
+    backgroundPosition: "center",
     backgroundSize: "190px 100px",
     margin: "13px",
     height: 80,
@@ -120,20 +120,26 @@ function CardLine({ item }) {
   );
 }
 
-function ScheduleCard({ title, items }) {
+function ScheduleCard({ title, items, src }) {
   const classes = useStyles();
 
   return (
     <div style={{ position: "relative" }}>
       <CardTitle>{title}</CardTitle>
       <Card classes={{ root: classes.root }}>
-        <CardHeader classes={{ root: classes.header }} />
-        <Box component="div" overflow="auto" style={{ height: 185 }}>
+        <CardHeader
+          classes={{ root: classes.header }}
+          style={{ backgroundImage: `url('${src}')` }}
+        />
+        <Box component="div" overflow="hidden" style={{ height: 185 }}>
           {items &&
-            items.map((item) => {
-              return <CardLine item={item}></CardLine>;
+            items.map((item, index) => {
+              return <CardLine item={item} key={index}></CardLine>;
             })}
         </Box>
+        <IconButton aria-label="share" style={{ width: "100%", height: 5 }}>
+          <MoreHorizIcon />
+        </IconButton>
       </Card>
     </div>
   );
