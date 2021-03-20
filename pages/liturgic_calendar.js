@@ -15,6 +15,7 @@ import Events from "../src/components/Events/Events";
 import Feedback from "../src/components/Feedback";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ScheduleCard from "../src/components/LiturgicCalendar/subcomponents/ScheduleCard";
+import CalendarSection from "../src/components/LiturgicCalendar/CalendarSection";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -27,10 +28,7 @@ export default function LiturgicCalendar() {
     <Fragment>
       <Topnav></Topnav>
       <LiturgicCalendarBanner></LiturgicCalendarBanner>
-      <ScheduleCard
-        items={[{ date: "23", text: "Virgen del Lourdes" }]}
-      ></ScheduleCard>
-      <ScheduleCard></ScheduleCard>
+      <CalendarSection></CalendarSection>
       <Footer></Footer>
     </Fragment>
   );
