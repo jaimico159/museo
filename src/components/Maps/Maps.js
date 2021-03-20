@@ -58,6 +58,7 @@ function Maps() {
       <Container>
         <Image src={map_image}></Image>
       </Container>
+
       <Info>
         <Title color="secondary">{details_section_title.es}</Title>
         <Details>
