@@ -1,19 +1,16 @@
-import Head from "next/head";
 import "fontsource-roboto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fragment } from "react";
-import Banner from "../src/components/Banner";
+import LiturgicCalendarBanner from "../src/components/LiturgicCalendar/LiturgicCalendarBanner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
-import Gallery from "../src/components/Gallery";
-import FilmsSection from "../src/components/FilmsSection";
-import Maps from "../src/components/Maps";
-import Events from "../src/components/Events/Events";
-import Feedback from "../src/components/Feedback";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import CalendarSection from "../src/components/LiturgicCalendar/CalendarSection";
+import TitleSection from "../src/components/LiturgicCalendar/TitleSection";
+import ReservationSection from "../src/components/LiturgicCalendar/ReservationSection";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -21,16 +18,14 @@ export const getStaticProps = async ({ locale }) => ({
   },
 });
 
-export default function Home() {
+export default function LiturgicCalendar() {
   return (
     <Fragment>
       <Topnav></Topnav>
-      <Banner></Banner>
-      <FilmsSection></FilmsSection>
-      <Gallery></Gallery>
-      <Maps></Maps>
-      <Events></Events>
-      <Feedback></Feedback>
+      <LiturgicCalendarBanner></LiturgicCalendarBanner>
+      <TitleSection></TitleSection>
+      <CalendarSection></CalendarSection>
+      <ReservationSection></ReservationSection>
       <Footer></Footer>
     </Fragment>
   );

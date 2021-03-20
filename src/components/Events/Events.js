@@ -6,10 +6,12 @@ import {
   events_section_title,
 } from "../../content/events_section_content";
 import Title from "../../shared/Title";
+import SquareButton from "../../shared/SquareButton";
+import { events_image_url } from "../../constants/constants";
 
 const EventsContainer = styled.div`
   height: 450px;
-  background: black;
+  background-image: url(${events_image_url});
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,15 +35,11 @@ function Events() {
   return (
     <EventsContainer>
       <ContentContainer>
-        <Title text={events_section_title.es} color="secondary" />
+        <Title color="secondary" marginBottom={30}>
+          {events_section_title.es}
+        </Title>
         <ButtonContainer>
-          <Button
-            variant="outlined"
-            color="secondary"
-            style={{ borderRadius: 0 }}
-          >
-            {events_section_button.es}
-          </Button>
+          <SquareButton>{events_section_button.es}</SquareButton>
         </ButtonContainer>
       </ContentContainer>
     </EventsContainer>

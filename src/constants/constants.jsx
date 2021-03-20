@@ -1,3 +1,7 @@
+const banner_image_url = "/images/banner/encabezado-home.png";
+const events_image_url = "/images/banner/eventos-iglesia.png";
+const prices_image_url = "/images/main/fondo-precios.jpg";
+
 const urls = [
   "/images/gallery/007.jpg",
   "/images/gallery/008.jpg",
@@ -40,15 +44,37 @@ const gallery_images = [
   "/images/gallery/033.jpg",
   "/images/gallery/034.jpg",
   "/images/gallery/035.jpg",
-  "/images/main/036.heic",
+  "/images/gallery/036.jpg",
 ];
 
-const map_image = ["/images/main/map-museo.png"];
+const map_image = ["/images/main/museo-map.png"];
 
-const colors = {
-  CUSTOM_GREY: "rgb(248,247,245)",
-  BORDER_GREY: "rgb(229,229,229)",
-  WHITE: "rgb(255,255,255)",
+const icons = {
+  mascarilla: "/images/icons/icono-mascarilla.png",
+  alcohol: "/images/icons/icono-desinfectante-alcohol.png",
+  desinfectante: "/images/icons/icono-desinfectante.png",
+  distanciamiento: "/images/icons/icono-distanciamiento-social.png",
+  dMax: "/images/icons/icono-duracion-max.png",
+  telefono: "/images/icons/icono-telefono.png",
 };
 
-export { urls, gallery_images, map_image, colors };
+const background_image = ["/images/main/sagrada-familia.png"];
+
+const colors = {
+  CUSTOM_GRAY: "rgb(248,247,245)",
+  BORDER_GRAY: "rgb(229,229,229)",
+  WHITE: "rgb(255,255,255)",
+  CUSTOM_YELLOW: "rgb(201,160,80)",
+};
+
+export {
+  urls,
+  gallery_images,
+  map_image,
+  icons,
+  background_image,
+  colors,
+  banner_image_url,
+  events_image_url,
+  prices_image_url,
+};
