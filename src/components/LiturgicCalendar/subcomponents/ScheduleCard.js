@@ -18,16 +18,18 @@ import styled from "styled-components";
 import Title from "../../../shared/Title";
 import { Fragment } from "react";
 import SimpleText from "../../../shared/SimpleText";
+import { Box } from "@material-ui/core";
 
 function CardTitle({ children }) {
   return (
     <Title
       style={{
         fontSize: 20,
-        position: "absolute",
+        position: "absolute ",
         zIndex: 2,
         backgroundColor: "#957223",
-        width: 100,
+        width: 120,
+        height: 25,
         borderRadius: 5,
         margin: "8px 0 0 10px",
         paddingLeft: 10,
@@ -42,6 +44,7 @@ function CardTitle({ children }) {
 const useStyles = makeStyles({
   root: {
     maxWidth: 210,
+    height: 300,
     borderRadius: 7,
     borderColor: "black",
     borderWidth: 1,
@@ -135,16 +138,18 @@ function ScheduleCard({ title, items }) {
   const classes = useStyles();
 
   return (
-    <Fragment>
+    <div style={{ position: "relative" }}>
       <CardTitle>{title}</CardTitle>
       <Card classes={{ root: classes.root }}>
         <CardHeader classes={{ root: classes.header }} />
-        {items &&
-          items.map((item) => {
-            return <CardLine item={item}></CardLine>;
-          })}
+        <Box component="div" overflow="auto" style={{ height: 185 }}>
+          {items &&
+            items.map((item) => {
+              return <CardLine item={item}></CardLine>;
+            })}
+        </Box>
       </Card>
-    </Fragment>
+    </div>
   );
 }
 
