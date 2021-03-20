@@ -4,7 +4,7 @@ import ScheduleCard from "./ScheduleCard";
 const CalendarContainer = styled.div`
   display: grid;
   grid-template-columns: 230px 230px 230px 230px 230px 230px;
-  grid-template-rows: 310px 310px;
+  grid-template-rows: 340px 340px;
   justify-content: center;
   align-content: start;
   height: 700px;
@@ -15,6 +15,7 @@ const CALENDAR_INFO = [
   // ENERO
   {
     title: "ENERO",
+    image: "/images/liturgic_calendar/san-francisco-de-asis-foto3.jpg",
     items: [
       {
         date: "",
@@ -31,6 +32,7 @@ const CALENDAR_INFO = [
   //FEBRERO
   {
     title: "FEBRERO",
+    image: "/images/liturgic_calendar/estatua-virgen-de-lourdes.jpg",
     items: [
       {
         date: "",
@@ -65,6 +67,7 @@ const CALENDAR_INFO = [
   //MARZO
   {
     title: "MARZO",
+    image: "/images/liturgic_calendar/mes-morado.jpg",
     items: [
       {
         date: "",
@@ -110,6 +113,7 @@ const CALENDAR_INFO = [
   //ABRIL
   {
     title: "ABRIL",
+    image: "/images/liturgic_calendar/large_semana-santa.jpg",
     items: [
       {
         date: "",
@@ -162,6 +166,7 @@ const CALENDAR_INFO = [
   //MAYO
   {
     title: "MAYO",
+    image: "/images/liturgic_calendar/santo-de-palermo-san-benito.jpg",
     items: [
       {
         date: "",
@@ -184,6 +189,7 @@ const CALENDAR_INFO = [
   //JUNIO
   {
     title: "JUNIO",
+    image: "/images/liturgic_calendar/san-antonio-de-padua.png",
     items: [
       {
         date: "",
@@ -212,6 +218,7 @@ const CALENDAR_INFO = [
   //JULIO
   {
     title: "JULIO",
+    image: "/images/liturgic_calendar/divino-nino.jpg",
     items: [
       {
         date: "",
@@ -234,6 +241,7 @@ const CALENDAR_INFO = [
   //AGOSTO
   {
     title: "AGOSTO",
+    image: "/images/liturgic_calendar/santa-clara.png",
     items: [
       {
         date: "",
@@ -262,6 +270,7 @@ const CALENDAR_INFO = [
   //SEPTIEMBRE
   {
     title: "SEPTIEMBRE",
+    image: "/images/liturgic_calendar/virgen-de-las-angustias.jpg",
     items: [
       {
         date: "",
@@ -284,6 +293,7 @@ const CALENDAR_INFO = [
   //OCTUBRE
   {
     title: "OCTUBRE",
+    image: "/images/liturgic_calendar/san-francisco-de-asis.jpg",
     items: [
       {
         date: "",
@@ -312,6 +322,7 @@ const CALENDAR_INFO = [
   //NOVIEMBRE
   {
     title: "NOVIEMBRE",
+    image: "/images/liturgic_calendar/virgen-del-carmen.jpg",
     items: [
       {
         date: "",
@@ -334,6 +345,7 @@ const CALENDAR_INFO = [
   //DICIEMBRE
   {
     title: "DICIEMBRE",
+    image: "/images/liturgic_calendar/inmaculada-concepcion.jpg",
     items: [
       {
         date: "",
@@ -372,7 +384,11 @@ function Calendar() {
     <CalendarContainer>
       {CALENDAR_INFO.map((month) => {
         return (
-          <ScheduleCard title={month.title} items={month.items}></ScheduleCard>
+          <ScheduleCard
+            title={month.title}
+            items={month.items}
+            src={month.image}
+          ></ScheduleCard>
         );
       })}
     </CalendarContainer>
