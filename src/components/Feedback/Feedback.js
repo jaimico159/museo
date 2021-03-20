@@ -7,6 +7,7 @@ import {
 import CapsuleButton from "../../shared/CapsuleButton";
 import Typography from "@material-ui/core/Typography";
 import { useTranslation } from "next-i18next";
+import Title from "../../shared/Title";
 
 const FeedbackSectionContainer = styled.div`
   height: 300px;
@@ -48,7 +49,7 @@ function Feedback() {
     <FeedbackSectionContainer>
       <FeedbackContainer>
         <TextContainer>
-          <Typography variant="h4">{t("feedback.title")}</Typography>
+          <Title variant="h4">{t("feedback.title")}</Title>
           <Typography variant="subtitle1">{t("feedback.details")}</Typography>
         </TextContainer>
         <ButtonContainer>

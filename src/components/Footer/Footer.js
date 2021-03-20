@@ -1,16 +1,20 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import styled from "styled-components";
 import { BsFillClockFill } from "react-icons/bs";
 import { useTranslation } from "next-i18next";
+import Title from "../../shared/Title";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import PhoneIcon from "@material-ui/icons/Phone";
 
 const FooterContainer = styled.section`
   width: 100%;
   margin: 0px;
   padding: 0px;
-  height: 400px;
+  height: 300px;
   background-color: black;
   color: white;
 `;
@@ -23,19 +27,24 @@ const InfoContainer = styled.div`
   height: 100%;
 `;
 
-const InfoImage = styled(Image)`
+const InfoImage = styled.div`
   width: 200px;
   height: 250px;
   align-self: center;
   margin-right: 15px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
 const InfoData = styled.div`
   display: flex;
   flex-direction: column;
-  height: 250px;
-  width: 400px;
+  height: 200px;
   margin-left: 15px;
+  flex-grow: 1;
+  justify-content: center;
 `;
 
 const FooterRow = styled(Row)`
@@ -50,7 +59,7 @@ const FooterLine = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 50px;
+  height: 30px;
 `;
 
 const FooterLineData = styled.div`
@@ -65,10 +74,9 @@ function Footer() {
         <FooterRow>
           <Col>
             <InfoContainer>
-              <InfoImage
-                src="https://previews.123rf.com/images/jemastock/jemastock1710/jemastock171013378/88544485-hombre-con-camisa-de-manga-larga-avatar-cuerpo-completo-icono-imagen-vector-ilustraci%C3%B3n-dise%C3%B1o-l%C3%ADnea-negra.jpg"
-                rounded
-              ></InfoImage>
+              <InfoImage>
+                <img src="/images/main/logo-museo.png" height="200" />
+              </InfoImage>
               <InfoData>
                 <FooterTitle>{t("footer.title")}</FooterTitle>
                 <FooterLine>

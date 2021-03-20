@@ -6,6 +6,7 @@ import SimpleText from "../../shared/SimpleText/SimpleText";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import { useTranslation } from "next-i18next";
+import { prices_image_url } from "../../constants/constants";
 
 const StyledMap = styled.div`
   display: flex;
@@ -29,7 +30,8 @@ const Image = styled.img`
 `;
 
 const Info = styled.div`
-  background-color: #f64e00;
+  background-image: url(${prices_image_url});
+  background-size: 100%;
   order: 2;
   margin-bottom: 2%;
   width: 28%;
@@ -54,6 +56,7 @@ function Maps() {
       <Container>
         <Image src={map_image}></Image>
       </Container>
+
       <Info>
         <Title color="secondary">{t("maps.title")}</Title>
         <Details>

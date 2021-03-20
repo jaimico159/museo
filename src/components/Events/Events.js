@@ -8,10 +8,11 @@ import {
 import Title from "../../shared/Title";
 import SquareButton from "../../shared/SquareButton";
 import { useTranslation } from "next-i18next";
+import { events_image_url } from "../../constants/constants";
 
 const EventsContainer = styled.div`
   height: 450px;
-  background: black;
+  background-image: url(${events_image_url});
   display: flex;
   justify-content: center;
   align-items: center;
