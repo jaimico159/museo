@@ -6,7 +6,7 @@ import SimpleText from "../../shared/SimpleText";
 import HorizontalLine from "../../shared/HorizontalLine";
 
 const MainComponent = styled.div`
-  height: 2400px;
+  height: 2000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,6 +52,7 @@ const ImagesContainer = styled.div`
   border-color: ${colors.BORDER_GRAY};
   border-weight: 1px;
   margin-left: 20px;
+  background-color: "white";
 `;
 
 function ImageDivider() {
@@ -71,9 +72,9 @@ function Paragraph({ children }) {
 
 export default function InfoSection() {
   return (
-    <MainComponent>
+    <MainComponent style={{ background: colors.CUSTOM_GRAY }}>
       <InfoContainer>
-        <ArticleContainer>
+        <ArticleContainer style={{ background: "white" }}>
           <ArticleImage></ArticleImage>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
             LA CONGREGACION FRANCISCANA
@@ -140,7 +141,7 @@ export default function InfoSection() {
             “O por fray o por hermano, todo el mundo es franciscano.”
           </Title>
         </ArticleContainer>
-        <ImagesContainer>
+        <ImagesContainer style={{ background: "white" }}>
           <img src="/images/congregation/acerca2.jpg" />
           <ImageDivider />
           <img src="/images/congregation/acerca3.jpg" />
