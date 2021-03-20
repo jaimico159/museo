@@ -1,10 +1,4 @@
-import { Button } from "@material-ui/core";
-import { Fragment } from "react";
 import styled from "styled-components";
-import {
-  events_section_button,
-  events_section_title,
-} from "../../content/events_section_content";
 import Title from "../../shared/Title";
 import SquareButton from "../../shared/SquareButton";
 import { useTranslation } from "next-i18next";

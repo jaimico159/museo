@@ -1,9 +1,7 @@
-import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Image from "react-bootstrap/Image";
 import styled from "styled-components";
-import { BsFillClockFill } from "react-icons/bs";
 import { Fragment } from "react";
 import { colors, gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
