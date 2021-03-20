@@ -6,6 +6,8 @@ import Title from "../../../shared/Title";
 import SimpleText from "../../../shared/SimpleText";
 import { Box, IconButton } from "@material-ui/core";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import ScheduleCardModal from "./ScheduleCardModal";
+import { useState } from "react";
 
 function CardTitle({ children }) {
   return (
@@ -122,6 +124,7 @@ function CardLine({ item }) {
 
 function ScheduleCard({ title, items, src }) {
   const classes = useStyles();
+  const [open, setOpen] = useState(false);
 
   return (
     <div style={{ position: "relative" }}>
@@ -137,10 +140,21 @@ function ScheduleCard({ title, items, src }) {
               return <CardLine item={item} key={index}></CardLine>;
             })}
         </Box>
-        <IconButton aria-label="share" style={{ width: "100%", height: 5 }}>
+        <IconButton
+          aria-label="share"
+          style={{ width: "100%", height: 5 }}
+          onClick={() => setOpen(true)}
+        >
           <MoreHorizIcon />
         </IconButton>
       </Card>
+      <ScheduleCardModal
+        open={open}
+        setOpen={setOpen}
+        title={title}
+        items={items}
+        src={src}
+      ></ScheduleCardModal>
     </div>
   );
 }
