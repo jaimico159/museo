@@ -11,29 +11,39 @@ import { useState } from "react";
 
 function CardTitle({ children }) {
   return (
-    <Title
+    <div
       style={{
-        fontSize: 17,
         position: "absolute ",
         zIndex: 2,
-        backgroundColor: "#957223",
-        width: 125,
-        height: 18,
-        borderRadius: 5,
-        margin: "8px 0 0 10px",
-        paddingLeft: 10,
+        width: "100%",
+        height: 25,
+
+        margin: "8px 0",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
-      color="secondary"
     >
-      {children}
-    </Title>
+      <Title
+        style={{
+          fontSize: 20,
+          backgroundColor: "#957223",
+          padding: "0 10px",
+          borderRadius: 5,
+        }}
+        color="secondary"
+      >
+        {children}
+      </Title>
+    </div>
   );
 }
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 210,
-    height: 320,
+    maxWidth: 600,
+    width: 600,
+    height: 600,
     borderRadius: 7,
     borderColor: "black",
     borderWidth: 1,
@@ -57,7 +67,7 @@ const useStyles = makeStyles({
 function CardLineContainer({ children }) {
   const style = {
     display: "flex",
-    height: 37,
+    height: "auto",
     alignItems: "center",
     justifContent: "center",
     width: "100%",
@@ -68,7 +78,7 @@ function CardLineContainer({ children }) {
 
 function CardLineContent({ children }) {
   return (
-    <SimpleText style={{ padding: "0 5px", maxWidth: 150, fontSize: 13 }}>
+    <SimpleText style={{ padding: "0 25px 0 0", maxWidth: 600, fontSize: 13 }}>
       {children}
     </SimpleText>
   );
@@ -89,7 +99,7 @@ function CardLineImage({ children }) {
     height: 37,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    minWidth: 65,
+    minWidth: 100,
   };
 
   const textStyle = {
@@ -117,12 +127,12 @@ function CardLine({ item }) {
   return (
     <CardLineContainer>
       <CardLineImage>{item.date}</CardLineImage>
-      <CardLineContent>{item.text}</CardLineContent>
+      <CardLineContent>{item.expandedText}</CardLineContent>
     </CardLineContainer>
   );
 }
 
-function ScheduleCard({ title, items, src }) {
+function BigScheduleCard({ title, items, src }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
@@ -132,31 +142,29 @@ function ScheduleCard({ title, items, src }) {
       <Card classes={{ root: classes.root }}>
         <CardHeader
           classes={{ root: classes.header }}
-          style={{ backgroundImage: `url('${src}')` }}
+          style={{
+            backgroundImage: `url('${src}')`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: 120,
+          }}
         />
-        <Box component="div" overflow="hidden" style={{ height: 185 }}>
+        <Box
+          component="div"
+          overflow="auto"
+          style={{
+            height: 400,
+            overflowY: "scroll",
+          }}
+        >
           {items &&
             items.map((item, index) => {
               return <CardLine item={item} key={index}></CardLine>;
             })}
         </Box>
-        <IconButton
-          aria-label="share"
-          style={{ width: "100%", height: 5 }}
-          onClick={() => setOpen(true)}
-        >
-          <MoreHorizIcon />
-        </IconButton>
       </Card>
-      <ScheduleCardModal
-        open={open}
-        setOpen={setOpen}
-        title={title}
-        items={items}
-        src={src}
-      ></ScheduleCardModal>
     </div>
   );
 }
 
-export default ScheduleCard;
+export default BigScheduleCard;
