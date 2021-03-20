@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "fontsource-roboto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -11,6 +10,7 @@ import Protocols from "../src/components/Visitors/Protocols";
 import VisitorsBanner from "../src/components/Visitors/VisitorsBanner";
 import styled from "styled-components";
 import VisitorsInfo from "../src/components/Visitors/VisitorsInfo";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
