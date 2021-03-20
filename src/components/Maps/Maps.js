@@ -7,6 +7,8 @@ import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import { useTranslation } from "next-i18next";
 import { prices_image_url } from "../../constants/constants";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const StyledMap = styled.div`
   display: flex;
@@ -51,6 +53,8 @@ const ButtonContainer = styled.div`
 
 function Maps() {
   const { t, i18n } = useTranslation();
+  const router = useRouter();
+
   return (
     <StyledMap>
       <Container>
@@ -79,11 +83,13 @@ function Maps() {
             <SimpleText color="secondary">{t("maps.eccles-p")}</SimpleText>
           </Details>
         </Details>
-        <ButtonContainer>
-          <SquareButton colorVariant="primary">
-            {t("maps.maps-button")}
-          </SquareButton>
-        </ButtonContainer>
+        <Link href="/visitors" locale={router.locale}>
+          <ButtonContainer>
+            <SquareButton colorVariant="primary">
+              {t("maps.maps-button")}
+            </SquareButton>
+          </ButtonContainer>
+        </Link>
       </Info>
     </StyledMap>
   );
