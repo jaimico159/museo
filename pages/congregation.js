@@ -4,13 +4,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fragment } from "react";
+import LiturgicCalendarBanner from "../src/components/LiturgicCalendar/LiturgicCalendarBanner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
-import Protocols from "../src/components/Visitors/Protocols";
-import VisitorsBanner from "../src/components/Visitors/VisitorsBanner";
-import styled from "styled-components";
-import VisitorsInfo from "../src/components/Visitors/VisitorsInfo";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import CalendarSection from "../src/components/LiturgicCalendar/CalendarSection";
+import TitleSection from "../src/components/LiturgicCalendar/TitleSection";
+import ReservationSection from "../src/components/LiturgicCalendar/ReservationSection";
+import CongregationBanner from "../src/components/Congregation/CongregationBanner";
+import InfoSection from "../src/components/Congregation/InfoSection";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -18,23 +20,12 @@ export const getStaticProps = async ({ locale }) => ({
   },
 });
 
-const BlackContainer = styled.div`
-  position: absolute;
-  background: black;
-  opacity: 0.3;
-  width: 100%;
-  height: 400px;
-  z-index: 1;
-`;
-
-export default function Visitantes() {
+export default function Congregation() {
   return (
     <Fragment>
       <Topnav></Topnav>
-      <BlackContainer></BlackContainer>
-      <VisitorsBanner></VisitorsBanner>
-      <VisitorsInfo></VisitorsInfo>
-      <Protocols></Protocols>
+      <CongregationBanner></CongregationBanner>
+      <InfoSection></InfoSection>
       <Footer></Footer>
     </Fragment>
   );
