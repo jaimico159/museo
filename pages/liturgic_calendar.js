@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "fontsource-roboto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -8,14 +7,10 @@ import { Fragment } from "react";
 import LiturgicCalendarBanner from "../src/components/LiturgicCalendar/LiturgicCalendarBanner";
 import Footer from "../src/components/Footer";
 import Topnav from "../src/components/Topnav";
-import Gallery from "../src/components/Gallery";
-import FilmsSection from "../src/components/FilmsSection";
-import Maps from "../src/components/Maps";
-import Events from "../src/components/Events/Events";
-import Feedback from "../src/components/Feedback";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import ScheduleCard from "../src/components/LiturgicCalendar/subcomponents/ScheduleCard";
 import CalendarSection from "../src/components/LiturgicCalendar/CalendarSection";
+import TitleSection from "../src/components/LiturgicCalendar/TitleSection";
+import ReservationSection from "../src/components/LiturgicCalendar/ReservationSection";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -28,7 +23,9 @@ export default function LiturgicCalendar() {
     <Fragment>
       <Topnav></Topnav>
       <LiturgicCalendarBanner></LiturgicCalendarBanner>
+      <TitleSection></TitleSection>
       <CalendarSection></CalendarSection>
+      <ReservationSection></ReservationSection>
       <Footer></Footer>
     </Fragment>
   );
