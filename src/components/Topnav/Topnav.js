@@ -27,7 +27,6 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   buttonRoot: {
-    //borderRight: "1px solid white",
     borderRadius: 0,
     paddingRight: 20,
     paddingLeft: 20,
@@ -36,7 +35,6 @@ const useStyles = makeStyles({
   actionRoot: {
     fontSize: 12,
     color: "white",
-    //borderRight: "1px solid white",
   },
   actionSelected: {
     background: "white",
