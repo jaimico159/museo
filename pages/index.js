@@ -1,9 +1,3 @@
-import Head from "next/head";
-import "fontsource-roboto";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "react-alice-carousel/lib/alice-carousel.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Fragment } from "react";
 import Banner from "../src/components/Banner";
 import Footer from "../src/components/Footer";

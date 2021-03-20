@@ -7,8 +7,10 @@ const BannerContainer = styled.div`
   display: flex;
   justify-content: center;
   background: url("images/congregation/encabezado.png");
-  height: 599px;
-  background-size: 100%;
+  height: 500px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 const ContentContainer = styled.div`

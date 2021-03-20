@@ -4,9 +4,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import { red } from "@material-ui/core/colors";
 import Title from "../../../shared/Title";
 import SimpleText from "../../../shared/SimpleText";
-import { Box, IconButton } from "@material-ui/core";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import ScheduleCardModal from "./ScheduleCardModal";
+import { Box } from "@material-ui/core";
 import { useState } from "react";
 
 function CardTitle({ children }) {

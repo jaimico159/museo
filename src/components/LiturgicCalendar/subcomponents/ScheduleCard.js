@@ -1,7 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
-import { red } from "@material-ui/core/colors";
 import Title from "../../../shared/Title";
 import SimpleText from "../../../shared/SimpleText";
 import { Box, IconButton } from "@material-ui/core";
@@ -44,13 +43,6 @@ const useStyles = makeStyles({
     backgroundSize: "190px 100px",
     margin: "13px",
     height: 80,
-  },
-  media: {
-    height: 0,
-    paddingTop: "56.25%", // 16:9
-  },
-  avatar: {
-    backgroundColor: red[500],
   },
 });
 
