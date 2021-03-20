@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { background_image } from "../../constants/constants";
 import HorizontalLine from "../../shared/HorizontalLine";
-import Typography from "@material-ui/core/Typography";
+import Title from "../../shared/Title";
 
 const BannerContainer = styled.div`
   text-align: center;
@@ -16,8 +15,8 @@ const ContentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  max-width: 500px;
+  width: 1100px;
+  max-width: 1100px;
   height: 100%;
   color: white;
   z-index: 2;
@@ -27,9 +26,11 @@ function LiturgicCalendarBanner() {
   return (
     <BannerContainer>
       <ContentContainer>
-        <HorizontalLine width={140} marRight={40} />
-        <Typography variant="h3">EVENTOS DEL CONVENTO</Typography>
-        <HorizontalLine width={140} marLeft={40} />
+        <HorizontalLine width={180} marRight={40} />
+        <Title variant="h4" space={30}>
+          EVENTOS DEL CONVENTO
+        </Title>
+        <HorizontalLine width={180} marLeft={40} />
       </ContentContainer>
     </BannerContainer>
   );
