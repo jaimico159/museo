@@ -27,7 +27,7 @@ const Image = styled.img`
 function Protocols() {
   return (
     <ProtocolsContainer>
-      <Title color="black" space="3px">
+      <Title color="black" space="3px" style={{ height: 60 }}>
         PROTOCOLO DE SEGURIDAD E HIGIENE
       </Title>
       <List>
