@@ -190,6 +190,23 @@
     "dec-12-details":"Se celebra un triduo el 9 de diciembre a las 6 de la tarde durante los próximos 3 dias. La fiesta se celebra el 12 de diciembre a las 6 de la tarde. Esta virgen es la única que tiene el derecho a estar en medio del altar mayor durante su fiesta, sin contar a la virgen de la inmaculada concepción. También la cofradía encargada de la Virgen de Guadalupe realiza diferentes homenajes, en la víspera ofrecen ponche a los que asisten y los de la colonia mexicana y le cantan. Durante el triduo y el día de fiesta se realiza la eucaristía.",
     "dec-18-name":"Señora del Amparo",
     "dec-18-details":"Se celebra un triduo el 15 de diciembre a las 6 de la tarde durante los próximos 3 dias. La fiesta se celebra el 18 de diciembre a las 6 de la tarde. Durante el triduo y el día de fiesta se realiza la eucaristía."
+  },
+
+  "calendar-reservations":{
+    "title": "RESERVACIONES",
+    "number": "Para reservar misas u otro evento contáctese con nosotros llamando al:"
+  },
+
+  "franciscan-order":{
+    "title": "LA CONGREGACION FRANCISCANA",
+    "origin":"¿Cuál es el origen de la orden Franciscana?",
+    "origin-answer":"La orden franciscana fue fundada por San Francisco de Asís hace un poco más de 800 años, el era un hijo de un comerciante que después de recibir una revelación divina en una iglesia abandonada en San Damian dándole la siguiente orden: “Francisco, ve y repara mi iglesia”.\nEn 1209, el primer grupo de frailes fue a pie de Asís a Roma y, en un extraordinario ejemplo de la obra del Espíritu Santo, el grupo de escuálidos hermanos fue recibido por el Papa Inocencio III, quien aprobó su modo de vida.\nFrancisco recibió los Estigmas en el Monte Alvernia, una prueba innegable de la dedicación que tuvo para seguir a Cristo en cuerpo y alma, y a pesar de graves enfermedades, aún sentía el gozo de amar y alabar a Dios, hasta cuando la Hermana Muerte vino a visitarlo en 1226.",
+    "arrival":"¿Cuándo arribó la orden Franciscana al Perú?",
+    "arrival-answer":"La orden Franciscana comenzó su obra misional en el año de 1500 en America Latina, y llegaron al Perú en 1531, fueron una de las primeras órdenes religiosas en llegar al Perú con voluntad evangelizadora y civilizadora y haberla continuada con abnegación por muchos siglos.",
+    "foundation":"¿Cuándo se estableció la orden Franciscana en Arequipa?",
+    "foundation-answer":"El convento San Francisco fue fundado en Arequipa en el año de 1552 por el padre Alonso Rincon, la labor de la orden franciscana en Arequipa fue la evangelización de los indios collahuas que venían a trabajar en la ciudad, poco después se extendió a toda Arequipa.",
+    "doses":"¿Cuál es la labor de la orden Franciscana en el Perú?",
+    "doses-answer":"La orden Franciscana a diferencia de otras ordenes hermanas, no se enfoca en una sola idea o pensamiento, es literalmente el apoyo de la iglesia, estando y siendo lo que se necesite, desde un maestro en escuelas, a un oyente de los que desean ser escuchados. Actualmente podemos hallarlos en todo el Perú, y en Arequipa además de sus iglesias y conventos dejaron el legado de un colegio inspirado en la enseñanza de San Francisco.",
+    "phrase":"“O por fray o por hermano, todo el mundo es franciscano.”"
   }
-  
 }
