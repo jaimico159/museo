@@ -24,6 +24,7 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
 `;
 
 const PhoneInfoContainer = styled.div`
@@ -31,7 +32,7 @@ const PhoneInfoContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  height: 130px;
+  height: 160px;
 `;
 const InfoContainer = styled.div`
   width: 300px;
@@ -50,6 +51,7 @@ const Image = styled.img`
 
 const VisitorDetailsContainer = styled.div`
   width: 350px;
+  height: 250px;
 `;
 
 function VisitorsInfo() {

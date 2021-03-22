@@ -1,14 +1,10 @@
-import { Button } from "@material-ui/core";
-import { Fragment } from "react";
 import styled from "styled-components";
-import {
-  events_section_button,
-  events_section_title,
-} from "../../content/events_section_content";
 import Title from "../../shared/Title";
 import SquareButton from "../../shared/SquareButton";
 import { useTranslation } from "next-i18next";
 import { events_image_url } from "../../constants/constants";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const EventsContainer = styled.div`
   height: 450px;
@@ -34,15 +30,19 @@ const ButtonContainer = styled.div`
 
 function Events() {
   const { t, i18n } = useTranslation();
+  const router = useRouter();
+
   return (
     <EventsContainer>
       <ContentContainer>
         <Title color="secondary" marginBottom={30}>
           {t("events.title")}
         </Title>
-        <ButtonContainer>
-          <SquareButton>{t("events.events-button")}</SquareButton>
-        </ButtonContainer>
+        <Link href="/liturgic_calendar" locale={router.locale}>
+          <ButtonContainer>
+            <SquareButton>{t("events.events-button")}</SquareButton>
+          </ButtonContainer>
+        </Link>
       </ContentContainer>
     </EventsContainer>
   );

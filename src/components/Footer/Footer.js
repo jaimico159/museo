@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
-import { BsFillClockFill } from "react-icons/bs";
 import { useTranslation } from "next-i18next";
 import Title from "../../shared/Title";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
@@ -51,10 +50,6 @@ const FooterRow = styled(Row)`
   height: 100%;
 `;
 
-const FooterTitle = styled.h5`
-  font-weight: bold;
-`;
-
 const FooterLine = styled.div`
   display: flex;
   flex-direction: row;
@@ -78,21 +73,21 @@ function Footer() {
                 <img src="/images/main/logo-museo.png" height="200" />
               </InfoImage>
               <InfoData>
-                <FooterTitle>{t("footer.title")}</FooterTitle>
+                <Title variant="h5">{t("footer.title")}</Title>
                 <FooterLine>
-                  <BsFillClockFill />
+                  <LocationOnIcon />
                   <FooterLineData>{t("footer.address")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <BsFillClockFill />
+                  <AccessTimeIcon />
                   <FooterLineData>{t("footer.hours")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <BsFillClockFill />
+                  <MailOutlineIcon />
                   <FooterLineData>{t("footer.e-mail")}</FooterLineData>
                 </FooterLine>
                 <FooterLine>
-                  <BsFillClockFill />
+                  <PhoneIcon />
                   <FooterLineData>{t("footer.phone")}</FooterLineData>
                 </FooterLine>
               </InfoData>

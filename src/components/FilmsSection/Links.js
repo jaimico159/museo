@@ -1,11 +1,3 @@
-import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import Modal from "react-bootstrap/Modal";
-import Image from "react-bootstrap/Image";
-import styled from "styled-components";
-import { BsFillClockFill } from "react-icons/bs";
-import { Fragment } from "react";
-import { gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 
 const footerStyles = {
