@@ -38,6 +38,6 @@ yarn-error.log*
 
 /public/videos/
 
-/public/images/main/
+/public/images/museums/
 
 /public/fonts/*.woff
