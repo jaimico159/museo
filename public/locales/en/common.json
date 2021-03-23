@@ -8,34 +8,18 @@
 
   "films": {
     "title": "Videos",
-    "films-cards": [
-      {
-        "title": "CHAPTER ROOM",
-        "description": "The Capitular Room was generally used to celebrate the “Chapters”, from there comes its name of “Capitular”. In this room the Franciscans recalled the adopted rule scriptures and discussed matters concerning the convent and its members.\nThe room shelters within its walls the Franciscan Order family tree, the largest painting that can be found in the city of Arequipa, along with other paintings by the Arequipa artist Antonio Guzman. The room is furnished with nineteenth century armchairs, each of which is decorated with the Franciscan Order coat of arms.\nIt is also used as a previously rented post-mass reception room.",
-        "id": 1
-      },
-      {
-        "title": "THE CELL OF FATHER JOSE DE GUADALUPE MOJICA",
-        "description": "Fray José de Guadalupe Mojica was a Mexican author and singer, and one of the most recognized Franciscans in Peru, born in San Gabriel in the year 1895 and died in Lima in the year 1974.\nMojica, long before dedicating himself to a religious life, participated in films such as “The Price of a Kiss” in 1930, followed by a series of comedies and romantic adventure melodramas, making him one of the most recognizable Hispanic faces in Hollywood. As a singer he was a tenor in the Chicago Opera Company.\nFinally, he left luxury, fame and his native country to become a friar of the Franciscan Order in Peru. In 1952 he published his book of memoirs “Yo pecador”, in which he recounts his worldly life and his conversion. The text inspired the 1959 film in which Mojica appeared with his name within the order.\nFray José de Guadalupe Mojica. José Mojica died in Lima in 1974, just six days after his 79th birthday. A legendary life that is treasured in our country as part of its cultural heritage.",
-        "id": 2
-      },{
-        "title": "DUNS SCOTTO ROOM",
-        "description": "The Duns Scotto Room named in honor of the venerable Father Fray Juan Duns Scotto, as a testimony of gratitude to the Franciscan theologian and Philosopher, Doctor Subtilis, Paladin and Defender of the dogma of the “Immaculate Conception at the University” at the University of Sorbonne-Paris in the year 1306.\nThe room is adorned with seventeenth and eighteenth century paintings, several of which are Cuzco school-style, especially the painting of the brown Christ or “Lord of the Tremors”, which is a painting of the sculpture found in the city of Cuzco, There are also sculptures such as “The Virgin of Quito” and “The Virgin of the Four Names”.\nThe room was originally the Franciscan recreation room of yesteryear, where they studied and meditated. Most of the chairs and furniture are original or donated by wealthy families of Arequipa.",
-        "id": 3
-      }, {
-        "title": "IMMACULATE CONCEPTION ART GALLERY",
-        "description": "The Pinacoteca Inmaculada Concepción was once a small chapel of the convent, but after an earthquake it was used as a dining room prior to its reconstruction.\nThe museum converted it into a art gallery and currently exhibiting the collections of paintings of “The Twelve Apostles” and “The Life of the Virgin Mary”. Along with these the museum also exhibits twentieth century corals, nineteeth century “missals” books, four eighteeth century raincoats, eighteen century chasubles, albs,  and stoles, and a Christmas crib representation that alludes to the First Manager, a tradition that St. Francis of Assisi initiated.\nAt the end of the room we can observe a sculpture of the primary virgin of the Franciscan order, the Virgin of the Immaculate Conception, This sculpture was one of the first in the church and is approximately 300 years old.",
-        "id": 4
-      }, {
-        "title": "ST. FRANCIS SOLANO CHOIR",
-        "description": "The choir is named after the Franciscan saint, San Francisco Solano, a missionary who preached with music using a rabel, a stringed instrument similar to a violin and a lute.\nUsed since colonial times, tThe choir was a special place where the franciscans of St. Francis Convent recited the “Psalter of the Roman Breviary” and had mental prayer. It is called “Religious Choir”, because here the franciscans performed their religious obligations of sanctification every day of the year.\nDue to the earthquakes some time later, the franciscans no longer used it. It is adorned with wooden chairs from the 18th century, an 18th century pipe organ made by Innocente Foglia and brought from Lima, a rotating lectern where the large corals that the choir read and sang were placed, and corals made of sheepskin and cowhide cover. From the choir you have a unique view of the church and its main altar made of wood. If you wish, you can enter the tower where you can see the bells and enjoy a spectacular view of Arequipa.",
-        "id": 5
-      }, {
-        "title": "THE ST. FRANCIS CONVENT AND THE CLOISTER ARCHITECTURE",
-        "description": "The St. Francis of Assisi Convent has existed for more than 400 years. The church has a neoclassical mestizo style with Mudejar ornamentation via the use of ashlar stones with the brick. In the beginning the church only had the central nave, but years later it was expanded and the side aisles were constructed. Unlike the St. Francis of Assisi Convent in Lima, this has no catacombs, because the cemetery was outside.\nThe cloister originally had high ceilings with wooden railings and a calamine roof, but an earthquake destroyed the roof, leaving a non-existent second floor to this day. The cloister has four passageways with decerative ashlar arch columns. In the museum front entrance arch we can see a bell, formerly used to call the Franciscan fathers.\nIn the middle of the convent we admire a basin with a sculpture of St. Francis of Assisi. Surrounding the cloister in the corners we have sculptures made in stone, originally for the temple of Cusco. Among the sculptures we can appreciate a lion and a crocodile, the puma-like she-wolf from the story of Romulus and Remus with her cubs, a puma with a foot in its mouth and a snake, the wolf of Gubbio and St. Francis of Assisi.",
-        "id": 6
-      }
-    ]
+    "chap-room-name": "CHAPTER ROOM",
+    "chap-room-description": "The Capitular Room was generally used to celebrate the “Chapters”, from there comes its name of “Capitular”. In this room the Franciscans recalled the adopted rule scriptures and discussed matters concerning the convent and its members.\nThe room shelters within its walls the Franciscan Order family tree, the largest painting that can be found in the city of Arequipa, along with other paintings by the Arequipa artist Antonio Guzman. The room is furnished with nineteenth century armchairs, each of which is decorated with the Franciscan Order coat of arms.\nIt is also used as a previously rented post-mass reception room.",
+    "cell-father-name": "THE CELL OF FATHER JOSE DE GUADALUPE MOJICA",
+    "cell-father-description": "Fray José de Guadalupe Mojica was a Mexican author and singer, and one of the most recognized Franciscans in Peru, born in San Gabriel in the year 1895 and died in Lima in the year 1974.\nMojica, long before dedicating himself to a religious life, participated in films such as “The Price of a Kiss” in 1930, followed by a series of comedies and romantic adventure melodramas, making him one of the most recognizable Hispanic faces in Hollywood. As a singer he was a tenor in the Chicago Opera Company.\nFinally, he left luxury, fame and his native country to become a friar of the Franciscan Order in Peru. In 1952 he published his book of memoirs “Yo pecador”, in which he recounts his worldly life and his conversion. The text inspired the 1959 film in which Mojica appeared with his name within the order.\nFray José de Guadalupe Mojica. José Mojica died in Lima in 1974, just six days after his 79th birthday. A legendary life that is treasured in our country as part of its cultural heritage.",
+    "duns-room-name": "DUNS SCOTTO ROOM",
+    "duns-room-description": "The Duns Scotto Room named in honor of the venerable Father Fray Juan Duns Scotto, as a testimony of gratitude to the Franciscan theologian and Philosopher, Doctor Subtilis, Paladin and Defender of the dogma of the “Immaculate Conception at the University” at the University of Sorbonne-Paris in the year 1306.\nThe room is adorned with seventeenth and eighteenth century paintings, several of which are Cuzco school-style, especially the painting of the brown Christ or “Lord of the Tremors”, which is a painting of the sculpture found in the city of Cuzco, There are also sculptures such as “The Virgin of Quito” and “The Virgin of the Four Names”.\nThe room was originally the Franciscan recreation room of yesteryear, where they studied and meditated. Most of the chairs and furniture are original or donated by wealthy families of Arequipa.",
+    "art-gallery-name": "IMMACULATE CONCEPTION ART GALLERY",
+    "art-gallery-description": "The Pinacoteca Inmaculada Concepción was once a small chapel of the convent, but after an earthquake it was used as a dining room prior to its reconstruction.\nThe museum converted it into a art gallery and currently exhibiting the collections of paintings of “The Twelve Apostles” and “The Life of the Virgin Mary”. Along with these the museum also exhibits twentieth century corals, nineteeth century “missals” books, four eighteeth century raincoats, eighteen century chasubles, albs,  and stoles, and a Christmas crib representation that alludes to the First Manager, a tradition that St. Francis of Assisi initiated.\nAt the end of the room we can observe a sculpture of the primary virgin of the Franciscan order, the Virgin of the Immaculate Conception, This sculpture was one of the first in the church and is approximately 300 years old.",
+    "choir-name": "ST. FRANCIS SOLANO CHOIR",
+    "choir-description": "The choir is named after the Franciscan saint, San Francisco Solano, a missionary who preached with music using a rabel, a stringed instrument similar to a violin and a lute.\nUsed since colonial times, tThe choir was a special place where the franciscans of St. Francis Convent recited the “Psalter of the Roman Breviary” and had mental prayer. It is called “Religious Choir”, because here the franciscans performed their religious obligations of sanctification every day of the year.\nDue to the earthquakes some time later, the franciscans no longer used it. It is adorned with wooden chairs from the 18th century, an 18th century pipe organ made by Innocente Foglia and brought from Lima, a rotating lectern where the large corals that the choir read and sang were placed, and corals made of sheepskin and cowhide cover. From the choir you have a unique view of the church and its main altar made of wood. If you wish, you can enter the tower where you can see the bells and enjoy a spectacular view of Arequipa.",
+    "covenant-name": "THE ST. FRANCIS CONVENT AND THE CLOISTER ARCHITECTURE",
+    "covenant-description": "The St. Francis of Assisi Convent has existed for more than 400 years. The church has a neoclassical mestizo style with Mudejar ornamentation via the use of ashlar stones with the brick. In the beginning the church only had the central nave, but years later it was expanded and the side aisles were constructed. Unlike the St. Francis of Assisi Convent in Lima, this has no catacombs, because the cemetery was outside.\nThe cloister originally had high ceilings with wooden railings and a calamine roof, but an earthquake destroyed the roof, leaving a non-existent second floor to this day. The cloister has four passageways with decerative ashlar arch columns. In the museum front entrance arch we can see a bell, formerly used to call the Franciscan fathers.\nIn the middle of the convent we admire a basin with a sculpture of St. Francis of Assisi. Surrounding the cloister in the corners we have sculptures made in stone, originally for the temple of Cusco. Among the sculptures we can appreciate a lion and a crocodile, the puma-like she-wolf from the story of Romulus and Remus with her cubs, a puma with a foot in its mouth and a snake, the wolf of Gubbio and St. Francis of Assisi."
   },
 
   "gallery":{
@@ -63,57 +47,34 @@
 
   "museums": {
     "title":"Other Museums of Arequipa",
-    "image-card": [
-    {
-      "title":"Arequipa Catedral Museum",
-      "description": "This museum safeguards and exhibits valuable objects that speak to the present and span more than 400 years of history.",
-      "location":"Location: Main Square",
-      "hours":"Hours: Mon-Sat, 10:00-4:15 pm",
-      "id": 1
-    }, 
-    {
-      "title":"Santa Catalina Museum",
-      "description": "A citadel within the city where you can relive the life of nuns past and present.",
-      "location":"Location: 301 Santa Catalina Street",
-      "hours":"Hours: Mon-Wed-Fri-Sat-Sun, 9:00-5:00 pm\nTues and Thurs, 8:00-8:00 pm",
-      "id": 2
-    }, 
-    {
-      "title":"Tristan del Pozo House Museum",
-      "description": "A large house with a 18th century traditional Baroque mestizo-style architecture. It has a museum inside.",
-      "location":"Location: 115 St. Francis Street",
-      "hours":"Hours: Mon-Fri, 9:00-1:00 pm and 4:00-6:00 pm\nTues and Thurs, 8:00-8:00 pm",
-      "id": 3
-    }, 
-    {
-      "title":"Santa Teresa Monastery Museum",
-      "description": "Built in 1710 and inhabited by the Barefoot Carmelites Order. It has 12 gallery rooms.",
-      "location":"Location: 303 Melgar",
-      "hours":"Hour: Mon-Sat, 9:00-5:00 pm",
-      "id": 4
-    }, 
-    {
-      "title":"Andean Shrines Museum",
-      "description": "It houses the famous Juanita Mummy and other Inca culture relicts.",
-      "location":"Location: 110 La Merced Street",
-      "hours":"Hours: Tue-Sat, 9:00-2:00 pm",
-      "id": 5
-    }, 
-    {
-      "title":"La Recoleta Museum",
-      "description": "This museum exhibits valuable 15th century artifacts, as well as religious articles such as canvases and liturgical objects.",
-      "location":"Location: 117 La Recoleta Street-Yanahuara",
-      "hours":"Hours: Mon-Sat, 9:00-12:00 and 3:00-5:00 pm",
-      "id": 6
-    }, 
-    {
-      "title":"Mario Vargas Llosa House Museum",
-      "description": "The illustrious writer Mario Vargas Llosa grew up in this house. It is now a museum that narrates his life.",
-      "location":"Location: 101 Parra Avenue",
-      "hours":"Hours: Mon-Sat. 10:00 - 5:00 pm",
-      "id": 7
-    }
-    ]
+    "catedral-name":"Arequipa Catedral Museum",
+    "catedral-description": "This museum safeguards and exhibits valuable objects that speak to the present and span more than 400 years of history.",
+    "catedral-location":"Location: Main Square",
+    "catedral-":"Hours: Mon-Sat, 10:00-4:15 pm",
+    "catalina-name":"Santa Catalina Museum",
+    "catalina-description": "A citadel within the city where you can relive the life of nuns past and present.",
+    "catalina-location":"Location: 301 Santa Catalina Street",
+    "catalina-hours":"Hours: Mon-Wed-Fri-Sat-Sun, 9:00-5:00 pm\nTues and Thurs, 8:00-8:00 pm",
+    "house-name":"Tristan del Pozo House Museum",
+    "house-description": "A large house with a 18th century traditional Baroque mestizo-style architecture. It has a museum inside.",
+    "house-location":"Location: 115 St. Francis Street",
+    "house-hours":"Hours: Mon-Fri, 9:00-1:00 pm and 4:00-6:00 pm\nTues and Thurs, 8:00-8:00 pm",
+    "monastery-name":"Santa Teresa Monastery Museum",
+    "monastery-description": "Built in 1710 and inhabited by the Barefoot Carmelites Order. It has 12 gallery rooms.",
+    "monastery-location":"Location: 303 Melgar",
+    "monastery-hours":"Hour: Mon-Sat, 9:00-5:00 pm",
+    "shrines-name":"Andean Shrines Museum",
+    "shrines-description": "It houses the famous Juanita Mummy and other Inca culture relicts.",
+    "shrines-location":"Location: 110 La Merced Street",
+    "shrines-hours":"Hours: Tue-Sat, 9:00-2:00 pm",
+    "recoleta-name":"La Recoleta Museum",
+    "recoleta-description": "This museum exhibits valuable 15th century artifacts, as well as religious articles such as canvases and liturgical objects.",
+    "recoleta-location":"Location: 117 La Recoleta Street-Yanahuara",
+    "recoleta-hours":"Hours: Mon-Sat, 9:00-12:00 and 3:00-5:00 pm",
+    "llosa-house-name":"Mario Vargas Llosa House Museum",
+    "llosa-house-description": "The illustrious writer Mario Vargas Llosa grew up in this house. It is now a museum that narrates his life.",
+    "llosa-house-location":"Location: 101 Parra Avenue",
+    "llosa-house-hours":"Hours: Mon-Sat. 10:00 - 5:00 pm"
   },
 
   "feedback":{
@@ -132,5 +93,117 @@
     "hours":"Hours:  Open Monday through Saturday, 9:00 am to 12:30 pm and 3:00 pm to 6:30 pm",
     "e-mail":"E-mail:  museoconventosanfrancisco@gmail.com",
     "phone":"Phone:   054 - 384103"
+  },
+
+  "visitors-banner":{
+    "title":"RESERVATIONS"
+  },
+
+  "visitors-info":{
+    "title":"PLAN YOUR VISIT",
+    "steps":"If you are coming to the museum in a large group, please do the following:",
+    "first":"1. Call us at this number:",
+    "second":"2. Give us the following information:",
+    "name":"Name and surname of the person in charge.",
+    "date":"Date of the visit.",
+    "time":"Time of the visit.",
+    "people":"Number of people visiting the museum. (number of children, teenagers, adults, seniors, university students).",
+    "cancel":"3. Cancel the tickets using the account number: XXXXXXXXXXX or by YAPE: XXXXXXXXXXXXXX."
+  },
+
+  "visitors-protocols":{
+    "title":"SAFETY AND HYGIENE PROTOCOLS",
+    "masks":"Mandatory use of masks",
+    "alcohol":"Use of liquid alcohol or alcohol gel",
+    "cleaning":"Periodic cleaning and disinfection of rooms",
+    "distance":"Minimum safety distance",
+    "duration":"Maximum duration of the visit"
+  },
+
+  "convent-events":{
+    "title":"EVENTS AT THE CONVENT",
+    "calendar":"LITURGICAL CALENDAR",
+    "jan":"JANUARY",
+    "mass-hours":"Morning Mass: 7 to 9 am\nEvening Mass: 5 to 9 pm",
+    "feb":"FEBRUARY",
+    "feb-11-name":"Our Lady of Lourdes",
+    "feb-11-details":"A triduum is held beginning February 8 at 6 pm and continues for the next three days. The feast day is February 11 at 6:00 pm. During the Eucharist, the apparitions of Our Lady of Lourdes to Bernadette Soubirous are remembered. During the triduum and on the feast day the Eucharist is celebrated.",
+    "feb-15-name":"Saint Anthony's Tongue",
+    "feb-15-details":"A Triduum is held beginning February 12 at 6 pm and continues for the next three days. The feast day is February 15 and is held at 11 am. The same day an agape is held with all the guests and bread is distributed to the poor. During the triduum and on the feast day the Eucharist is celebrated.",
+    "feb-26-name":"Just Judge (Friday after the imposition of ashes)",
+    "feb-26-details":"The feast of the Just Judge is celebrated on the Friday following the imposition of ashes on Ash Wednesday. This is why the date changes every year. The Lord of the Just Judge has a novena that begins on February 17 at 6:00 pm and continues for the next nine days. The feast day is held at 10:30 am on February 26th. During the novena and on the feast day the Eucharist is celebrated.",
+    "mar":"",
+    "mar-14":"14",
+    "mar-14-name":"Jesus Nazarene",
+    "mar-14-details":"A novena is celebrated to Jesus the Nazarene beginning March 5 at 6:00 pm and continues for the next nine days. The feast day is held on March 14 at 10:30 am. During the novena and on the feast day the Eucharist is performed.",    "mar-28-name":"Palm Sunday",
+    "mar-28-details":"The blessing of the branches takes place along with two or three masses.",    "mar-29-name":"Easter Monday",
+    "mar-29-details":"Confessions and masses at 4:45, 5:00 and 7:00 in the afternoon.",    "mar-30-name":"Holy Tuesday",
+    "mar-30-details":"Confessions and Masses at 4:45, 5:00 and 7:00 pm.",    "mar-31-name":"Holy Wednesday",
+    "mar-31-details":"Confessions and Masses at 4:45, 5:00 and 7:00 pm.",
+    "apr":"APRIL",
+    "apr-1-4-name":"Holy Week",
+    "apr-1-4-details":"Holy Week in Arequipa, as in most of the world, begins 40 days before, starting with Ash Wednesday, which is the beginning of Lent. Once the period of time called Lent is over, the Holy Week begins with:",
+    "apr-1-name":"Holy Thursday",
+    "apr-1-details":"Confessions in the morning. The institution of the Eucharist takes place at 5:00 pm, along with the washing of feet and the Most Holy Sacrament procession.",
+    "apr-2-name":"Good Friday",
+    "apr-2-details":"Stations of the Cross at 10:00 a.m.. No masses are held this day. Adoration of the Cross takes place at 3 or 4:00 p.m.",
+    "apr-3-name":"Holy Saturday",
+    "apr-3-details":"The Solitude of Our Lady of Sorrows takes place at 4:00 in the afternoon along with a sermon. At 5:30 there is a Our Lady of Sorrows procession. Finally the Easter Vigil is held. No masses are held this day.",
+    "apr-4-name":"Easter Sunday",
+    "apr-4-details":"A Resurrection Mass is held at 4:45, 5:00 and 7:00 in the evening.",
+    "apr-11-name":"Lord of Divine Mercy.",
+    "apr-11-details":"The feast of the Lord of Divine Mercy is celebrated every following Easter Sunday,. According to the account, Jesus Himself told this to Maria Faustina, so the date varies each year, being the same worldwide. A Triduum is celebrated on April 8 at 6 p.m. and continues for the next three days. The feast begins at 7 pm on April 11. During the triduum and on the feast day the Eucharist is held.",
+    "may":"MAY",
+    "may-4-name":"St. Benedict of Palermo",
+    "may-4-details":"Traditionally his feast day is April 4, but due to a clash of dates, in this case Holy Week, the Church of St. Francis celebrates it on May 4. A novena begins on April 25 at 5:00 p.m. and continues for the next nine days. The feast day takes place at 6 pm on May 4th. During the novena and on the feast day, the Eucharist is performed.",
+    "jun":"JUNE",
+    "jun-13-name":"St. Anthony of Padua",
+    "jun-13-details":"A novena is held beginning June 4 at 6 p.m. and continues for the next nine days. The feast day begins at 11:00 a.m., followed by the distribution of bread to the poor and an agape for the guests. The Pious Union of St. Anthony of Padua offers a locro during the agape. During the novena and on the feast day, the Eucharist is celebrated.",
+    "jun-27-name":"Sacred Heart of Jesus",
+    "jun-27-details":"The feast is celebrated every last Sunday of June. This is why the date varies every year. There is a novena that begins on June 18 at 6:00 p.m. and continues for the next nine days. The feast is held at 10:30 in the morning. During the novena and on the feast day the Eucharist is celebrated.",
+    "jul":"JULY",
+    "jul-20-name":"Divine Child",
+    "jul-20-details":"A triduum is held on July 17 at 6 p.m. and continues for the next 3 days. The feast day is July 20 at 6:00 pm. During the triduum and on the feast day the Eucharist is celebrated.",
+    "aug":"AUGUST",
+    "aug-11-name":"St. Clare",
+    "aug-11-details":"A triduum is celebrated on August 8 at 6 p.m. and continues for the next three days. The feast day is August 11 at 6:00 pm. During the triduum and on the feast day the Eucharist is held.",
+    "aug-29-name":"Our Lady of Perpetual Help",
+    "aug-29-details":"The traditional date of the feast is June 27, but due to the clash of dates with another feast, in this case the Sacred Heart of Jesus, the feast is celebrated on the last Sunday of August. For the same reason the date varies every year. A novena begins on August 20 at 6:00 p.m. and continues for the next 9 days, the feast day is at 10:30 a.m. on August 29. During the novena and on the feast day the Eucharist is celebrated.",
+    "sep":"SEPTEMBER",
+    "sep-12-name":"Our Lady of Sorrows",
+    "sep-12-details":"A triduum is held on September 9 at 6 p.m. and continuse for the next 3 days. The feast is on September 12th at 6:00 pm. During the triduum and on the feast day the Eucharist is celebrated.",
+    "oct":"OCTOBER",
+    "oct-4-name":"St. Francis of Assisi",
+    "oct-4-details":"Given that St. Francis is the most important saint of the Church and the convent, more activities are held in his honor. These activities begin with a feast on September 24, where the faithful, people who live nearby and the friends of the fraternity, who are considered the invited guests, gather to participate in the celebration. A novena is celebrated beginning on September 25 at 6:00 p.m. for the next nine days. On the day of the eve in 2019 the traditional procession of the passage was held, in which St. Francis of Assisi and St. Dominic of Guzman met in the main square of Arequipa and embraced each other, symbol of their brotherhood. The day of the feast is October 4 at 6:00 p.m. At this time the church tower bells are rung. During the novena and on the feast day, the Eucharist is celebrated.",
+    "oct-31-name":"St. Jude Thaddeus",
+    "oct-31-details":"n the Church of St. Francis, St. Jude Thaddeus is usually celebrated on the Sunday nearest to October 28th. The novena begins on October 22 at 7 p.m. and continues for the next nine days. The feast is held on October 31 at 10:30 am. During the novena and on the feast day the Eucharist is celebrated.",
+    "nov":"NOVEMBER",
+    "nov-2-name":"The Virgen of Mount Carmel",
+    "nov-2-details":"A triduum is celebrated on October 30 at 8 am and continues for the next three days. The feast day is celebrated on November 2 at 8 am. During the triduum and on the feast day the Eucharist is held.",
+    "dec":"DECEMBER",
+    "dec-8-name":"The Virgin of the Immaculate Conception",
+    "dec-8-details":"A novena is celebrated on November 29 at 6 p.m. and continues for the next nine days. The feast day is held on December 8 at 10:30 am. During the novena and on the feast day the Eucharist is celebrated.",
+    "dec-12-name":"The Virgin of Guadalupe",
+    "dec-12-details":"A triduum is celebrated on December 9 at 6:00 p.m. and continues for the next three days. The feast is held on December 12 at 6:00 pm. This Virgin is the only one who has the right to be in the middle of the main altar during her feast, not counting the Virgin of the Immaculate Conception. Also, the brotherhood in charge of the Virgin of Guadalupe makes different tributes. On the eve they offer punch to those who attend and to the Mexican colony and sing to her. During the triduum and on the feast day the Eucharist is performed.",
+    "dec-18-name":"Our Lady of Refuge",
+    "dec-18-details":"A triduum is celebrated on December 15 at 6:00 p.m. and continues for the next three days. The feast is held on December 18 at 6:00 pm. During the triduum and on the feast day the Eucharist is performed."
+  },
+  
+  "calendar-reservations":{
+    "title": "RESERVATIONS",
+    "number": "To schedule masses or other events, please contact us at:"
+  },
+
+  "franciscan-order":{
+    "title": "THE FRANCISCAN CONGREGATION",
+    "origin":"When did the Franciscan Order begin?",
+    "origin-answer":"The Franciscan Order was founded by St. Francis of Assisi a little over 800 years ago. St. Francis was a merchant's son who received a divine revelation in an abandoned church in San Damiano. In this revelation he was given the following command: “Francis, go and put my church in order.”\nIn 1209, the first group of friars went on foot from Assisi to Rome and, in an extraordinary example of the work of the Holy Spirit, the group of scrawny friars was received by Pope Innocent III, who approved of their way of life.\nFrancis received the Stigmata on Mount Alvernia, an undeniable proof of the dedication he had to follow Christ in body and soul, and despite serious illnesses, he still felt the joy of loving and praising God, even when Sister Death came to visit him in 1226.",
+    "arrival":"When was the Franciscan Order founded in Arequipa?",
+    "arrival-answer":"The Franciscan Order began its missionary work in the year 1500 in Latin America and arrived in Peru in 1531. They were one of the first religious orders to come to Peru with the goal to evangelize and civilize, and have continued to do so for many centuries with devotion and sacrifice.",
+    "foundation":"When was the Franciscan Order founded in Arequipa?",
+    "foundation-answer":"The St. Francis Convent was founded in Arequipa in the year 1552 by Father Alonso Rincón. Initially, the Franciscan Order's focus in Arequipa was the evangelization of the Collahuas Indians who came to work in the city. Soon afterwards, its labors included all of Arequipa.",
+    "doses":"What doses the Franciscan Order do in Peru?",
+    "doses-answer":"The Franciscan Order, unlike other similiar orders, does not focus on a single idea or thought, It supports the Church, being and doing whatever is needed, from a school teacher to a listener to those who wish to be heard. Currently we can find members all over Peru. In Arequipa they left, in addition to their churches and convents, the legacy of a school inspired by the teachings of St. Francis.",
+    "phrase":"“Whether it be by a friar or by a brother, everyone is a Franciscan.”"
   }
 }
