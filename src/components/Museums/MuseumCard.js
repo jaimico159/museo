@@ -11,7 +11,7 @@ import SimpleText from "../../shared/SimpleText";
 
 const useStyles = makeStyles({
   root: {
-    width: 220,
+    width: 231,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
@@ -40,18 +40,24 @@ function MuseumCard({ src, title, description, location, hours }) {
       />
       <CardContent>
         <Box overflow="auto" style={{ height: 70 }}>
-          <Title variant="h6" marginBottom={15}>
+          <Title variant="h6" marginBottom={15} style={{ lineHeight: 1.2 }}>
             {title}
           </Title>
         </Box>
-        <Box overflow="auto" style={{ height: 200 }}>
+        <Box overflow="auto" style={{ height: 165 }}>
           <SimpleText classes={{ root: classes.contentRoot }}>
             {description}
           </SimpleText>
-          <SimpleText classes={{ root: classes.contentRoot }}>
+          <SimpleText
+            classes={{ root: classes.contentRoot }}
+            style={{ marginTop: 10 }}
+          >
             {location}
           </SimpleText>
-          <SimpleText classes={{ root: classes.contentRoot }}>
+          <SimpleText
+            classes={{ root: classes.contentRoot }}
+            style={{ marginTop: 10 }}
+          >
             {hours}
           </SimpleText>
         </Box>
