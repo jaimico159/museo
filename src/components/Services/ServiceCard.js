@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 const useStyles = makeStyles({
   root: {
-    width: 231,
+    width: 150,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
@@ -20,12 +20,12 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   media: {
-    height: 180,
+    height: 150,
     width: "100%",
   },
   media2: {
     height: 80,
-    width: 90,
+    width: 80,
     margin: 8,
   },
   contentRoot: {
@@ -40,7 +40,7 @@ const PhoneContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 20px;
+  height: 15px;
   margin-right: 5px;
 `;
 

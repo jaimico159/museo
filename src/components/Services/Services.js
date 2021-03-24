@@ -36,50 +36,54 @@ const settings = {
 
 const servicesContent = [
   {
-    srcImage: "/images/services/victoria-picanteria-1.png",
+    srcImage: "/images/services/victoria-picanteria.png",
     srcLogo: "/images/services/victoria-picanteria-logo.png",
     phone: "966714119",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/McDonalds.png",
+    srcLogo: "/images/services/McDonalds-logo.png",
+    phone: "(054) 212774",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/starbucks.png",
+    srcLogo: "/images/services/starbucks-logo.png",
+    phone: "(01) 5055000",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/pizza-hut.jpg",
+    srcLogo: "/images/services/pizza-hut.-logo.png",
+    phone: "(054) 257777",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/policia-de-turismo.jpg",
+    srcLogo: "/images/services/policia-de-turismo-logo.png",
+    phone: "988888888",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/interbank.jpg",
+    srcLogo: "/images/services/interbank",
+    phone: "(01) 3119000",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/bcp.jpg",
+    srcLogo: "/images/services/bcp-logo.png",
+    phone: "(01) 3119000",
   },
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/inkafarma.jpg",
+    srcLogo: "/images/services/inkafarma-logo.png",
+    phone: "988888888",
   },
-
   {
-    srcImage: "/images/services/",
-    srcLogo: "/images/services/",
-    phone: "",
+    srcImage: "/images/services/megatur.png",
+    srcLogo: "/images/services/megatur-logo.png",
+    phone: "(054) 404040",
+  },
+  {
+    srcImage: "/images/services/lavanderia.jpg",
+    srcLogo: "/images/services/lavanderia-logo.png",
+    phone: "988888888",
   },
 ];
 
