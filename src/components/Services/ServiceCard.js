@@ -15,9 +15,18 @@ const useStyles = makeStyles({
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   media: {
     height: 180,
+    width: "100%",
+  },
+  media2: {
+    height: 80,
+    width: 90,
+    margin: 8,
   },
   contentRoot: {
     overflow: "scroll",
@@ -31,8 +40,8 @@ const PhoneContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 3px;
-  margin: 5px;
+  height: 20px;
+  margin-right: 5px;
 `;
 
 function MuseumCard({ srcImage, srcLogo, phone }) {
@@ -44,22 +53,22 @@ function MuseumCard({ srcImage, srcLogo, phone }) {
         className={classes.media}
         image={srcImage}
         component="image"
-        height="140"
+        // height="140"
         controls
         controlsList="nodownload"
         disablePictureInPicture
       />
       <CardMedia
-        className={classes.media}
+        className={classes.media2}
         image={srcLogo}
         component="image"
-        height="140"
+        // height="140"
         controls
         controlsList="nodownload"
         disablePictureInPicture
       />
       <CardContent>
-        <Box overflow="auto" style={{ height: 165 }}>
+        <Box overflow="auto" style={{ height: 20 }}>
           <PhoneContainer>
             <Image src={icons.telefono}></Image>
             <SimpleText> {phone} </SimpleText>
