@@ -120,11 +120,12 @@
     "duration":"Duración máxima de la visita"
   },
 
-  "convent-event":{
+  "convent-events":{
     "title":"EVENTOS DEL CONVENTO",
     "calendar":"CALENDARIO LITURGICO",
     "jan":"ENERO",
-    "mass-hours":"Misa matutina 7 a 9 mañana\nMisa vespertina 5 a 9 tarde",
+    "mass-hours-1":"Misa matutina 7 a 9 mañana",
+    "mass-hours-2":"Misa vespertina 5 a 9 tarde",
     "feb":"FEBRERO",
     "feb-11-name":"Virgen de Lourdes",
     "feb-11-details":"Se realiza un triduo que comienza el 8 de febrero a las 6 de la tarde durante los próximos 3 días. El día de la fiesta es el 11 de febrero a las 6 de la tarde. Durante la eucaristía se recuerdan las apariciones de la Virgen de Lourdes a Bernadette Soubirous. Durante el triduo y el día de fiesta se realiza la eucaristía.",
