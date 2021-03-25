@@ -23,7 +23,7 @@ const mainContainer = {
   width: "100%",
   background: colors.CUSTOM_GRAY,
   maxWidth: 2600,
-  height: 750,
+  height: 500,
   paddingTop: 50,
   paddingBottom: 50,
 };

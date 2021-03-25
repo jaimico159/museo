@@ -14,14 +14,14 @@ import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 250,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
     position: "relative",
   },
   media: {
-    height: 250,
+    height: 160,
   },
   contentRoot: {
     overflow: "scroll",
