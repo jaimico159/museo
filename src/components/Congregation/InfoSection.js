@@ -4,6 +4,7 @@ import Title from "../../shared/Title";
 import EventIcon from "@material-ui/icons/Event";
 import SimpleText from "../../shared/SimpleText";
 import HorizontalLine from "../../shared/HorizontalLine";
+import { useTranslation } from "next-i18next";
 
 const MainComponent = styled.div`
   height: 2000px;
@@ -71,74 +72,39 @@ function Paragraph({ children }) {
 }
 
 export default function InfoSection() {
+  const { t } = useTranslation();
   return (
     <MainComponent style={{ background: colors.CUSTOM_GRAY }}>
       <InfoContainer>
         <ArticleContainer style={{ background: "white" }}>
           <ArticleImage></ArticleImage>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            LA CONGREGACION FRANCISCANA
+            {t("franciscan-order.title")}
           </Title>
           <DateLabel style={{ marginBottom: 30 }}>
             <EventIcon fontSize="small" style={{ marginRight: 10 }} />
-            25 de Julio del 2021
+            {t("franciscan-order.date")}
           </DateLabel>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            ¿Cual es el origen de la orden Franciscana?
+            {t("franciscan-order.origin")}
           </Title>
-          <Paragraph>
-            La orden franciscana fue fundada por San Francisco de Asís hace un
-            poco más de 800 años, el era un hijo de un comerciante que después
-            de recibir una revelación divina en una iglesia abandonada en San
-            Damian dándole la siguiente orden: “Francisco, ve y repara mi
-            iglesia”.
-          </Paragraph>
-          <Paragraph>
-            En 1209, el primer grupo de frailes fue a pie de Asís a Roma y, en
-            un extraordinario ejemplo de la obra del Espíritu Santo, el grupo de
-            escuálidos hermanos fue recibido por el Papa Inocencio III, quien
-            aprobó su modo de vida.
-          </Paragraph>
-          <Paragraph>
-            Francisco recibió los Estigmas en el Monte Alvernia, una prueba
-            innegable de la dedicación que tuvo para seguir a Cristo en cuerpo y
-            alma, y a pesar de graves enfermedades, aún sentía el gozo de amar y
-            alabar a Dios, hasta cuando la Hermana Muerte vino a visitarlo en
-            1226.
-          </Paragraph>
+          <Paragraph>{t("franciscan-order.origin-answer-1")}</Paragraph>
+          <Paragraph>{t("franciscan-order.origin-answer-2")}</Paragraph>
+          <Paragraph>{t("franciscan-order.origin-answer-3")}</Paragraph>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            ¿Cuando arribo la orden Franciscana al Perú?
+            {t("franciscan-order.arrival")}
           </Title>
-          <Paragraph>
-            La orden Franciscana comenzó su obra misional en el año de 1500 en
-            America Latina, y llegaron al Perú en 1531, fueron una de las
-            primeras órdenes religiosas en llegar al Perú con voluntad
-            evangelizadora y civilizadora y haberla continuada con abnegación
-            por muchos siglos.
-          </Paragraph>
+          <Paragraph>{t("franciscan-order.arrival-answer")}</Paragraph>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            ¿Cuando se establecio la orden Franciscana en Arequipa?
+            {t("franciscan-order.foundation")}
           </Title>
-          <Paragraph>
-            El convento San Francisco fue fundado en Arequipa en el año de 1552
-            por el padre Alonso Rincon, la labor de la orden franciscana en
-            Arequipa fue la evangelización de los indios collahuas que venían a
-            trabajar en la ciudad, poco después se extendió a toda Arequipa.
-          </Paragraph>
+          <Paragraph>{t("franciscan-order.foundation-answer")}</Paragraph>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            ¿Cual es la labor de la orden Franciscana en el Perú?
+            {t("franciscan-order.doses")}
           </Title>
-          <Paragraph>
-            La orden Franciscana a diferencia de otras ordenes hermanas, no se
-            enfoca en una sola idea o pensamiento, es literalmente el apoyo de
-            la iglesia, estando y siendo lo que se necesite, desde un maestro en
-            escuelas, a un oyente de los que desean ser escuchados. Actualmente
-            podemos hallarlos en todo el Perú, y en Arequipa además de sus
-            iglesias y conventos dejaron el legado de un colegio inspirado en la
-            enseñanza de San Francisco.
-          </Paragraph>
+          <Paragraph>{t("franciscan-order.doses-answer")}</Paragraph>
           <Title style={{ margin: "30px 0", fontSize: 20 }}>
-            “O por fray o por hermano, todo el mundo es franciscano.”
+            {t("franciscan-order.phrase")}
           </Title>
         </ArticleContainer>
         <ImagesContainer style={{ background: "white" }}>

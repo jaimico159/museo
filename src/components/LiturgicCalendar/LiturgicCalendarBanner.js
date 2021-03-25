@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HorizontalLine from "../../shared/HorizontalLine";
 import Title from "../../shared/Title";
+import { useTranslation } from "next-i18next";
 
 const BannerContainer = styled.div`
   text-align: center;
@@ -23,12 +24,13 @@ const ContentContainer = styled.div`
 `;
 
 function LiturgicCalendarBanner() {
+  const { t } = useTranslation();
   return (
     <BannerContainer>
       <ContentContainer>
         <HorizontalLine width={180} marRight={40} />
         <Title variant="h4" space={30}>
-          EVENTOS DEL CONVENTO
+          {t("convent-events.title")}
         </Title>
         <HorizontalLine width={180} marLeft={40} />
       </ContentContainer>

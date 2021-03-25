@@ -120,11 +120,12 @@
     "duration":"Duración máxima de la visita"
   },
 
-  "convent-event":{
+  "convent-events":{
     "title":"EVENTOS DEL CONVENTO",
     "calendar":"CALENDARIO LITURGICO",
     "jan":"ENERO",
-    "mass-hours":"Misa matutina 7 a 9 mañana\nMisa vespertina 5 a 9 tarde",
+    "mass-hours-1":"Misa matutina 7 a 9 mañana",
+    "mass-hours-2":"Misa vespertina 5 a 9 tarde",
     "feb":"FEBRERO",
     "feb-11-name":"Virgen de Lourdes",
     "feb-11-details":"Se realiza un triduo que comienza el 8 de febrero a las 6 de la tarde durante los próximos 3 días. El día de la fiesta es el 11 de febrero a las 6 de la tarde. Durante la eucaristía se recuerdan las apariciones de la Virgen de Lourdes a Bernadette Soubirous. Durante el triduo y el día de fiesta se realiza la eucaristía.",
@@ -199,8 +200,11 @@
 
   "franciscan-order":{
     "title": "LA CONGREGACION FRANCISCANA",
+    "date": "21 de julio del 2021",
     "origin":"¿Cuál es el origen de la orden Franciscana?",
-    "origin-answer":"La orden franciscana fue fundada por San Francisco de Asís hace un poco más de 800 años, el era un hijo de un comerciante que después de recibir una revelación divina en una iglesia abandonada en San Damian dándole la siguiente orden: “Francisco, ve y repara mi iglesia”.\nEn 1209, el primer grupo de frailes fue a pie de Asís a Roma y, en un extraordinario ejemplo de la obra del Espíritu Santo, el grupo de escuálidos hermanos fue recibido por el Papa Inocencio III, quien aprobó su modo de vida.\nFrancisco recibió los Estigmas en el Monte Alvernia, una prueba innegable de la dedicación que tuvo para seguir a Cristo en cuerpo y alma, y a pesar de graves enfermedades, aún sentía el gozo de amar y alabar a Dios, hasta cuando la Hermana Muerte vino a visitarlo en 1226.",
+    "origin-answer-1":"La orden franciscana fue fundada por San Francisco de Asís hace un poco más de 800 años, el era un hijo de un comerciante que después de recibir una revelación divina en una iglesia abandonada en San Damian dándole la siguiente orden: “Francisco, ve y repara mi iglesia.”",
+    "origin-answer-2":"En 1209, el primer grupo de frailes fue a pie de Asís a Roma y, en un extraordinario ejemplo de la obra del Espíritu Santo, el grupo de escuálidos hermanos fue recibido por el Papa Inocencio III, quien aprobó su modo de vida.",
+    "origin-answer-3":"Francisco recibió los Estigmas en el Monte Alvernia, una prueba innegable de la dedicación que tuvo para seguir a Cristo en cuerpo y alma, y a pesar de graves enfermedades, aún sentía el gozo de amar y alabar a Dios, hasta cuando la Hermana Muerte vino a visitarlo en 1226.",
     "arrival":"¿Cuándo arribó la orden Franciscana al Perú?",
     "arrival-answer":"La orden Franciscana comenzó su obra misional en el año de 1500 en America Latina, y llegaron al Perú en 1531, fueron una de las primeras órdenes religiosas en llegar al Perú con voluntad evangelizadora y civilizadora y haberla continuada con abnegación por muchos siglos.",
     "foundation":"¿Cuándo se estableció la orden Franciscana en Arequipa?",

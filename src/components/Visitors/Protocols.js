@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { icons } from "../../constants/constants";
 import Title from "../../shared/Title/Title";
 import SimpleText from "../../shared/SimpleText/SimpleText";
+import { useTranslation } from "next-i18next";
 
 const ProtocolsContainer = styled.div`
   text-align: center;
@@ -25,32 +26,39 @@ const Image = styled.img`
 `;
 
 function Protocols() {
+  const { t } = useTranslation();
   return (
     <ProtocolsContainer>
       <Title color="black" space="3px" style={{ height: 60 }}>
-        PROTOCOLO DE SEGURIDAD E HIGIENE
+        {t("visitors-protocols.title")}
       </Title>
       <List>
         <ListItem>
-          <SimpleText color="black">Uso obligatorio de mascarilla</SimpleText>
+          <SimpleText color="black">{t("visitors-protocols.masks")}</SimpleText>
           <Image src={icons.mascarilla}></Image>
         </ListItem>
         <ListItem>
-          <SimpleText color="black">Uso de alcohol líquido en gel</SimpleText>
+          <SimpleText color="black">
+            {t("visitors-protocols.alcohol")}
+          </SimpleText>
           <Image src={icons.alcohol}></Image>
         </ListItem>
         <ListItem style={{ margin: "10px 0 10px 0" }}>
           <SimpleText color="black">
-            Limpieza y desinfección periódica de espacios
+            {t("visitors-protocols.cleaning")}
           </SimpleText>
           <Image src={icons.desinfectante}></Image>
         </ListItem>
         <ListItem>
-          <SimpleText color="black">Distancia mínima de seguridad</SimpleText>
+          <SimpleText color="black">
+            {t("visitors-protocols.distance")}
+          </SimpleText>
           <Image src={icons.distanciamiento}></Image>
         </ListItem>
         <ListItem>
-          <SimpleText color="black">Duración máxima de la visita</SimpleText>
+          <SimpleText color="black">
+            {t("visitors-protocols.duration")}
+          </SimpleText>
           <Image src={icons.dMax}></Image>
         </ListItem>
       </List>
