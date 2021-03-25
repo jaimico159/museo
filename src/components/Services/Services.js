@@ -52,7 +52,7 @@ const servicesContent = [
   },
   {
     srcImage: "/images/services/pizza-hut.jpg",
-    srcLogo: "/images/services/pizza-hut.-logo.png",
+    srcLogo: "/images/services/pizza-hut-logo.png",
     phone: "(054) 257777",
   },
   {
@@ -62,7 +62,7 @@ const servicesContent = [
   },
   {
     srcImage: "/images/services/interbank.jpg",
-    srcLogo: "/images/services/interbank",
+    srcLogo: "/images/services/interbank-logo.png",
     phone: "(01) 3119000",
   },
   {

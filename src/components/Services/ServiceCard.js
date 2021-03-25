@@ -24,9 +24,10 @@ const useStyles = makeStyles({
     width: "100%",
   },
   media2: {
-    height: 80,
-    width: 80,
-    margin: 8,
+    height: 60,
+    width: 120,
+    marginTop: 8,
+    backgroundSize: "contain",
   },
   contentRoot: {
     overflow: "scroll",
@@ -62,7 +63,7 @@ function MuseumCard({ srcImage, srcLogo, phone }) {
         className={classes.media2}
         image={srcLogo}
         component="image"
-        // height="140"
+        height="140"
         controls
         controlsList="nodownload"
         disablePictureInPicture
@@ -70,7 +71,7 @@ function MuseumCard({ srcImage, srcLogo, phone }) {
       <CardContent>
         <Box overflow="auto" style={{ height: 20 }}>
           <PhoneContainer>
-            <Image src={icons.telefono}></Image>
+            <Image src={icons.phone}></Image>
             <SimpleText> {phone} </SimpleText>
           </PhoneContainer>
         </Box>
