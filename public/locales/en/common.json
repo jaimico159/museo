@@ -196,8 +196,11 @@
 
   "franciscan-order":{
     "title": "THE FRANCISCAN CONGREGATION",
+    "date": "July 21, 2021",
     "origin":"When did the Franciscan Order begin?",
-    "origin-answer":"The Franciscan Order was founded by St. Francis of Assisi a little over 800 years ago. St. Francis was a merchant's son who received a divine revelation in an abandoned church in San Damiano. In this revelation he was given the following command: “Francis, go and put my church in order.”\nIn 1209, the first group of friars went on foot from Assisi to Rome and, in an extraordinary example of the work of the Holy Spirit, the group of scrawny friars was received by Pope Innocent III, who approved of their way of life.\nFrancis received the Stigmata on Mount Alvernia, an undeniable proof of the dedication he had to follow Christ in body and soul, and despite serious illnesses, he still felt the joy of loving and praising God, even when Sister Death came to visit him in 1226.",
+    "origin-answer-1":"The Franciscan Order was founded by St. Francis of Assisi a little over 800 years ago. St. Francis was a merchant's son who received a divine revelation in an abandoned church in San Damiano. In this revelation he was given the following command: “Francis, go and put my church in order.”",
+    "origin-answer-2":"In 1209, the first group of friars went on foot from Assisi to Rome and, in an extraordinary example of the work of the Holy Spirit, the group of scrawny friars was received by Pope Innocent III, who approved of their way of life.",
+    "origin-answer-3":"Francis received the Stigmata on Mount Alvernia, an undeniable proof of the dedication he had to follow Christ in body and soul, and despite serious illnesses, he still felt the joy of loving and praising God, even when Sister Death came to visit him in 1226.",
     "arrival":"When was the Franciscan Order founded in Arequipa?",
     "arrival-answer":"The Franciscan Order began its missionary work in the year 1500 in Latin America and arrived in Peru in 1531. They were one of the first religious orders to come to Peru with the goal to evangelize and civilize, and have continued to do so for many centuries with devotion and sacrifice.",
     "foundation":"When was the Franciscan Order founded in Arequipa?",
