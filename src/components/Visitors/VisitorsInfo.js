@@ -4,6 +4,7 @@ import HorizontalLine from "../../shared/HorizontalLine";
 import Typography from "@material-ui/core/Typography";
 import Title from "../../shared/Title/Title";
 import SimpleText from "../../shared/SimpleText/SimpleText";
+import { useTranslation } from "next-i18next";
 
 const VisitorsContainer = styled.div`
   display: flex;
@@ -55,23 +56,22 @@ const VisitorDetailsContainer = styled.div`
 `;
 
 function VisitorsInfo() {
+  const { t } = useTranslation();
   return (
     <VisitorsContainer>
       <VisitorsInfoContainer>
         <TitleContainer>
           <HorizontalLine color="black" width={140} marRight={40} />
           <Title color="black" space="5px">
-            PLANEA TU VISITA
+            {t("visitors-info.title")}
           </Title>
           <Typography variant="h4"></Typography>
           <HorizontalLine color="black" width={140} marLeft={40} />
         </TitleContainer>
         <PhoneInfoContainer>
           <InfoContainer>
-            <SimpleText>
-              Si vas a venir al museo en un grupo numeroso, puedes planear tu
-              visita llamándonos al:
-            </SimpleText>
+            <SimpleText>{t("visitors-info.steps")}</SimpleText>
+            <SimpleText>{t("visitors-info.first")}</SimpleText>
           </InfoContainer>
           <PhoneContainer>
             <Image src={icons.telefono}></Image>
@@ -80,17 +80,14 @@ function VisitorsInfo() {
         </PhoneInfoContainer>
 
         <VisitorDetailsContainer>
-          <SimpleText>Y proporcionando la siguiente información:</SimpleText>
+          <SimpleText>{t("visitors-info.second")}</SimpleText>
           <ol style={{ paddingLeft: 18, marginTop: 26 }}>
-            <li>Nombre y Apellidos de la persona encargada</li>
-            <li>Fecha de la visita</li>
-            <li>Hora de la visita</li>
-            <li>Número de niños</li>
-            <li>Número de adolescentes</li>
-            <li>Número de adultos</li>
-            <li>Número de adultos mayor</li>
-            <li>Número de niños</li>
+            <li>{t("visitors-info.name")}</li>
+            <li>{t("visitors-info.date")}</li>
+            <li>{t("visitors-info.time")}</li>
+            <li>{t("visitors-info.people")}</li>
           </ol>
+          <SimpleText>{t("visitors-info.cancel")}</SimpleText>
         </VisitorDetailsContainer>
       </VisitorsInfoContainer>
     </VisitorsContainer>
