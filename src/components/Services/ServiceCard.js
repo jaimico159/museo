@@ -11,22 +11,23 @@ import styled from "styled-components";
 
 const useStyles = makeStyles({
   root: {
-    width: 150,
+    width: 200,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    height: 330,
   },
   media: {
-    height: 150,
+    height: 200,
     width: "100%",
   },
   media2: {
     height: 60,
-    width: 120,
-    marginTop: 8,
+    width: 150,
+    margin: 8,
     backgroundSize: "contain",
   },
   contentRoot: {
@@ -68,7 +69,7 @@ function MuseumCard({ srcImage, srcLogo, phone }) {
         controlsList="nodownload"
         disablePictureInPicture
       />
-      <CardContent>
+      <CardContent style={{ padding: 13 }}>
         <Box overflow="auto" style={{ height: 20 }}>
           <PhoneContainer>
             <Image src={icons.phone}></Image>
