@@ -5,6 +5,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { colors } from "../../constants/constants";
+import { Box } from "@material-ui/core";
+import Title from "../../shared/Title";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,30 +25,45 @@ const useStyles = makeStyles((theme) => ({
 const styles = {
   main: {
     height: 500,
-    width: 800,
+    width: 1000,
     borderColor: colors.BORDER_GRAY,
     borderRadio: 5,
+    borderWeight: 10,
+    borderStyle: "solid",
     display: "flex",
+    background: "white",
+    padding: 5,
+    alignItems: "center",
   },
   video: {},
   content: {},
 };
 
-function BigFilmCard() {
+function BigFilmCard({ src, title, content }) {
   return (
     <div style={styles.main}>
-      <div>
+      <div style={{ width: 800, display: "flex", alignItems: "center" }}>
         <CardMedia
-          className={classes.media}
           image={src}
           component="video"
-          height="140"
-          // controls
-          // controlsList="nodownload"
-          // disablePictureInPicture
+          height="430"
+          controls
+          controlsList="nodownload"
+          disablePictureInPicture
         />
       </div>
-      <div>HELLo</div>
+      <Box
+        style={{
+          padding: 40,
+          width: 400,
+          height: 500,
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Title marginBottom={30}>{title}</Title>
+        <Box overflow="auto">{content}</Box>
+      </Box>
     </div>
   );
 }
