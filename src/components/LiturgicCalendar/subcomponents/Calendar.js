@@ -357,8 +357,6 @@ function Calendar() {
     },
   ];
 
-  console.log(CALENDAR_INFO);
-
   return (
     <CalendarContainer>
       {CALENDAR_INFO.map((month) => {
