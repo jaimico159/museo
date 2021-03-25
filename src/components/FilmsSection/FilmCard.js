@@ -35,13 +35,13 @@ function FilmCard({ src, title, content }) {
   return (
     <Card classes={{ root: classes.root }}>
       <IconButton
-        style={{ position: "absolute", left: 250, top: 0 }}
+        style={{ position: "absolute", left: 200, top: 0 }}
         onClick={() => setOpen(true)}
       >
         <LaunchIcon />
       </IconButton>
       <CardContent>
-        <Box overflow="auto" style={{ height: 70 }}>
+        <Box overflow="auto" style={{ height: 70, width: 200 }}>
           <Title variant="h6" marginBottom={15}>
             {title}
           </Title>
