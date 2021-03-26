@@ -28,7 +28,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  // height: 100%;
+  height: 450px;
 `;
 
 const Info = styled.div`
@@ -39,6 +39,7 @@ const Info = styled.div`
   width: 28%;
   align-self: stretch;
   padding: 2%;
+  height: 450px;
 `;
 
 const Details = styled.ul`

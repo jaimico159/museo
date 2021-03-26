@@ -56,6 +56,7 @@ const icons = {
   distanciamiento: "/images/icons/icono-distanciamiento-social.png",
   dMax: "/images/icons/icono-duracion-max.png",
   telefono: "/images/icons/icono-telefono.png",
+  phone: "/images/icons/telephone-icon.png",
 };
 
 const background_image = ["/images/main/sagrada-familia.png"];
@@ -66,7 +67,15 @@ const colors = {
   WHITE: "rgb(255,255,255)",
   CUSTOM_YELLOW: "rgb(201,160,80)",
 };
-
+const museum_images = [
+  "/images/museums/museo-1.jpg",
+  "/images/museums/museo-2.jpg",
+  "/images/museums/museo-3.jpg",
+  "/images/museums/museo-4.jpg",
+  "/images/museums/museo-5.jpg",
+  "/images/museums/museo-6.jpg",
+  "/images/museums/museo-7.jpg",
+];
 export {
   urls,
   gallery_images,
@@ -77,4 +86,5 @@ export {
   banner_image_url,
   events_image_url,
   prices_image_url,
+  museum_images
 };
