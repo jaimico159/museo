@@ -102,13 +102,13 @@
   "visitors-info":{
     "title":"PLANEA TU VISITA",
     "steps":"Si vas a venir al museo en un grupo numeroso por favor realiza lo siguiente:",
-    "first":"1. Llámanos a este número:",
-    "second":"2. Otorgarnos los siguientes datos:",
+    "first":"1.\tLlámanos a este número:",
+    "second":"2.\tOtorgarnos los siguientes datos:",
     "name":"Nombre y apellidos de la persona encargada.",
     "date":"Fecha de la visita.",
     "time":"Hora de la visita.",
     "people":"Cantidad de personas que van a visitar el museo. (número de niños, adolescentes, adultos, adultos mayores, universitarios).",
-    "cancel":"3. Cancelar el precio de los boletos en el número de cuenta: XXXXXXXXX o por YAPE: XXXXXXXX"
+    "cancel":"3.\tCancelar el precio de los boletos en el número de cuenta: \n\tXXXXXXXXX o por YAPE: XXXXXXXX"
   },
 
   "visitors-protocols":{

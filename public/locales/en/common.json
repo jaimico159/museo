@@ -102,13 +102,13 @@
   "visitors-info":{
     "title":"PLAN YOUR VISIT",
     "steps":"If you are coming to the museum in a large group, please do the following:",
-    "first":"1. Call us at this number:",
-    "second":"2. Give us the following information:",
+    "first":"1.\tCall us at this number:",
+    "second":"2.\tGive us the following information:",
     "name":"Name and surname of the person in charge.",
     "date":"Date of the visit.",
     "time":"Time of the visit.",
     "people":"Number of people visiting the museum. (number of children, teenagers, adults, seniors, university students).",
-    "cancel":"3. Cancel the tickets using the account number: XXXXXXXXXXX or by YAPE: XXXXXXXXXXXXXX."
+    "cancel":"3.\tCancel the tickets using the account number:\n\tXXXXXXXXXXX or by YAPE: XXXXXXXXXXXXXX."
   },
 
   "visitors-protocols":{
