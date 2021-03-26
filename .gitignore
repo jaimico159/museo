@@ -31,10 +31,6 @@ yarn-error.log*
 
 /public/images/gallery/
 
-/public/images/icons/
-
-/public/images/main/
-
 /public/videos/
 
 /public/fonts/*.woff
