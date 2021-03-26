@@ -8,6 +8,7 @@ import Maps from "../src/components/Maps";
 import Events from "../src/components/Events/Events";
 import Feedback from "../src/components/Feedback";
 import Museums from "../src/components/Museums";
+import Services from "../src/components/Services";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export const getStaticProps = async ({ locale }) => ({
@@ -27,6 +28,7 @@ export default function Home() {
       <Events></Events>
       <Museums></Museums>
       <Feedback></Feedback>
+      <Services></Services>
       <Footer></Footer>
     </Fragment>
   );

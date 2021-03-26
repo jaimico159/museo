@@ -30,11 +30,5 @@ yarn-error.log*
 .env.production.local
 
 /public/images/gallery/
-
-/public/images/icons/
-
-/public/images/main/
-
 /public/videos/
-
 /public/fonts/*.woff

@@ -56,6 +56,7 @@ const icons = {
   distanciamiento: "/images/icons/icono-distanciamiento-social.png",
   dMax: "/images/icons/icono-duracion-max.png",
   telefono: "/images/icons/icono-telefono.png",
+  phone: "/images/icons/telephone-icon.png",
 };
 
 const background_image = ["/images/main/sagrada-familia.png"];
