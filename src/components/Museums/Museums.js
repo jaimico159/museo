@@ -34,67 +34,59 @@ const settings = {
   prevArrow: <ArrowBackIosIcon color="primary" fontSize="large" />,
 };
 
-const museumsContent = [
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-1.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-2.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-3.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-4.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-5.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-6.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-  {
-    title: "Museo de la Catedral de Arequipa",
-    src: "/images/museums/museo-7.jpg",
-    description:
-      "Atesora y expone valiosos objetos, que hablan al presente de la historia de más de 400 años.",
-    location: "Ubicación: Plaza de Armas",
-    hours: "Lun-Sab.: 10:00–4:15 pm",
-  },
-];
-
 function Museums() {
   const { t, i18n } = useTranslation();
+  const museumsContent = [
+    {
+      title: t("museums.catedral-name"),
+      src: "/images/museums/museo-1.jpg",
+      description: t("museums.catedral-description"),
+      location: t("museums.catedral-location"),
+      hours: t("museums.catedral-hours"),
+    },
+    {
+      title: t("museums.catalina-name"),
+      src: "/images/museums/museo-2.jpg",
+      description: t("museums.catalina-description"),
+      location: t("museums.catalina-location"),
+      hours: t("museums.catalina-hours"),
+    },
+    {
+      title: t("museums.house-name"),
+      src: "/images/museums/museo-3.jpg",
+      description: t("museums.house-description"),
+      location: t("museums.house-location"),
+      hours: t("museums.house-hours"),
+    },
+    {
+      title: t("museums.monastery-name"),
+      src: "/images/museums/museo-4.jpg",
+      description: t("museums.monastery-description"),
+      location: t("museums.monastery-location"),
+      hours: t("museums.monastery-hours"),
+    },
+    {
+      title: t("museums.shrines-name"),
+      src: "/images/museums/museo-5.jpg",
+      description: t("museums.shrines-description"),
+      location: t("museums.shrines-location"),
+      hours: t("museums.shrines-hours"),
+    },
+    {
+      title: t("museums.recoleta-name"),
+      src: "/images/museums/museo-6.jpg",
+      description: t("museums.recoleta-description"),
+      location: t("museums.recoleta-location"),
+      hours: t("museums.recoleta-hours"),
+    },
+    {
+      title: t("museums.llosa-house-name"),
+      src: "/images/museums/museo-7.jpg",
+      description: t("museums.llosa-house-description"),
+      location: t("museums.llosa-house-location"),
+      hours: t("museums.llosa-house-hours"),
+    },
+  ];
   return (
     <Container style={mainContainer}>
       <Container style={museumContainerStyles}>

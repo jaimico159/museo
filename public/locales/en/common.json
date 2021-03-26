@@ -8,17 +8,17 @@
 
   "films": {
     "title": "Videos",
-    "chap-room-name": "CHAPTER ROOM",
+    "chap-room-name": "Chapter Room",
     "chap-room-description": "The Capitular Room was generally used to celebrate the “Chapters”, from there comes its name of “Capitular”. In this room the Franciscans recalled the adopted rule scriptures and discussed matters concerning the convent and its members.\nThe room shelters within its walls the Franciscan Order family tree, the largest painting that can be found in the city of Arequipa, along with other paintings by the Arequipa artist Antonio Guzman. The room is furnished with nineteenth century armchairs, each of which is decorated with the Franciscan Order coat of arms.\nIt is also used as a previously rented post-mass reception room.",
-    "cell-father-name": "THE CELL OF FATHER JOSE DE GUADALUPE MOJICA",
+    "cell-father-name": "The Cell of Father Jose de Guadalupe Mojica",
     "cell-father-description": "Fray José de Guadalupe Mojica was a Mexican author and singer, and one of the most recognized Franciscans in Peru, born in San Gabriel in the year 1895 and died in Lima in the year 1974.\nMojica, long before dedicating himself to a religious life, participated in films such as “The Price of a Kiss” in 1930, followed by a series of comedies and romantic adventure melodramas, making him one of the most recognizable Hispanic faces in Hollywood. As a singer he was a tenor in the Chicago Opera Company.\nFinally, he left luxury, fame and his native country to become a friar of the Franciscan Order in Peru. In 1952 he published his book of memoirs “Yo pecador”, in which he recounts his worldly life and his conversion. The text inspired the 1959 film in which Mojica appeared with his name within the order.\nFray José de Guadalupe Mojica. José Mojica died in Lima in 1974, just six days after his 79th birthday. A legendary life that is treasured in our country as part of its cultural heritage.",
-    "duns-room-name": "DUNS SCOTTO ROOM",
+    "duns-room-name": "Duns Scotto Room",
     "duns-room-description": "The Duns Scotto Room named in honor of the venerable Father Fray Juan Duns Scotto, as a testimony of gratitude to the Franciscan theologian and Philosopher, Doctor Subtilis, Paladin and Defender of the dogma of the “Immaculate Conception at the University” at the University of Sorbonne-Paris in the year 1306.\nThe room is adorned with seventeenth and eighteenth century paintings, several of which are Cuzco school-style, especially the painting of the brown Christ or “Lord of the Tremors”, which is a painting of the sculpture found in the city of Cuzco, There are also sculptures such as “The Virgin of Quito” and “The Virgin of the Four Names”.\nThe room was originally the Franciscan recreation room of yesteryear, where they studied and meditated. Most of the chairs and furniture are original or donated by wealthy families of Arequipa.",
-    "art-gallery-name": "IMMACULATE CONCEPTION ART GALLERY",
+    "art-gallery-name": "Immaculate Conception Art Gallery",
     "art-gallery-description": "The Pinacoteca Inmaculada Concepción was once a small chapel of the convent, but after an earthquake it was used as a dining room prior to its reconstruction.\nThe museum converted it into a art gallery and currently exhibiting the collections of paintings of “The Twelve Apostles” and “The Life of the Virgin Mary”. Along with these the museum also exhibits twentieth century corals, nineteeth century “missals” books, four eighteeth century raincoats, eighteen century chasubles, albs,  and stoles, and a Christmas crib representation that alludes to the First Manager, a tradition that St. Francis of Assisi initiated.\nAt the end of the room we can observe a sculpture of the primary virgin of the Franciscan order, the Virgin of the Immaculate Conception, This sculpture was one of the first in the church and is approximately 300 years old.",
-    "choir-name": "ST. FRANCIS SOLANO CHOIR",
+    "choir-name": "St. Francis Solano Choir",
     "choir-description": "The choir is named after the Franciscan saint, San Francisco Solano, a missionary who preached with music using a rabel, a stringed instrument similar to a violin and a lute.\nUsed since colonial times, tThe choir was a special place where the franciscans of St. Francis Convent recited the “Psalter of the Roman Breviary” and had mental prayer. It is called “Religious Choir”, because here the franciscans performed their religious obligations of sanctification every day of the year.\nDue to the earthquakes some time later, the franciscans no longer used it. It is adorned with wooden chairs from the 18th century, an 18th century pipe organ made by Innocente Foglia and brought from Lima, a rotating lectern where the large corals that the choir read and sang were placed, and corals made of sheepskin and cowhide cover. From the choir you have a unique view of the church and its main altar made of wood. If you wish, you can enter the tower where you can see the bells and enjoy a spectacular view of Arequipa.",
-    "covenant-name": "THE ST. FRANCIS CONVENT AND THE CLOISTER ARCHITECTURE",
+    "covenant-name": "The St. Francis Convent and the Cloister Architecture",
     "covenant-description": "The St. Francis of Assisi Convent has existed for more than 400 years. The church has a neoclassical mestizo style with Mudejar ornamentation via the use of ashlar stones with the brick. In the beginning the church only had the central nave, but years later it was expanded and the side aisles were constructed. Unlike the St. Francis of Assisi Convent in Lima, this has no catacombs, because the cemetery was outside.\nThe cloister originally had high ceilings with wooden railings and a calamine roof, but an earthquake destroyed the roof, leaving a non-existent second floor to this day. The cloister has four passageways with decerative ashlar arch columns. In the museum front entrance arch we can see a bell, formerly used to call the Franciscan fathers.\nIn the middle of the convent we admire a basin with a sculpture of St. Francis of Assisi. Surrounding the cloister in the corners we have sculptures made in stone, originally for the temple of Cusco. Among the sculptures we can appreciate a lion and a crocodile, the puma-like she-wolf from the story of Romulus and Remus with her cubs, a puma with a foot in its mouth and a snake, the wolf of Gubbio and St. Francis of Assisi."
   },
 
@@ -50,7 +50,7 @@
     "catedral-name":"Arequipa Catedral Museum",
     "catedral-description": "This museum safeguards and exhibits valuable objects that speak to the present and span more than 400 years of history.",
     "catedral-location":"Location: Main Square",
-    "catedral-":"Hours: Mon-Sat, 10:00-4:15 pm",
+    "catedral-hours":"Hours: Mon-Sat, 10:00-4:15 pm",
     "catalina-name":"Santa Catalina Museum",
     "catalina-description": "A citadel within the city where you can relive the life of nuns past and present.",
     "catalina-location":"Location: 301 Santa Catalina Street",
@@ -62,7 +62,7 @@
     "monastery-name":"Santa Teresa Monastery Museum",
     "monastery-description": "Built in 1710 and inhabited by the Barefoot Carmelites Order. It has 12 gallery rooms.",
     "monastery-location":"Location: 303 Melgar",
-    "monastery-hours":"Hour: Mon-Sat, 9:00-5:00 pm",
+    "monastery-hours":"Hours: Mon-Sat, 9:00-5:00 pm",
     "shrines-name":"Andean Shrines Museum",
     "shrines-description": "It houses the famous Juanita Mummy and other Inca culture relicts.",
     "shrines-location":"Location: 110 La Merced Street",
@@ -74,7 +74,7 @@
     "llosa-house-name":"Mario Vargas Llosa House Museum",
     "llosa-house-description": "The illustrious writer Mario Vargas Llosa grew up in this house. It is now a museum that narrates his life.",
     "llosa-house-location":"Location: 101 Parra Avenue",
-    "llosa-house-hours":"Hours: Mon-Sat. 10:00 - 5:00 pm"
+    "llosa-house-hours":"Hours: Mon-Sat, 10:00 - 5:00 pm"
   },
 
   "feedback":{

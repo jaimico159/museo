@@ -25,7 +25,7 @@ const mainContainer = {
 const settings = {
   infinite: true,
   dots: true,
-  centerMode: true,
+  // centerMode: true,
   slidesToShow: 1,
   variableWidth: true,
   arrows: true,
