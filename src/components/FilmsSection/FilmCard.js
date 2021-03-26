@@ -42,7 +42,7 @@ function FilmCard({ src, title, content }) {
         <LaunchIcon />
       </IconButton>
       <CardContent>
-        <Box overflow="auto" style={{ width: "99%", height: 70 }}>
+        <Box overflow="auto" style={{ width: "90%", height: 70 }}>
           <Title variant="h6">{title}</Title>
         </Box>
         {/* <Box overflow="auto" style={{ height: 200 }}>
