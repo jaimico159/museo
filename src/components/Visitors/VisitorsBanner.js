@@ -3,6 +3,7 @@ import { background_image } from "../../constants/constants";
 import HorizontalLine from "../../shared/HorizontalLine";
 import Typography from "@material-ui/core/Typography";
 import Title from "../../shared/Title/Title";
+import { useTranslation } from "next-i18next";
 
 const BannerContainer = styled.div`
   text-align: center;
@@ -26,12 +27,13 @@ const ContentContainer = styled.div`
 `;
 
 function VisitorsBanner() {
+  const { t } = useTranslation();
   return (
     <BannerContainer>
       <ContentContainer>
         <HorizontalLine width={140} marRight={40} />
         <Title color="secondary" variant="h3" space="10px">
-          RESERVACIONES
+          {t("visitors-banner.title")}
         </Title>
         <HorizontalLine width={140} marLeft={40} />
       </ContentContainer>

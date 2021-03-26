@@ -3,6 +3,7 @@ import Title from "../../shared/Title";
 import SimpleText from "../../shared/SimpleText";
 import HorizontalLine from "../../shared/HorizontalLine";
 import { icons } from "../../constants/constants";
+import { useTranslation } from "next-i18next";
 
 const MainContainer = styled.div`
   height: 600px;
@@ -34,21 +35,22 @@ const Image = styled.img`
 `;
 
 function ReservationSection() {
+  const { t } = useTranslation();
   return (
     <MainContainer>
       <TitleContainer>
         <HorizontalLine color="black" width={140} marRight={40} />
         <Title variant="h4" space={5}>
-          RESERVACIONES
+          {t("calendar-reservations.title")}
         </Title>
         <HorizontalLine color="black" width={140} marLeft={40} />
       </TitleContainer>
       <SimpleText style={{ fontSize: 25, width: "350px", textAlign: "center" }}>
-        Para reservar misas, bautismos, matrimonios u otro evento.
+        {t("calendar-reservations.number")}
       </SimpleText>
-      <SimpleText style={{ fontSize: 25, width: "320px", textAlign: "center" }}>
+      {/* <SimpleText style={{ fontSize: 25, width: "320px", textAlign: "center" }}>
         Contáctese con nosotros así:
-      </SimpleText>
+      </SimpleText> */}
       <PhoneContainer>
         <SimpleText
           style={{ fontSize: 25, width: "320px", textAlign: "center" }}
