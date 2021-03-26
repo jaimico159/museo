@@ -6,7 +6,7 @@ import { icons } from "../../constants/constants";
 import { useTranslation } from "next-i18next";
 
 const MainContainer = styled.div`
-  height: 600px;
+  height: 580px;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -26,7 +26,7 @@ const PhoneContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 110px;
 `;
 
 const Image = styled.img`

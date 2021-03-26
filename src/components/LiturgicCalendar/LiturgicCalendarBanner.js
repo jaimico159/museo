@@ -8,8 +8,9 @@ const BannerContainer = styled.div`
   display: flex;
   justify-content: center;
   background: url("images/liturgic_calendar/encabezado.jpg");
-  height: 599px;
+  height: 480px;
   background-size: 100%;
+  background-position: 0px 30px;
 `;
 
 const ContentContainer = styled.div`
