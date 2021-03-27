@@ -108,7 +108,7 @@
     "date":"Date of the visit.",
     "time":"Time of the visit.",
     "people":"Number of people visiting the museum. (number of children, teenagers, adults, seniors, university students).",
-    "cancel":"3.\tCancel the tickets using the account number:\n\tXXXXXXXXXXX or by YAPE: XXXXXXXXXXXXXX."
+    "cancel":"3.\tCancel the tickets using the account number:\n\t\t\tXXXXXXXXXXX \n\tor by YAPE: \n\t\t\tXXXXXXXXXXXXXX."
   },
 
   "visitors-protocols":{

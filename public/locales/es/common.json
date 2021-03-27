@@ -108,7 +108,7 @@
     "date":"Fecha de la visita.",
     "time":"Hora de la visita.",
     "people":"Cantidad de personas que van a visitar el museo. (número de niños, adolescentes, adultos, adultos mayores, universitarios).",
-    "cancel":"3.\tCancelar el precio de los boletos en el número de cuenta: \n\tXXXXXXXXX o por YAPE: XXXXXXXX"
+    "cancel":"3.\tCancelar el precio de los boletos en el número \n\tde cuenta: \n\t\t\tXXXXXXXXX \n\to por YAPE: \n\t\t\tXXXXXXXX"
   },
 
   "visitors-protocols":{

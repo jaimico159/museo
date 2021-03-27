@@ -10,6 +10,7 @@ const VisitorsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 700px;
 `;
 
 const VisitorsInfoContainer = styled.div`
@@ -17,7 +18,6 @@ const VisitorsInfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 70px;
   padding-bottom: 20px;
 `;
 
@@ -51,7 +51,6 @@ const Image = styled.img`
 
 const VisitorDetailsContainer = styled.div`
   width: 350px;
-  height: 250px;
 `;
 
 function VisitorsInfo() {
