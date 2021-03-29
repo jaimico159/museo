@@ -69,8 +69,8 @@ function MuseumCard({ srcImage, srcLogo, phone }) {
         controlsList="nodownload"
         disablePictureInPicture
       />
-      <CardContent style={{ padding: 13 }}>
-        <Box overflow="auto" style={{ height: 20 }}>
+      <CardContent style={{ padding: 10 }}>
+        <Box overflow="auto" style={{ height: 30 }}>
           <PhoneContainer>
             <Image src={icons.phone}></Image>
             <SimpleText> {phone} </SimpleText>

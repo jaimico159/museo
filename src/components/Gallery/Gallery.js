@@ -47,18 +47,18 @@ const VerticalCenteredModal = function ({ show, src, onHide }) {
   return (
     <Modal
       show={show}
-      size="lg"
+      size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       onHide={handleClose}
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        {/* <Modal.Title id="contained-modal-title-vcenter">
           Modal heading
-        </Modal.Title>
+        </Modal.Title> */}
       </Modal.Header>
       <Modal.Body>
-        <Image src={src} style={{ height: 200 }}></Image>
+        <Image src={src} style={{ height: 480, margin: "0 180px" }}></Image>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={onHide}>Close</Button>
