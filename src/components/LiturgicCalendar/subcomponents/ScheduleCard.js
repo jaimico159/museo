@@ -91,6 +91,9 @@ function CardLineImage({ children }) {
     width: 70,
     fontFamily: "ITCEDSCR",
     fontSize: 45,
+    alignItems: "flex-start",
+    lineHeight: "normal",
+    paddingRight: 10,
   };
 
   return (
