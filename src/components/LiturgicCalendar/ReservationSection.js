@@ -6,7 +6,7 @@ import { icons } from "../../constants/constants";
 import { useTranslation } from "next-i18next";
 
 const MainContainer = styled.div`
-  height: 580px;
+  height: 450px;
   width: 100%;
   display: flex;
   justify-content: start;

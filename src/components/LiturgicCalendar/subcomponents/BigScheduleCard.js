@@ -103,7 +103,9 @@ function CardLineImage({ children }) {
   const textStyle = {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
+    lineHeight: "normal",
+    paddingRight: 10,
     width: 70,
     fontFamily: "ITCEDSCR",
     fontSize: 45,
