@@ -14,14 +14,15 @@ import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles({
   root: {
-    width: 250,
+    width: 315,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "0 10px",
     position: "relative",
   },
   media: {
-    height: 160,
+    height: "100%",
+    width: "100%",
   },
   contentRoot: {
     overflow: "scroll",
@@ -35,16 +36,14 @@ function FilmCard({ src, title, content }) {
   return (
     <Card classes={{ root: classes.root }}>
       <IconButton
-        style={{ position: "absolute", left: 200, top: 0 }}
+        style={{ position: "absolute", left: 260, top: 0 }}
         onClick={() => setOpen(true)}
       >
         <LaunchIcon />
       </IconButton>
       <CardContent>
-        <Box overflow="auto" style={{ height: 70, width: 200 }}>
-          <Title variant="h6" marginBottom={15}>
-            {title}
-          </Title>
+        <Box overflow="auto" style={{ width: "90%", height: 70 }}>
+          <Title variant="h6">{title}</Title>
         </Box>
         {/* <Box overflow="auto" style={{ height: 200 }}>
           <SimpleText classes={{ root: classes.contentRoot }}>

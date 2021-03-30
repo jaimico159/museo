@@ -12,30 +12,29 @@ import Link from "next/link";
 
 const StyledMap = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
   flex: 3 0px;
-  align-content: stretch;
+  background-color: rgb(248, 247, 245);
+  padding: 15px 0;
 `;
 
 const Container = styled.div`
   order: 1;
   max-width: 100%;
   height: 60%;
-  width: 70%;
-  margin-bottom: 2%;
-  text-align: center;
+  margin-right: 15px;
 `;
 
 const Image = styled.img`
   height: 450px;
+  width: 100%;
 `;
 
 const Info = styled.div`
   background-image: url(${prices_image_url});
   background-size: 100%;
   order: 2;
-  margin-bottom: 2%;
   width: 28%;
   align-self: stretch;
   padding: 2%;
@@ -65,13 +64,13 @@ function Maps() {
       <Info>
         <Title color="secondary">{t("maps.title")}</Title>
         <Details>
-          <SimpleText color="primary">
+          <SimpleText color="primary" style={{ fontWeight: "bold" }}>
             <AccessTimeIcon fontSize="small"></AccessTimeIcon> {t("maps.hours")}
           </SimpleText>
           <Details>
             <SimpleText color="secondary">{t("maps.m-s-hours")}</SimpleText>
           </Details>
-          <SimpleText color="primary">
+          <SimpleText color="primary" style={{ fontWeight: "bold" }}>
             <AttachMoneyIcon fontSize="small"></AttachMoneyIcon>
             {t("maps.price")}
           </SimpleText>

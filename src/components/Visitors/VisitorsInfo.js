@@ -10,6 +10,7 @@ const VisitorsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 700px;
 `;
 
 const VisitorsInfoContainer = styled.div`
@@ -17,7 +18,6 @@ const VisitorsInfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 70px;
   padding-bottom: 20px;
 `;
 
@@ -32,11 +32,10 @@ const PhoneInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  text-align: center;
   height: 160px;
 `;
 const InfoContainer = styled.div`
-  width: 300px;
+  width: 350px;
 `;
 
 const PhoneContainer = styled.div`
@@ -52,7 +51,6 @@ const Image = styled.img`
 
 const VisitorDetailsContainer = styled.div`
   width: 350px;
-  height: 250px;
 `;
 
 function VisitorsInfo() {
@@ -71,7 +69,9 @@ function VisitorsInfo() {
         <PhoneInfoContainer>
           <InfoContainer>
             <SimpleText>{t("visitors-info.steps")}</SimpleText>
-            <SimpleText>{t("visitors-info.first")}</SimpleText>
+            <SimpleText style={{ marginTop: 10, whiteSpace: "pre" }}>
+              {t("visitors-info.first")}
+            </SimpleText>
           </InfoContainer>
           <PhoneContainer>
             <Image src={icons.telefono}></Image>
@@ -80,14 +80,18 @@ function VisitorsInfo() {
         </PhoneInfoContainer>
 
         <VisitorDetailsContainer>
-          <SimpleText>{t("visitors-info.second")}</SimpleText>
-          <ol style={{ paddingLeft: 18, marginTop: 26 }}>
+          <SimpleText style={{ whiteSpace: "pre" }}>
+            {t("visitors-info.second")}
+          </SimpleText>
+          <ul style={{ paddingLeft: 15, marginTop: 10, marginLeft: 48 }}>
             <li>{t("visitors-info.name")}</li>
             <li>{t("visitors-info.date")}</li>
             <li>{t("visitors-info.time")}</li>
             <li>{t("visitors-info.people")}</li>
-          </ol>
-          <SimpleText>{t("visitors-info.cancel")}</SimpleText>
+          </ul>
+          <SimpleText style={{ whiteSpace: "pre-wrap" }}>
+            {t("visitors-info.cancel")}
+          </SimpleText>
         </VisitorDetailsContainer>
       </VisitorsInfoContainer>
     </VisitorsContainer>
