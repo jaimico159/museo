@@ -98,7 +98,7 @@ function Gallery() {
   return (
     <GalleryContainer>
       <SliderContainer>
-        <Title marginBottom={30} style={{ marginLeft: 85 }}>
+        <Title marginBottom={30} style={{ marginLeft: 28 }}>
           {t("gallery.title")}
         </Title>
         <Slider {...settings} style={{ padding: "0 20px" }}>
