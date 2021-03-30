@@ -6,14 +6,23 @@ import { Fragment } from "react";
 import { colors, gallery_images } from "../../constants/constants";
 import React, { useState } from "react";
 import Slider from "react-slick";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Title from "../../shared/Title";
 import { useTranslation } from "next-i18next";
 
-const SliderContainer = styled.div`
+const GalleryContainer = styled.div`
   width: 100%;
-  margin: 0;
+  max-width: 2600px,
+  margin: auto;
   background-color: white;
   padding: 100px 0;
+`;
+
+const SliderContainer = styled.div`
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 const settings = {
@@ -21,8 +30,13 @@ const settings = {
   infinite: true,
   centerMode: true,
   slidesToShow: 1,
-  slidesToScroll: 1,
+  // slidesToScroll: 1,
   variableWidth: true,
+  dots: true,
+  arrows: true,
+  accessibility: true,
+  nextArrow: <ArrowForwardIosIcon color="primary" fontSize="large" />,
+  prevArrow: <ArrowBackIosIcon color="primary" fontSize="large" />,
 };
 
 const VerticalCenteredModal = function ({ show, src, onHide }) {
@@ -33,18 +47,18 @@ const VerticalCenteredModal = function ({ show, src, onHide }) {
   return (
     <Modal
       show={show}
-      size="lg"
+      size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       onHide={handleClose}
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        {/* <Modal.Title id="contained-modal-title-vcenter">
           Modal heading
-        </Modal.Title>
+        </Modal.Title> */}
       </Modal.Header>
       <Modal.Body>
-        <Image src={src} style={{ height: 200 }}></Image>
+        <Image src={src} style={{ height: 480, margin: "0 180px" }}></Image>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={onHide}>Close</Button>
@@ -82,16 +96,18 @@ const ClickableImage = function ({ src }) {
 function Gallery() {
   const { t, i18n } = useTranslation();
   return (
-    <SliderContainer>
-      <Title style={{ marginLeft: "100px" }} marginBottom={30}>
-        {t("gallery.title")}
-      </Title>
-      <Slider {...settings}>
-        {gallery_images.map((url) => {
-          return <ClickableImage src={url} />;
-        })}
-      </Slider>
-    </SliderContainer>
+    <GalleryContainer>
+      <SliderContainer>
+        <Title marginBottom={30} style={{ marginLeft: 28 }}>
+          {t("gallery.title")}
+        </Title>
+        <Slider {...settings} style={{ padding: "0 20px" }}>
+          {gallery_images.map((url) => {
+            return <ClickableImage src={url} />;
+          })}
+        </Slider>
+      </SliderContainer>
+    </GalleryContainer>
   );
 }
 

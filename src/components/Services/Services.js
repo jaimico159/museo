@@ -10,7 +10,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const serviceContainerStyles = {
   maxWidth: 1600,
-  width: "85%",
+  width: "90%",
 };
 
 const mainContainer = {

@@ -10,7 +10,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const filmsContainerStyles = {
   maxWidth: 1600,
-  width: "85%",
+  width: "90%",
 };
 
 const mainContainer = {
@@ -25,7 +25,7 @@ const mainContainer = {
 const settings = {
   infinite: true,
   dots: true,
-  centerMode: true,
+  // centerMode: true,
   slidesToShow: 1,
   variableWidth: true,
   arrows: true,

@@ -11,13 +11,15 @@ import SimpleText from "../../shared/SimpleText";
 
 const useStyles = makeStyles({
   root: {
-    width: 231,
+    width: 320,
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
-    margin: "0 10px",
+    margin: "10px",
+    height: 495,
   },
   media: {
-    height: 180,
+    height: 220,
+    margin: 10,
   },
   contentRoot: {
     overflow: "scroll",
@@ -39,24 +41,27 @@ function MuseumCard({ src, title, description, location, hours }) {
         disablePictureInPicture
       />
       <CardContent>
-        <Box overflow="auto" style={{ height: 70 }}>
-          <Title variant="h6" marginBottom={15} style={{ lineHeight: 1.2 }}>
+        <Box overflow="auto" style={{ height: 60 }}>
+          <Title variant="h6" style={{ lineHeight: 1.2, marginBottom: 8 }}>
             {title}
           </Title>
         </Box>
-        <Box overflow="auto" style={{ height: 165 }}>
-          <SimpleText classes={{ root: classes.contentRoot }}>
+        <Box overflow="auto" style={{ height: 350, marginTop: 5 }}>
+          <SimpleText
+            classes={{ root: classes.contentRoot }}
+            style={{ lineHeight: "1.1" }}
+          >
             {description}
           </SimpleText>
           <SimpleText
             classes={{ root: classes.contentRoot }}
-            style={{ marginTop: 10 }}
+            style={{ marginTop: 10, lineHeight: "1.1" }}
           >
             {location}
           </SimpleText>
           <SimpleText
             classes={{ root: classes.contentRoot }}
-            style={{ marginTop: 10 }}
+            style={{ marginTop: 10, lineHeight: "1.1", whiteSpace: "pre-wrap" }}
           >
             {hours}
           </SimpleText>
