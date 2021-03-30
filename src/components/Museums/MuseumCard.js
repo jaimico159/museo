@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     border: "solid 2px",
     borderColor: colors.BORDER_GRAY,
     margin: "10px",
-    height: 435,
+    height: 495,
   },
   media: {
     height: 220,
@@ -41,12 +41,12 @@ function MuseumCard({ src, title, description, location, hours }) {
         disablePictureInPicture
       />
       <CardContent>
-        <Box overflow="auto" style={{ height: 40 }}>
-          <Title variant="h6" style={{ lineHeight: 1.2 }}>
+        <Box overflow="auto" style={{ height: 60 }}>
+          <Title variant="h6" style={{ lineHeight: 1.2, marginBottom: 8 }}>
             {title}
           </Title>
         </Box>
-        <Box overflow="auto" style={{ height: 300 }}>
+        <Box overflow="auto" style={{ height: 350, marginTop: 5 }}>
           <SimpleText
             classes={{ root: classes.contentRoot }}
             style={{ lineHeight: "1.1" }}
@@ -61,7 +61,7 @@ function MuseumCard({ src, title, description, location, hours }) {
           </SimpleText>
           <SimpleText
             classes={{ root: classes.contentRoot }}
-            style={{ marginTop: 10, lineHeight: "1.1" }}
+            style={{ marginTop: 10, lineHeight: "1.1", whiteSpace: "pre-wrap" }}
           >
             {hours}
           </SimpleText>
