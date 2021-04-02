@@ -53,7 +53,7 @@ function ReservationSection() {
           style={{ fontSize: 25, width: "320px", textAlign: "center" }}
         >
           <Image src={icons.telefono}></Image>
-          (+54) 999 999 999
+          054-384103
         </SimpleText>
       </PhoneContainer>
     </MainContainer>

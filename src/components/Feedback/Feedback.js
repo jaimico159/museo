@@ -48,7 +48,12 @@ function Feedback() {
           <Typography variant="subtitle1">{t("feedback.details")}</Typography>
         </TextContainer>
         <ButtonContainer>
-          <CapsuleButton>{t("feedback.feedback-button")}</CapsuleButton>
+          <CapsuleButton
+            href="https://g.page/r/CVA8qt431VinEAg/review"
+            target="_blank"
+          >
+            {t("feedback.feedback-button")}
+          </CapsuleButton>
         </ButtonContainer>
       </FeedbackContainer>
     </FeedbackSectionContainer>

@@ -75,7 +75,7 @@ function VisitorsInfo() {
           </InfoContainer>
           <PhoneContainer>
             <Image src={icons.telefono}></Image>
-            <SimpleText> (+54) 999 999 999 </SimpleText>
+            <SimpleText> 054-384103 </SimpleText>
           </PhoneContainer>
         </PhoneInfoContainer>
 

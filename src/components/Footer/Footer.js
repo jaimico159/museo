@@ -70,7 +70,7 @@ function Footer() {
           <Col>
             <InfoContainer>
               <InfoImage>
-                <img src="/images/main/logo-museo.png" height="200" />
+                <img src="/images/main/logo-museo.png" height="100" />
               </InfoImage>
               <InfoData>
                 <Title variant="h5">{t("footer.title")}</Title>

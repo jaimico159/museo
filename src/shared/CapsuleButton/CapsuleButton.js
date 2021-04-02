@@ -10,9 +10,15 @@ const buttonStyle = {
   fontSize: 12,
 };
 
-function CapsuleButton({ children }) {
+function CapsuleButton({ children, href, target }) {
   return (
-    <Button variant="contained" color="primary" style={buttonStyle}>
+    <Button
+      variant="contained"
+      color="primary"
+      style={buttonStyle}
+      href={href}
+      target={target}
+    >
       {children}
     </Button>
   );
