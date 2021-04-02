@@ -10,6 +10,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Title from "../../shared/Title";
 import { useTranslation } from "next-i18next";
+import ImageCard from "./ImageCard";
 
 const GalleryContainer = styled.div`
   width: 100%;
@@ -39,62 +40,9 @@ const settings = {
   prevArrow: <ArrowBackIosIcon color="primary" fontSize="large" />,
 };
 
-const VerticalCenteredModal = function ({ show, src, onHide }) {
-  const handleClose = () => {
-    onHide();
-  };
-
-  return (
-    <Modal
-      show={show}
-      size="xl"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      onHide={handleClose}
-    >
-      <Modal.Header closeButton>
-        {/* <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title> */}
-      </Modal.Header>
-      <Modal.Body>
-        <Image src={src} style={{ height: 480, margin: "0 180px" }}></Image>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-};
-
-const ClickableImage = function ({ src }) {
-  const [modalShow, setModalShow] = useState(false);
-
-  return (
-    <Fragment>
-      <Image
-        src={src}
-        onClick={() => {
-          setModalShow(true);
-        }}
-        style={{
-          height: 300,
-          cursor: "pointer",
-          padding: "8px 4px",
-          backgroundColor: colors.CUSTOM_GRAY,
-        }}
-      ></Image>
-      <VerticalCenteredModal
-        src={src}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      ></VerticalCenteredModal>
-    </Fragment>
-  );
-};
-
 function Gallery() {
   const { t, i18n } = useTranslation();
+
   return (
     <GalleryContainer>
       <SliderContainer>
@@ -103,7 +51,7 @@ function Gallery() {
         </Title>
         <Slider {...settings} style={{ padding: "0 20px" }}>
           {gallery_images.map((url) => {
-            return <ClickableImage src={url} />;
+            return <ImageCard src={url} />;
           })}
         </Slider>
       </SliderContainer>
