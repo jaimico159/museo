@@ -96,16 +96,7 @@ function CardLineImage({ children }) {
     paddingRight: 10,
   };
 
-  return (
-    <div style={{ ...imageStyle, ...textStyle }}>{children}</div>
-    // <div style={{ margin: "0 5px", display: "flex", maxWidth: 60 }}>
-    //   <div style={imageStyle}>
-    //     <div style={style}>
-    //       <div style={textStyle}>31</div>
-    //     </div>
-    //   </div>
-    // </div>
-  );
+  return <div style={{ ...imageStyle, ...textStyle }}>{children}</div>;
 }
 
 function CardLine({ item }) {

@@ -2,7 +2,6 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Box from "@material-ui/core/Box";
-
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useState } from "react";
 import { colors } from "../../constants/constants";
@@ -45,20 +44,12 @@ function FilmCard({ src, title, content }) {
         <Box overflow="auto" style={{ width: "90%", height: 70 }}>
           <Title variant="h6">{title}</Title>
         </Box>
-        {/* <Box overflow="auto" style={{ height: 200 }}>
-          <SimpleText classes={{ root: classes.contentRoot }}>
-            {content}
-          </SimpleText>
-        </Box> */}
       </CardContent>
       <CardMedia
         className={classes.media}
         image={src}
         component="video"
         height="140"
-        // controls
-        // controlsList="nodownload"
-        // disablePictureInPicture
       />
       <FilmCardModal
         src={src}

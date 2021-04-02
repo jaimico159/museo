@@ -71,10 +71,6 @@ function BigFilmCard({ src, title, content }) {
 export default function FilmCardModal({ open, setOpen, title, content, src }) {
   const classes = useStyles();
 
-  const handleClose = () => {
-    console.log("CLOSING");
-  };
-
   return (
     <div>
       <Modal

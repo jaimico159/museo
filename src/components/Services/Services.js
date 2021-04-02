@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
-import { museum_images, colors } from "../../constants/constants";
-import React, { useState } from "react";
+import { colors } from "../../constants/constants";
+import React from "react";
 import ServiceCard from "./ServiceCard";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
@@ -25,7 +25,6 @@ const mainContainer = {
 const settings = {
   infinite: true,
   dots: true,
-  // centerMode: true,
   slidesToShow: 1,
   variableWidth: true,
   arrows: true,
