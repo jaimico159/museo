@@ -48,9 +48,6 @@ function ReservationSection() {
       <SimpleText style={{ fontSize: 25, width: "350px", textAlign: "center" }}>
         {t("calendar-reservations.number")}
       </SimpleText>
-      {/* <SimpleText style={{ fontSize: 25, width: "320px", textAlign: "center" }}>
-        Contáctese con nosotros así:
-      </SimpleText> */}
       <PhoneContainer>
         <SimpleText
           style={{ fontSize: 25, width: "320px", textAlign: "center" }}

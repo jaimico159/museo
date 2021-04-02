@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import {
-  feedback_section_button,
-  feedback_section_info,
-  feedback_section_title,
-} from "../../content/feedback_section_content";
 import CapsuleButton from "../../shared/CapsuleButton";
 import Typography from "@material-ui/core/Typography";
 import { useTranslation } from "next-i18next";

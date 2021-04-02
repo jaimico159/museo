@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import { colors } from "../../constants/constants";
-import React, { useState } from "react";
+import React from "react";
 import FilmCard from "./FilmCard";
 import Slider from "react-slick";
 import Title from "../../shared/Title";
@@ -25,7 +25,6 @@ const mainContainer = {
 const settings = {
   infinite: true,
   dots: true,
-  // centerMode: true,
   slidesToShow: 1,
   variableWidth: true,
   arrows: true,

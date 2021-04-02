@@ -1,10 +1,6 @@
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import Image from "react-bootstrap/Image";
 import styled from "styled-components";
-import { Fragment } from "react";
-import { colors, gallery_images } from "../../constants/constants";
-import React, { useState } from "react";
+import { gallery_images } from "../../constants/constants";
+import React from "react";
 import Slider from "react-slick";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -29,9 +25,7 @@ const SliderContainer = styled.div`
 const settings = {
   className: "center",
   infinite: true,
-  centerMode: true,
   slidesToShow: 1,
-  // slidesToScroll: 1,
   variableWidth: true,
   dots: true,
   arrows: true,
