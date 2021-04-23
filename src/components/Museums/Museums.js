@@ -7,7 +7,6 @@ import Title from "../../shared/Title";
 import { useTranslation } from "next-i18next";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import { Link } from "react-router-dom";
 
 const museumContainerStyles = {
   maxWidth: 1600,
