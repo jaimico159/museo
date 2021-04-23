@@ -7,6 +7,7 @@ import Title from "../../shared/Title";
 import { useTranslation } from "next-i18next";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { Link } from "react-router-dom";
 
 const museumContainerStyles = {
   maxWidth: 1600,
@@ -42,6 +43,7 @@ function Museums() {
       description: t("museums.catedral-description"),
       location: t("museums.catedral-location"),
       hours: t("museums.catedral-hours"),
+      link: "https://www.museocatedralarequipa.org.pe/index.html",
     },
     {
       title: t("museums.catalina-name"),
@@ -49,6 +51,7 @@ function Museums() {
       description: t("museums.catalina-description"),
       location: t("museums.catalina-location"),
       hours: t("museums.catalina-hours"),
+      link: "https://santacatalina.org.pe",
     },
     {
       title: t("museums.house-name"),
@@ -56,6 +59,7 @@ function Museums() {
       description: t("museums.house-description"),
       location: t("museums.house-location"),
       hours: t("museums.house-hours"),
+      link: "https://fundacionbbva.pe/casonas-y-museos/casa-tristan-del-pozo/",
     },
     {
       title: t("museums.monastery-name"),
@@ -63,6 +67,7 @@ function Museums() {
       description: t("museums.monastery-description"),
       location: t("museums.monastery-location"),
       hours: t("museums.monastery-hours"),
+      link: "https://museosantateresa.org/museo/",
     },
     {
       title: t("museums.shrines-name"),
@@ -70,6 +75,7 @@ function Museums() {
       description: t("museums.shrines-description"),
       location: t("museums.shrines-location"),
       hours: t("museums.shrines-hours"),
+      link: "https://www.ucsm.edu.pe/museo-santuarios-andinos/",
     },
     {
       title: t("museums.recoleta-name"),
@@ -77,6 +83,7 @@ function Museums() {
       description: t("museums.recoleta-description"),
       location: t("museums.recoleta-location"),
       hours: t("museums.recoleta-hours"),
+      link: "https://www.facebook.com/museolarecoleta/",
     },
     {
       title: t("museums.llosa-house-name"),
@@ -84,6 +91,7 @@ function Museums() {
       description: t("museums.llosa-house-description"),
       location: t("museums.llosa-house-location"),
       hours: t("museums.llosa-house-hours"),
+      link: "https://www.facebook.com/casamariovargasllosa/",
     },
   ];
   return (
@@ -93,14 +101,16 @@ function Museums() {
         <Slider {...settings} style={{ padding: "0 20px" }}>
           {museumsContent.map((el, index) => {
             return (
-              <MuseumCard
-                src={el.src}
-                key={index}
-                title={el.title}
-                description={el.description}
-                location={el.location}
-                hours={el.hours}
-              />
+              <a href={el.link} target="_blank">
+                <MuseumCard
+                  src={el.src}
+                  key={index}
+                  title={el.title}
+                  description={el.description}
+                  location={el.location}
+                  hours={el.hours}
+                />
+              </a>
             );
           })}
         </Slider>
